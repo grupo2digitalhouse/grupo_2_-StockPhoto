@@ -1,4 +1,4 @@
-# grupo_2_-StockPhoto
+# grupo_2_-StockPhoto 💚
 
 El proyecto es el desarrollo de un sitio repositorio de imagenes, que ofrece al usuario un catalogo variado de fotografias , con la  posibilidad de registrarse en el mismo para adquirirlas o colaborar con imagenes para su venta 
 
