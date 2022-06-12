@@ -1,0 +1,50 @@
+/*BREAKPOINT SMARTPHONE*/
+@media(max-width: 480px){*{box-sizing: border-box;}
+
+/*INDEX STYLE*/
+
+/*LOGIN STYLE*/
+
+/*productOFFER STYLE*/
+
+/*productCART STYLE*/
+
+/*productPAYMENT STYLE*/
+
+/*REGISTER STYLE*/
+
+}
+
+/*BREAKPOINT TABLETS*/
+@media(min-width: 481px){*{box-sizing: border-box;}
+
+/*INDEX STYLE*/
+
+/*LOGIN STYLE*/
+
+/*productOFFER STYLE*/
+
+/*productCART STYLE*/
+
+/*productPAYMENT STYLE*/
+
+/*REGISTER STYLE*/
+
+}
+
+/*BREAKPOINT DESKTOP*/
+@media(min-width: 769px)and(orientation =landscape){*{box-sizing: border-box;}
+
+/*INDEX STYLE*/
+
+/*LOGIN STYLE*/
+
+/*productOFFER STYLE*/
+
+/*productCART STYLE*/
+
+/*productPAYMENT STYLE*/
+
+/*REGISTER STYLE*/
+
+}
