@@ -8,9 +8,82 @@
     <script src="https://kit.fontawesome.com/635bf43688.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/png" href="images/photostation-isotipo.png"/>
     <link rel="stylesheet", href="/css/normalize.css">
-    <link rel="stylesheet", href="/css/style.css">
+    <link rel="stylesheet", href="/css/cart.css">
 </head>
-<body>
-    
-</body>
+<style>
+@font-face{
+    font-family: myFirstFont;
+    src: url("./fonts/made-tommy-regular.otf");
+    }
+@font-face {
+font-family: mySecondFont;
+src: url(../public/fonts/CocoGothic-Regular.ttf);
+}
+</style>
+<section class="main">
+    <section class="top">
+        <i class="fa-solid fa-bars"></i>
+        <a href="http://localhost:3001"><img class="logo" src="../images/photostation-isotipo.png" alt="logoSuperior"></a>
+        <div class="right">
+            <i class="fa-solid fa-circle"><p></p></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+            <i class="fa-solid fa-user"></i>
+        </div>
+    </section>
+    <body>
+        <section class="box-padre">
+            <div class="shoppingCart">
+            <h2 class="titulo"> Mis Compras </h2>
+                <div class="inside-box">
+                    <ul class="items">
+                        <label for="compras" class="compras">
+                            <input type="checkbox" id="check" value="item">
+                            Lorem ipsum, dolor sit
+                        </label>
+                        <i class="fa-solid fa-circle-info"></i>
+                        <p class="precio">$000,00</p>
+
+                        <label for="compras" class="compras">
+                            <input type="checkbox" id="check" value="item">
+                            Lorem ipsum, dolor sit
+                        </label>
+                        <i class="fa-solid fa-circle-info"></i>
+                        <p class="precio">$000,00</p>
+
+                        <label for="compras" class="compras">
+                            <input type="checkbox" id="check" value="item">
+                            Lorem ipsum, dolor sit
+                        </label>
+                        <i class="fa-solid fa-circle-info"></i>
+                        <p class="precio">$000,00</p>
+
+                        <label for="compras" class="compras">
+                            <input type="checkbox" id="check" value="item">
+                            Lorem ipsum, dolor sit
+                        </label>
+                        <i class="fa-solid fa-circle-info"></i>
+                        <p class="precio">$000,00</p>
+
+                        <label for="compras" class="compras">
+                            <input type="checkbox" id="check" value="item">
+                            Lorem ipsum, dolor sit
+                        </label>
+                        <i class="fa-solid fa-circle-info"></i>
+                        <p class="precio">$000,00</p>
+                    </ul>
+                    <div class="inside-linea"></div>
+                        <label for="descuento" class="descuento-box">
+                            <input type="checkbox" id="check" value="item">
+                            <input type="text" name="descuento">
+                        </label>
+                    <div class="inside-linea"></div>
+                    <button class="botonDePago" type="button">$</button>
+                </div>
+            </div>
+        </section>
+    </body>
+    <footer class="footer-box">
+    <div class="linea"></div>
+        <a href="http://localhost:3001"><img class="logoFooter" src="../images/photostation-imagotipo.png" alt="logoSuperior"></a>
+    </footer>
 </html>

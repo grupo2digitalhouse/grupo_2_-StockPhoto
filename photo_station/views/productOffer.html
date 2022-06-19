@@ -11,9 +11,9 @@
     <link rel="stylesheet", href="/css/offer.css">
 </head>
 <style>
-@font-face {
+@font-face{
     font-family: myFirstFont;
-    src: url(../public/fonts/MADE\ TOMMY\ Regular.otf);
+    src: url("./fonts/made-tommy-regular.otf");
   }
 @font-face {
 font-family: mySecondFont;
@@ -25,41 +25,44 @@ src: url(../public/fonts/CocoGothic-Regular.ttf);
         <i class="fa-solid fa-bars"></i>
         <a href="http://localhost:3001"><img class="logo" src="../images/photostation-isotipo.png" alt="logoSuperior"></a>
         <div class="right">
-            <i class="fa-solid fa-circle"></i>
+            <i class="fa-solid fa-circle"><p></p></i>
             <i class="fa-solid fa-cart-shopping"></i>
             <i class="fa-solid fa-user"></i>
         </div>
     </section>
-    <body class="fondo">
+    <body>
+        <div class="box-padre">
         <section class="ofertasIndividuales">
-            <img class="sale" src="../images/sale.png" alt="logoSale">
-            <i class="fa-duotone fa-circle"></i>
-            <div class="botones">
-                <i class="fa-duotone fa-angle-left"></i>
-                <i class="fa-duotone fa-angle-right"></i>
+            <div class="circulo"><p class="cantidad">10</p><p class="clase">imagenes</p></div>
+            <div class="box-sale"><img class="sale" src="../images/sale.png" alt="logoSale"></div>
+            <div>
+                <i class="fa-duotone fa-circle-arrow-left"></i>
+                <i class="fa-duotone fa-circle-arrow-right"></i>
             </div>        
                 <p class="precio">$000,00</p>
                 <p class="terminosYCondiciones"><a href="#" alt="terminosYCondiciones">Terminos y condiciones</a></p>
-                <button class="botonDePago" type="button"><i class="fa-solid fa-cart-shopping"></i></button>
+                <button class="botonDePago" type="button">$</button>
         </section>
 
         <section class="ofertasLicencias">
-            <h2 class="titulo">Licencias</h2>
+            <h1 class="titulo">Licencias</h1>
             <div class="switchContainer">
                 <input type="checkbox" id="switch">
                 <label for="switch" class="label"></label>
             </div>
-            <i class="fa-duotone fa-circle"></i>
-            <div class="botones">
+            <div class="circulo"><p class="cantidad">20</p><p class="clase">imagenes</p></div>
+            <div>
                 <i class="fa-duotone fa-angle-left"></i>
                 <i class="fa-duotone fa-angle-right"></i>
             </div>
                 <p class="precio">$000,00</p>
                 <p class="terminosYCondiciones"><a href="#" alt="terminosYCondiciones">Terminos y condiciones</a></p>
-                <button class="botonDePago" type="button"><i class="fa-solid fa-cart-shopping"></i></button>
+                <button class="botonDePago" type="button">$</button>
         </section>
+        </div>
     </body>
     <footer class="footer-box">
+    <div class="linea"></div>
         <a href="http://localhost:3001"><img class="logoFooter" src="../images/photostation-imagotipo.png" alt="logoSuperior"></a>
     </footer>
 </html>

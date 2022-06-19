@@ -20,6 +20,7 @@
     flex-wrap: wrap;
     height:fit-content;
     justify-content: space-around;
+    position:fixed;
     width: 100%;
 }
 i.fa-solid.fa-bars{
@@ -30,7 +31,6 @@ i.fa-solid.fa-bars{
     width: 40px;
 }
 .logo{
-    box-shadow: 0px 0px 5px gray;
     margin-top: 4.5px;
     height: 40px;
     position: relative;
@@ -64,65 +64,139 @@ i.fa-solid.fa-user{
 
 /*BODY*/
 body{
-    align-items: center;
-}
-.fondo{
     background-color: #e3e7e8;
 }
+.box-padre{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+
 /*OFERTAS INDIVIDUALES*/
 .ofertasIndividuales{
+    align-items: center;
     background-color: #4d4d4f;
     border-radius: 0.2em;
     box-shadow: 0px 0px 10px gray;
     display: flex;
     flex-wrap: wrap;
-    height: 30%;
+    flex-direction: column;
+    height: 480px;
     justify-content: center;
-    width: 30%;
+    margin: 80px 20px 10px 20px;
+    width: 85%;
+}
+.box-sale{
+    height: 1px;
 }
 .sale{
-    width: 60px;
-    height: 50px;
-
+    height: 75px;
+    max-height: 150px;
+    position: relative;
+    right: 70px;
+    bottom: 30px;
+    width: 100px;
 }
-.fa-duotone.fa-circle{
+.circulo{
+    box-shadow: inset 0px 0px 10px rgb(81, 81, 81);
+    background-color: #e3e7e8;
+    border-radius: 100%;
+    height: 150px;
+    justify-items: center;
+    width: 150px;
+}
+.cantidad{
+    color: #292929;
+    font-family: myFirstFont;
+    font-weight: bold;
+    font-size: 50px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+.clase{
+    color: #292929;
+    font-family: myFirstFont;
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: 0px;
+    margin-bottom: 22px;
+    text-align: center;
 
 }
 .botones{
-
+    background-color: white;
+    width: 40px;
 }
-i.fa-duotone.fa-angle-left{
-
+i.fa-duotone.fa-circle-arrow-left{
+    color: black;
+    height: 20px;
+    width: 20px;
 }
-i.fa-duotone.fa-angle-right{
+i.fa-duotone.fa-circle-arrow-right{
+    color: black;
+    height: 20px;
+    width: 20px;
 
 }
 .precio{
+    color: #b3d7d6;
+    font-family: myFirstFont;
+    font-weight: bold;
+    font-size: 50px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    text-align: center;
 
 }
 .terminosYCondiciones{
-
+    font-family: myFirstFont;
+    font-size: 10px;
 }
 .botonDePago{
-
+    align-items: center;
+    background-color: #b3d7d6;
+    border: hidden ;
+    border-radius: 100em;
+    font-size: 30px;
+    height: 60px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: 150px;
 }
+.botonDePago:hover{
+    background-color: #8cd2d0;
+}
+
+
+
 
 /*OFERTAS LICENCIAS*/
 .ofertasLicencias{
+    align-items: center;
     background-color: #4d4d4f;
     border-radius: 0.2em;
     box-shadow: 0px 0px 10px gray;
     display: flex;
     flex-wrap: wrap;
-    height: 30%;
+    flex-direction: column;
+    height: 580px;
     justify-content: center;
-    width: 30%;
-
+    margin: 20px 20px 20px 20px;
+    width: 85%;
 }
 .titulo{
-
+    color: #e3e7e8;
 }
+
 /*SWITCH*/
+.switchContainer{
+    margin: 10px;
+}
 .label{
     display: inline-block;
     width: 65px;
@@ -149,7 +223,7 @@ i.fa-duotone.fa-angle-right{
     left: 36px;
 }
 #switch:checked + .label{
-background: #00C8B1;
+background: #8cd2d0;
 }
 #switch{
 display: none;
@@ -166,10 +240,14 @@ display: none;
     justify-content: center;
     width: 100%;
 }
+.linea{
+    background-color: gray;
+    height: 1px;
+    margin-top: 20px;
+    width: 90%;
+}
 .logoFooter{
-    margin-top:20px;
     height: 40px;
-
 }
 
 
