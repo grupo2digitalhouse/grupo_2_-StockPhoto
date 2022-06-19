@@ -1,6 +1,193 @@
 /*BREAKPOINT SMARTPHONE*/
 @media(max-width: 480px){*{box-sizing: border-box;}
 
+/*MAIN*/
+.main{
+    font-family: myFirstFont;
+    width: 100%;
+    height: 100%;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+/*TOP*/
+.top{
+    background-color: #b3d7d6;
+    box-shadow: 0px 0px 10px gray;
+    color: #4d4d4f;
+    display: flex;
+    flex-wrap: wrap;
+    height:fit-content;
+    justify-content: space-around;
+    width: 100%;
+}
+i.fa-solid.fa-bars{
+    font-size: 30px;
+    margin-top: 12px;
+    position: relative;
+    right: 30px;
+    width: 40px;
+}
+.logo{
+    box-shadow: 0px 0px 5px gray;
+    margin-top: 4.5px;
+    height: 40px;
+    position: relative;
+    left: 24px;
+    width: 50px;
+}
+.right{
+    font-size: 25px;
+    justify-content: center;
+    margin: 4.5px;
+    position: relative;
+    left: 30px;
+}
+i.fa-solid.fa-circle{
+    height: 40px;
+    margin-top: 10px;
+    width:fit-content;
+}
+i.fa-solid.fa-cart-shopping{
+    height: 40px;
+    margin-top: 10px;
+    width:fit-content;
+}
+i.fa-solid.fa-user{
+    height: 40px;
+    margin-top: 10px;
+    position: relative;
+    width:fit-content;
+}
+
+
+/*BODY*/
+body{
+    align-items: center;
+}
+.fondo{
+    background-color: #e3e7e8;
+}
+/*OFERTAS INDIVIDUALES*/
+.ofertasIndividuales{
+    background-color: #4d4d4f;
+    border-radius: 0.2em;
+    box-shadow: 0px 0px 10px gray;
+    display: flex;
+    flex-wrap: wrap;
+    height: 30%;
+    justify-content: center;
+    width: 30%;
+}
+.sale{
+    width: 60px;
+    height: 50px;
+
+}
+.fa-duotone.fa-circle{
+
+}
+.botones{
+
+}
+i.fa-duotone.fa-angle-left{
+
+}
+i.fa-duotone.fa-angle-right{
+
+}
+.precio{
+
+}
+.terminosYCondiciones{
+
+}
+.botonDePago{
+
+}
+
+/*OFERTAS LICENCIAS*/
+.ofertasLicencias{
+    background-color: #4d4d4f;
+    border-radius: 0.2em;
+    box-shadow: 0px 0px 10px gray;
+    display: flex;
+    flex-wrap: wrap;
+    height: 30%;
+    justify-content: center;
+    width: 30%;
+
+}
+.titulo{
+
+}
+/*SWITCH*/
+.label{
+    display: inline-block;
+    width: 65px;
+    height: 33px;
+    background: #979797;
+    border-radius: 100px;
+    cursor: pointer;
+    position: relative;
+    transition: .2s;
+}  
+.label::after{
+    content: '';
+    display: block;
+    width: 25px;
+    height: 25px;
+    background: #eee;
+    border-radius: 100px;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    transition: .2s;
+}
+#switch:checked + .label::after{
+    left: 36px;
+}
+#switch:checked + .label{
+background: #00C8B1;
+}
+#switch{
+display: none;
+}
+
+
+/*FOOTER*/
+.footer-box{
+    background-color: black;
+    box-shadow: 0px 0px 10px gray;
+    display: flex;
+    flex-wrap: wrap;
+    height: 130px;
+    justify-content: center;
+    width: 100%;
+}
+.logoFooter{
+    margin-top:20px;
+    height: 40px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 /*BREAKPOINT TABLETS*/
