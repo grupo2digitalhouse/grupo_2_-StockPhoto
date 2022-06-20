@@ -19,30 +19,24 @@
     display: flex;
     flex-wrap: wrap;
     height:fit-content;
-    justify-content: space-around;
+    justify-content: space-between;
     position:fixed;
     width: 100%;
 }
 i.fa-solid.fa-bars{
     font-size: 30px;
-    margin-top: 12px;
-    position: relative;
-    right: 30px;
-    width: 40px;
+    margin: 12px 0px 0px 10px;
 }
 .logo{
-    margin-top: 4.5px;
+    margin: 4.5px 0px 0px 0px;
     height: 40px;
-    position: relative;
-    left: 24px;
-    width: 50px;
+    justify-content: center;
+    position: absolute;
 }
 .right{
     font-size: 25px;
     justify-content: center;
-    margin: 4.5px;
-    position: relative;
-    left: 30px;
+    margin: 4.5px 10px 0px 0px;
 }
 i.fa-solid.fa-circle{
     height: 40px;
