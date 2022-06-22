@@ -1,12 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/a0c0c091c3.js" crossorigin="anonymous" rel="stylesheet" ></script>
+  <link rel="icon" type="image/png" href="images/photostation-isotipo.png"/>
+    <link rel="stylesheet", href="/css/normalize.css">
+
+
+  <link rel="stylesheet" href="/css/style.css">
+  <title>Photo Station </title>
 </head>
+<style>
+  @font-face{
+      font-family: myFirstFont;
+      src: url("./fonts/made-tommy-regular.otf");
+      }
+  @font-face {
+  font-family: mySecondFont;
+  src: url(../public/fonts/CocoGothic-Regular.ttf);
+  }
+  </style>
 <body>
-    
+  <header>
+    <div class="top-header">
+      <div class="logo">
+        <img src=" " alt="Logo de Photo Station">
+      </div>
+  </header>
+
+ <main>
+  <div class="signupForm">
+    <form action="/registro" class="form" method="post">
+      <h1 class="title">Sign up</h1>
+
+      <div class="inputContainer">
+        <input type="text" class="input" placeholder="a">
+        <label for="" class="label">Email</label>
+      </div>
+
+      <div class="inputContainer">
+        <input type="text" class="input" placeholder="a">
+        <label for="" class="label">Username</label>
+      </div>
+
+      <div class="inputContainer">
+        <input type="text" class="input" placeholder="a">
+        <label for="" class="label">Password</label>
+      </div>
+
+      <div class="inputContainer">
+        <input type="text" class="input" placeholder="a">
+        <label for="" class="label">Confirm Password</label>
+      </div>
+
+      <input type="submit" class="submitBtn" value="Sign up">
+    </form>
+  </div>
+
+ </main>
+
+ <footer>
+  <div class="infoFooter">
+    <i class="fa-light fa-people-line"></i>
+    <h4> Quienes somos</h4>
+    <p> Sobre nosotros</p>
+  </div>
+  <div class="infoFooter">
+    <i class="fa-thin fa-screwdriver-wrench"></i>
+    <h4>herramientas</h4>
+    <p>  Coming soon </p>
+  </div>
+  <div class="infoFooter">
+    <i class="fa-thin fa-phone-rotary"></i>
+    <h4>Contactanos</h4>
+    <p>mail@norespondemos.com</p>
+  </div>
+</footer>
 </body>
+
 </html>
+

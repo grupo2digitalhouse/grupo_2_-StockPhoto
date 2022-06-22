@@ -24,6 +24,11 @@ app.get('/productPayment', (req, res)=>{
   res.sendFile(path.resolve(__dirname,'./views/productPayment.html'));
 })
 
+//register
+app.get('/register', (req, res)=>{
+  res.sendFile(path.resolve(__dirname,'./views/register.html'));
+})
+
 
 //ruteo HEROKU
 app.set('puerto',process.env.PORT || 3000);
