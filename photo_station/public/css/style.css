@@ -25,14 +25,15 @@ gris claro: E3E7E8  */
     background-color: #b3d7d6;
     padding: 15px;
     box-sizing: border-box;
+    height: min-content;
   }
-  /*.top-header {
+  .top-header {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-  }*/
+  }
 
   .signupForm {
     display: flex;
