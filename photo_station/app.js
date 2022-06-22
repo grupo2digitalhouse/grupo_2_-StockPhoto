@@ -24,6 +24,11 @@ app.get('/productPayment', (req, res)=>{
   res.sendFile(path.resolve(__dirname,'./views/productPayment.html'));
 })
 
+//register
+app.get('/register', (req, res)=>{
+  res.sendFile(path.resolve(__dirname,'./views/register.html'));
+})
+
 
 //Ruteo LOCAL
 app.listen(3001, ()=> console.log("Servidor escuchando en puerto 3001"));
