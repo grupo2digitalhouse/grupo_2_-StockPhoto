@@ -14,7 +14,7 @@
 /*TOP*/
 .top{
     background-color: #b3d7d6;
-    box-shadow: 0px 0px 10px gray;
+    box-shadow: 0px 0px 20px black;
     color: #4d4d4f;
     display: flex;
     flex-wrap: wrap;
@@ -24,6 +24,7 @@
     width: 100%;
 }
 i.fa-solid.fa-bars{
+    color: black;
     font-size: 30px;
     margin: 12px 0px 0px 10px;
 }
@@ -38,17 +39,20 @@ i.fa-solid.fa-bars{
     justify-content: center;
     margin: 4.5px 10px 0px 0px;
 }
-i.fa-solid.fa-circle{
+i.fa-solid.fa-bell{
+    color: black;
     height: 40px;
     margin-top: 10px;
     width:fit-content;
 }
 i.fa-solid.fa-cart-shopping{
+    color: black;
     height: 40px;
     margin-top: 10px;
     width:fit-content;
 }
 i.fa-solid.fa-user{
+    color: black;
     height: 40px;
     margin-top: 10px;
     position: relative;
@@ -58,7 +62,10 @@ i.fa-solid.fa-user{
 
 /*BODY*/
 body{
-    background-color: #e3e7e8;
+    background-image: url(../images/fondo-nebulosa.jpg);
+    background-position: bottom;
+    background-attachment: fixed;
+    background-size: cover;
 }
 .box-padre{
     align-items: center;
@@ -73,9 +80,9 @@ body{
 /*PAYMENT*/
 .payment-box{
     align-items: center;
-    background-color: #4d4d4f;
+    background-color: #404040;
     border-radius: 0.2em;
-    box-shadow: 0px 0px 10px gray;
+    box-shadow: 0px 0px 10px black;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -90,14 +97,14 @@ body{
 }
 .inside-box{
     background-color: #a7a9ac;
+    box-shadow: inset 0px 0px 5px black;
     border-radius: 0.2em;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    height: 500px;
+    height: 512px;
     justify-content: space-between;
-    margin-bottom: 13px;
-    width: 90%;
+    width: 100%;
 }
 .inputs{
     border: hidden;
@@ -105,34 +112,56 @@ body{
     height: 40px;
     width: 63vw;
 }
+.opcionesPago-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
 .opcionesPago{
+    display: flex;
+    flex-wrap: wrap;
     border: hidden;
     border-radius: 0.2em;
     height: 40px;
-    margin: 20px 0px 0px 30px;
+    justify-content: center;
     width: 63vw;
 }
 .nombreYApellido-box{
+    display: flex;
+    flex-wrap: wrap;
     height: fit-content;
-    margin: 5px 0px 0px 30px;
+    justify-content: center;
+    width: 100%;
 }
 .dni-box{
+    display: flex;
+    flex-wrap: wrap;
     height: fit-content;
-    margin: 5px 0px 0px 30px;
+    justify-content: center;
+    width: 100%;
 }
 .numeroTarjeta-box{
+    display: flex;
+    flex-wrap: wrap;
     height: fit-content;
-    margin: 5px 0px 0px 30px;
+    justify-content: center;
+    width: 100%;
 }
 .codigoSeguridad-box{
+    display: flex;
+    flex-wrap: wrap;
     height: fit-content;
-    margin: 5px 0px 0px 30px;
+    justify-content: center;
+    width: 100%;
 }
 .fechaVencimiento-box{
     display: flex;
     flex-wrap: wrap;
-    margin: 0px 0px 10px 30px;
-    width: 63vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
 }
 .termino1-box{
     height: fit-content;
@@ -144,6 +173,12 @@ body{
 }
 
 /*BOTON DE PAGO*/
+.button-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 30px;
+}
 .botonDePago{
     align-items: center;
     background-color: #b3d7d6;
@@ -151,7 +186,6 @@ body{
     border-radius: 100em;
     font-size: 30px;
     height: 60px;
-    margin: 5px 0px 20px 100px;
     width: 150px;
 }
 .botonDePago:hover{
@@ -160,12 +194,10 @@ body{
 
 
 
-
-
 /*FOOTER*/
 .footer-box{
     background-color: black;
-    box-shadow: 0px 0px 10px gray;
+    box-shadow: 0px 0px 20px black;
     display: flex;
     flex-wrap: wrap;
     height: 130px;
@@ -187,9 +219,472 @@ body{
 /*BREAKPOINT TABLETS*/
 @media(min-width: 481px){*{box-sizing: border-box;}
 
+/*MAIN*/
+.main{
+    font-family: myFirstFont;
+    width: 100%;
+    height: 100%;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+/*TOP*/
+.top{
+    background-color: #b3d7d6;
+    box-shadow: 0px 0px 20px black;
+    color: #4d4d4f;
+    display: flex;
+    flex-wrap: wrap;
+    height:fit-content;
+    justify-content: space-between;
+    position:fixed;
+    width: 100%;
+}
+i.fa-solid.fa-bars{
+    color: black;
+    font-size: 30px;
+    margin: 12px 0px 0px 10px;
+}
+.logo{
+    margin: 4.5px 0px 0px 0px;
+    height: 40px;
+    justify-content: center;
+    position: absolute;
+}
+.right{
+    font-size: 25px;
+    justify-content: center;
+    margin: 4.5px 10px 0px 0px;
+}
+i.fa-solid.fa-bell{
+    color: black;
+    height: 40px;
+    margin-top: 10px;
+    width:fit-content;
+}
+i.fa-solid.fa-cart-shopping{
+    color: black;
+    height: 40px;
+    margin-top: 10px;
+    width:fit-content;
+}
+i.fa-solid.fa-user{
+    color: black;
+    height: 40px;
+    margin-top: 10px;
+    position: relative;
+    width:fit-content;
+}
+
+
+/*BODY*/
+body{
+    background-image: url(../images/fondo-nebulosa.jpg);
+    background-position: bottom;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.box-padre{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+
+/*PAYMENT*/
+.payment-box{
+    align-items: center;
+    background-color: #404040;
+    border-radius: 0.2em;
+    box-shadow: 0px 0px 10px black;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 585px;
+    justify-content: center;
+    margin: 80px 0px 20px 0px;
+    width: 85%;
+}
+.titulo{
+    color: #e3e7e8;
+    height:fit-content;
+}
+.inside-box{
+    background-color: #a7a9ac;
+    box-shadow: inset 0px 0px 5px black;
+    border-radius: 0.2em;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 512px;
+    justify-content: space-between;
+    width: 100%;
+}
+.inputs{
+    border: hidden;
+    border-radius: 0.2em;
+    height: 40px;
+    width: 63vw;
+}
+.opcionesPago-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+.opcionesPago{
+    display: flex;
+    flex-wrap: wrap;
+    border: hidden;
+    border-radius: 0.2em;
+    height: 40px;
+    justify-content: center;
+    width: 63vw;
+}
+.nombreYApellido-box{
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+    justify-content: center;
+    width: 100%;
+}
+.dni-box{
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+    justify-content: center;
+    width: 100%;
+}
+.numeroTarjeta-box{
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+    justify-content: center;
+    width: 100%;
+}
+.codigoSeguridad-box{
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+    justify-content: center;
+    width: 100%;
+}
+.tituloVencimiento{
+    color: gray;
+    position: absolute;
+    bottom: 37.5%;
+    left: 42vw;
+}
+.fechaVencimiento-box{
+    display: flex;
+    flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+.termino1-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    height: fit-content;
+    margin: 0px 0px 0px 9vh;
+}
+.termino2-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    height: fit-content;
+    margin: 0px 0px 0px 9vh;
+}
+
+/*BOTON DE PAGO*/
+.button-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.botonDePago{
+    align-items: center;
+    background-color: #b3d7d6;
+    border: hidden ;
+    border-radius: 100em;
+    font-size: 30px;
+    height: 70px;
+    width: 170px;
+}
+.botonDePago:hover{
+    background-color: #8cd2d0;
+}
+
+
+
+/*FOOTER*/
+.footer-box{
+    background-color: black;
+    box-shadow: 0px 0px 20px black;
+    display: flex;
+    flex-wrap: wrap;
+    height: 130px;
+    justify-content: center;
+    width: 100%;
+}
+.linea{
+    background-color: gray;
+    height: 1px;
+    margin-top: 20px;
+    width: 90%;
+}
+.logoFooter{
+    height: 40px;
+}
+
+
 }
 
 /*BREAKPOINT DESKTOP*/
-@media(min-width: 769px)and(orientation =landscape){*{box-sizing: border-box;}
+@media(min-width: 769px){*{box-sizing: border-box;}
+
+/*MAIN*/
+.main{
+    font-family: myFirstFont;
+    width: 100%;
+    height: 100%;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+/*TOP*/
+.top{
+    background-color: #b3d7d6;
+    box-shadow: 0px 0px 20px black;
+    color: #4d4d4f;
+    display: flex;
+    flex-wrap: wrap;
+    height:fit-content;
+    justify-content: space-between;
+    position:fixed;
+    width: 100%;
+}
+i.fa-solid.fa-bars{
+    color: black;
+    font-size: 30px;
+    margin: 12px 0px 0px 10px;
+}
+.logo{
+    margin: 4.5px 0px 0px 0px;
+    height: 40px;
+    justify-content: center;
+    position: absolute;
+}
+.right{
+    font-size: 25px;
+    justify-content: center;
+    margin: 4.5px 10px 0px 0px;
+}
+i.fa-solid.fa-bell{
+    color: black;
+    height: 40px;
+    margin-top: 10px;
+    width:fit-content;
+}
+i.fa-solid.fa-cart-shopping{
+    color: black;
+    height: 40px;
+    margin-top: 10px;
+    width:fit-content;
+}
+i.fa-solid.fa-user{
+    color: black;
+    height: 40px;
+    margin-top: 10px;
+    position: relative;
+    width:fit-content;
+}
+
+
+/*BODY*/
+body{
+    background-image: url(../images/fondo-nebulosa.jpg);
+    background-position: bottom;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.box-padre{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+
+/*PAYMENT*/
+.payment-box{
+    align-items: center;
+    background-color: #404040;
+    border-radius: 0.2em;
+    box-shadow: 0px 0px 10px black;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 585px;
+    justify-content: center;
+    margin: 80px 0px 20px 0px;
+    width: 85%;
+    max-width: 600px;
+}
+.titulo{
+    color: #e3e7e8;
+    height:fit-content;
+}
+.inside-box{
+    background-color: #a7a9ac;
+    box-shadow: inset 0px 0px 5px black;
+    border-radius: 0.2em;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 512px;
+    justify-content: space-between;
+    width: 100%;
+}
+.inputs{
+    border: hidden;
+    border-radius: 0.2em;
+    height: 40px;
+    width: 63vw;
+    max-width: 500px;
+}
+.opcionesPago-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 30px 0px 0px 50px;
+    width: 65.7vh;
+}
+.opcionesPago{
+    display: flex;
+    flex-wrap: wrap;
+    border: hidden;
+    border-radius: 0.2em;
+    height: 40px;
+    justify-content: center;
+    width: 100%;
+}
+.nombreYApellido-box{
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+    justify-content: center;
+    width: 100%;
+}
+.dni-box{
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+    justify-content: center;
+    width: 100%;
+}
+.numeroTarjeta-box{
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+    justify-content: center;
+    width: 100%;
+}
+.codigoSeguridad-box{
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+    justify-content: center;
+    width: 100%;
+}
+.tituloVencimiento{
+    color: gray;
+    position: absolute;
+    bottom: 37.5%;
+    left: 42vw;
+}
+.fechaVencimiento-box{
+    display: flex;
+    flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+.termino1-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    height: fit-content;
+    margin: 0px 0px 0px 9vh;
+}
+.termino2-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    height: fit-content;
+    margin: 0px 0px 0px 9vh;
+}
+
+/*BOTON DE PAGO*/
+.button-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.botonDePago{
+    align-items: center;
+    background-color: #b3d7d6;
+    border: hidden ;
+    border-radius: 100em;
+    font-size: 30px;
+    height: 70px;
+    width: 170px;
+}
+.botonDePago:hover{
+    background-color: #8cd2d0;
+}
+
+
+
+/*FOOTER*/
+.footer-box{
+    background-color: black;
+    box-shadow: 0px 0px 20px black;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 130px;
+    justify-content: center;
+    width: 100%;
+}
+.linea{
+    background-color: gray;
+    height: 1px;
+    justify-content: center;
+    margin: 0px 0px 45px 0px;
+    width: 100%;
+}
+.logoInferior-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+.logoFooter{
+    height: 40px;
+}
+
 
 }

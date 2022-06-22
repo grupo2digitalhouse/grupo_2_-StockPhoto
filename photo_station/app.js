@@ -12,26 +12,27 @@ app.get('/', (req, res)=>{
 
 //Carro de compra
 //productOffer
-app.get('/productOffer', (req, res)=>{
-  res.sendFile(path.resolve(__dirname,'./views/productOffer.html'));
+app.get('/offer', (req, res)=>{
+  res.sendFile(path.resolve(__dirname,'./views/offer.html'));
 })
 //productCart
-app.get('/productCart', (req, res)=>{
-  res.sendFile(path.resolve(__dirname,'./views/productCart.html'));
+app.get('/cart', (req, res)=>{
+  res.sendFile(path.resolve(__dirname,'./views/cart.html'));
 })
 //productPayment
-app.get('/productPayment', (req, res)=>{
-  res.sendFile(path.resolve(__dirname,'./views/productPayment.html'));
+app.get('/payment', (req, res)=>{
+  res.sendFile(path.resolve(__dirname,'./views/payment.html'));
 })
-
 //register
 app.get('/register', (req, res)=>{
   res.sendFile(path.resolve(__dirname,'./views/register.html'));
 })
+//login
+app.get('/login', (req, res)=>{
+  res.sendFile(path.resolve(__dirname,'./views/login.html'));
+})
 
 
-//Ruteo LOCAL
-app.listen(3001, ()=> console.log("Servidor escuchando en puerto 3001"));
 //ruteo HEROKU
 app.set('puerto',process.env.PORT || 3000);
 app.listen(app.get('puerto'), ()=>console.log(`Servidor escuchando en puerto ${app.get('puerto')}`));
