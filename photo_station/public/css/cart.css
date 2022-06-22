@@ -114,6 +114,26 @@ body{
     padding-left: 20px;
     width: 100%;
 }
+.itemIndividual{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 0vw;
+    width: 100%;
+}
+.quitarItem{
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+    margin: 8px;
+    width: fit-content;
+}
+i.fa-solid.fa-xmark{
+    color: #758f8e;
+}
+.check{
+    display: none;
+}
 .compras{
     margin: 10px 0px 10px 0px;
     width: 40vw;
@@ -122,6 +142,26 @@ body{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+}
+.cantidad-box{
+    color: rgb(216, 216, 216);
+    margin-right: 20px;
+    width: 20px;
+}
+.cantidad{
+    background-color: rgb(216, 216, 216);
+    border: none;
+    border-radius: 10%;
+    color: black;
+    width: 23px;
+}
+.cantidad:hover{
+    background-color: rgb(216, 216, 216);
+    cursor: pointer;
+    color: black;
+    border-color: #b3d7d6;
+    border-radius: 10%;
+    width: 23px;
 }
 i.fa-solid.fa-circle-info{
     margin: 10px 5px 10px 0px;
@@ -157,6 +197,8 @@ i.fa-solid.fa-circle-info{
     border-color: #8cd2d0;
 }
 .precioFinal{
+    color: rgb(37, 151, 37);
+    font-size: 25px;
     height: fit-content;
     margin: 20px 0px 10px 0px;
 }
@@ -321,15 +363,55 @@ body{
     padding-left: 20px;
     width: 100%;
 }
+.itemIndividual{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 4vw;
+    width: 100%;
+}
+.quitarItem{
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+    margin: 8px;
+    width: fit-content;
+}
+i.fa-solid.fa-xmark{
+    color: #758f8e;
+}
+.check{
+    display: none;
+}
 .compras{
     margin: 10px 5px 10px 0px;
-    width: 65%;
+    width: 50%;
 }
 .right-box{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     margin-right: 5%;
+}
+.cantidad-box{
+    color: rgb(216, 216, 216);
+    margin-right: 20px;
+    width: 20px;
+}
+.cantidad{
+    background-color: rgb(216, 216, 216);
+    border: none;
+    border-radius: 10%;
+    color: black;
+    width: 23px;
+}
+.cantidad:hover{
+    background-color: rgb(216, 216, 216);
+    cursor: pointer;
+    color: black;
+    border-color: #b3d7d6;
+    border-radius: 10%;
+    width: 23px;
 }
 i.fa-solid.fa-circle-info{
     align-items: flex-end;
@@ -367,8 +449,10 @@ i.fa-solid.fa-circle-info{
     border-color: #8cd2d0;
 }
 .precioFinal{
+    color: rgb(37, 151, 37);
+    font-size: 25px;
     height: fit-content;
-    margin: 20px 0px 10px 4%;
+    margin: 10px 0px 20px 4%;
 }
 
 /*BOTON DE PAGO*/
@@ -533,7 +617,28 @@ body{
     padding-left: 20px;
     width: 100%;
 }
+.itemIndividual{    
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 7vw;
+    width: 100%;
+}
+.quitarItem{
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+    margin: 8px;
+    width: fit-content;
+}
+i.fa-solid.fa-xmark{
+    color: #758f8e;
+}
+.check{
+    display: none;
+}
 .compras{
+    font-size: 20px;
     margin: 10px 5px 10px 0px;
     width: 65%;
 }
@@ -543,6 +648,26 @@ body{
     flex-direction: row;
     margin-right: 5%;
 }
+.cantidad-box{
+    color: rgb(216, 216, 216);
+    margin-right: 20px;
+    width: 20px;
+}
+.cantidad{
+    background-color: rgb(216, 216, 216);
+    border: none;
+    border-radius: 10%;
+    color: black;
+    width: 23px;
+}
+.cantidad:hover{
+    background-color: rgb(216, 216, 216);
+    cursor: pointer;
+    color: black;
+    border-color: #b3d7d6;
+    border-radius: 10%;
+    width: 23px;
+}
 i.fa-solid.fa-circle-info{
     align-items: flex-end;
     margin: 10px 5px 10px 0px;
@@ -551,6 +676,7 @@ i.fa-solid.fa-circle-info{
     color: black;
 }
 .precio{
+    font-size: 20px;
     height: fit-content;
     align-items: flex-end;
     margin: 10px 0px 10px 0px;
@@ -581,9 +707,11 @@ i.fa-solid.fa-circle-info{
     border-color: #8cd2d0;
 }
 .precioFinal{
+    color: rgb(37, 151, 37);
+    font-size: 25px;
     height: fit-content;
     margin: 20px 0px 10px 0px;
-    margin-left: 12vw;
+    margin-left: 9vw;
 }
 
 /*BOTON DE PAGO*/
