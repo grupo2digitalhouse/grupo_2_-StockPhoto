@@ -38,17 +38,20 @@ i.fa-solid.fa-bars{
     justify-content: center;
     margin: 4.5px 10px 0px 0px;
 }
-i.fa-solid.fa-circle{
+i.fa-solid.fa-bell{
+    color: #292929;
     height: 40px;
     margin-top: 10px;
     width:fit-content;
 }
 i.fa-solid.fa-cart-shopping{
+    color: #292929;
     height: 40px;
     margin-top: 10px;
     width:fit-content;
 }
 i.fa-solid.fa-user{
+    color: #292929;
     height: 40px;
     margin-top: 10px;
     position: relative;
@@ -64,7 +67,6 @@ body{
     align-items: center;
     display: flex;
     flex-direction: column;
-    height: 100%;
 }
 
 
@@ -288,17 +290,20 @@ i.fa-solid.fa-bars{
     justify-content: center;
     margin: 4.5px 10px 0px 0px;
 }
-i.fa-solid.fa-circle{
+i.fa-solid.fa-bell{
+    color: #292929;
     height: 40px;
     margin-top: 10px;
     width:fit-content;
 }
 i.fa-solid.fa-cart-shopping{
+    color: #292929;
     height: 40px;
     margin-top: 10px;
     width:fit-content;
 }
 i.fa-solid.fa-user{
+    color: #292929;
     height: 40px;
     margin-top: 10px;
     position: relative;
@@ -314,6 +319,7 @@ body{
     align-items: center;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     height: 100%;
 }
 
@@ -330,8 +336,25 @@ body{
     flex-direction: column;
     height: 520px;
     justify-content: flex-end;
-    margin: 75px 10px 10px 15px;
-    width: 45vw;
+    margin: 75px 10px 10px 10px;
+    min-width: 400px;
+    width: 47vw;
+}
+.ofertasIndividuales:hover{
+    align-items: center;
+    background-color: #4d4d4f;
+    border-radius: 0.3em;
+    box-shadow: 0px 0px 20px black;
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 520px;
+    justify-content: flex-end;
+    margin: 75px 10px 10px 10px;
+    min-width: 420px;
+    transition: all 600ms;
+    width: 47.5vw;
 }
 .titulo1{
     color: #e3e7e8;
@@ -433,8 +456,24 @@ i.fa-duotone.fa-circle-arrow-right{
     flex-direction: column;
     height: 520px;
     justify-content: flex-end;
-    margin: 85px 15px 20px 10px;
-    width: 45vw;
+    margin: 20px 10px 20px 10px;
+    min-width: 400px;
+    width: 47vw;
+}
+.ofertasLicencias:hover{
+    align-items: center;
+    background-color: #4d4d4f;
+    border-radius: 0.3em;
+    box-shadow: 0px 0px 20px black;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 520px;
+    justify-content: flex-end;
+    margin: 20px 10px 10px 10px;
+    min-width: 420px;
+    transition: all 600ms;
+    width: 47.5vw;
 }
 .titulo2{
     color: #e3e7e8;
@@ -501,7 +540,7 @@ display: none;
 }
 
 /*BREAKPOINT DESKTOP*/
-@media(min-width: 960px)and(orientation =landscape){*{box-sizing: border-box;}
+@media(min-width: 960px){*{box-sizing: border-box;}
 
 /*MAIN*/
 .main{
@@ -540,17 +579,20 @@ i.fa-solid.fa-bars{
     justify-content: center;
     margin: 4.5px 10px 0px 0px;
 }
-i.fa-solid.fa-circle{
+i.fa-solid.fa-bell{
+    color: #292929;
     height: 40px;
     margin-top: 10px;
     width:fit-content;
 }
 i.fa-solid.fa-cart-shopping{
+    color: #292929;
     height: 40px;
     margin-top: 10px;
     width:fit-content;
 }
 i.fa-solid.fa-user{
+    color: #292929;
     height: 40px;
     margin-top: 10px;
     position: relative;
@@ -566,6 +608,8 @@ body{
     align-items: center;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
     height: 100%;
 }
 
@@ -582,8 +626,22 @@ body{
     flex-direction: column;
     height: 520px;
     justify-content: flex-end;
-    margin: 75px 10px 10px 15px;
-    width: 40vw;
+    margin: 75px 5px 10px 5px;
+    width: 46vw;
+}
+.ofertasIndividuales:hover{
+    align-items: center;
+    background-color: #4d4d4f;
+    border-radius: 0.3em;
+    box-shadow: 0px 0px 30px black;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 520px;
+    justify-content: flex-end;
+    margin: 75px 5px 10px 5px;
+    transition: all 600ms;
+    width: 47vw;
 }
 .titulo1{
     color: #e3e7e8;
@@ -685,8 +743,22 @@ i.fa-duotone.fa-circle-arrow-right{
     flex-direction: column;
     height: 520px;
     justify-content: flex-end;
-    margin: 85px 15px 20px 10px;
-    width: 40vw;
+    margin: 85px 5px 20px 5px;
+    width: 46vw;
+}
+.ofertasLicencias:hover{
+    align-items: center;
+    background-color: #4d4d4f;
+    border-radius: 0.3em;
+    box-shadow: 0px 0px 30px black;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 520px;
+    justify-content: flex-end;
+    margin: 85px 5px 20px 5px;
+    transition: all 600ms;
+    width: 47vw;
 }
 .titulo2{
     color: #e3e7e8;
@@ -735,7 +807,7 @@ display: none;
     box-shadow: 0px 0px 10px gray;
     display: flex;
     flex-wrap: wrap;
-    height: 130px;
+    height: 150px;
     justify-content: center;
     width: 100%;
 }
@@ -743,7 +815,7 @@ display: none;
     background-color: gray;
     height: 1px;
     margin-top: 20px;
-    width: 90%;
+    width: 100%;
 }
 .logoFooter{
     height: 40px;
