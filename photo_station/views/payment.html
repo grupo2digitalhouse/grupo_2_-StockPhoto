@@ -35,10 +35,12 @@ src: url(../public/fonts/CocoGothic-Regular.ttf);
             <div class="payment-box">
                 <h2 class="titulo"> Pasarela de Pago </h2>
                     <div class="inside-box">
-                        <select class="opcionesPago" name="opcionesDePago" id="eleccion">
-                            <option value="eleccion">VISA</option>
-                            <option value="eleccion">MASTERCARD</option>
-                        </select>
+                        <div class="opcionesPago-box">
+                            <select class="opcionesPago" name="opcionesDePago" id="eleccion">
+                                <option value="eleccion">VISA</option>
+                                <option value="eleccion">MASTERCARD</option>
+                            </select>
+                        </div>
                         <div class="nombreYApellido-box">
                             <label for="NombreYApellido"></label>
                             <input type="text" class="inputs" id="NombreYApellido" placeholder=" Nombre y Apellido">
@@ -69,7 +71,7 @@ src: url(../public/fonts/CocoGothic-Regular.ttf);
                             <input type="checkbox" id="termino2" required>
                             Lorem ipsum dolor sit
                         </div>
-                        <button class="botonDePago" type="button">$</button>
+                        <a class="button-box"><button class="botonDePago" type="button">$</button></a>
                     </div>
             </div>
         </section>
