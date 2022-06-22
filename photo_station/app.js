@@ -12,16 +12,16 @@ app.get('/', (req, res)=>{
 
 //Carro de compra
 //productOffer
-app.get('/productOffer', (req, res)=>{
-  res.sendFile(path.resolve(__dirname,'./views/productOffer.html'));
+app.get('/offer', (req, res)=>{
+  res.sendFile(path.resolve(__dirname,'./views/offer.html'));
 })
 //productCart
-app.get('/productCart', (req, res)=>{
-  res.sendFile(path.resolve(__dirname,'./views/productCart.html'));
+app.get('/cart', (req, res)=>{
+  res.sendFile(path.resolve(__dirname,'./views/cart.html'));
 })
 //productPayment
-app.get('/productPayment', (req, res)=>{
-  res.sendFile(path.resolve(__dirname,'./views/productPayment.html'));
+app.get('/payment', (req, res)=>{
+  res.sendFile(path.resolve(__dirname,'./views/payment.html'));
 })
 
 //register

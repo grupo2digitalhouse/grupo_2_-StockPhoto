@@ -14,14 +14,15 @@
 /*TOP*/
 .top{
     background-color: #b3d7d6;
-    box-shadow: 0px 0px 10px gray;
+    box-shadow: 0px 0px 20px black;
     color: #4d4d4f;
     display: flex;
     flex-wrap: wrap;
     height:fit-content;
     justify-content: space-between;
-    position:fixed;
+    position: fixed;
     width: 100%;
+    z-index: 10;
 }
 i.fa-solid.fa-bars{
     color: #292929;
@@ -64,13 +65,15 @@ i.fa-solid.fa-user{
 body{
     background-image: url(../images/fondo-nebulosa.jpg);
     background-position: bottom;
+    background-attachment: fixed;
+    background-size: cover;
 }
 .box-padre{
     align-items: center;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    height: 100%;
+    height: 100vh;
 }
 
 
@@ -78,13 +81,13 @@ body{
 /*SHOPPING CART*/
 .shoppingCart{
     align-items: center;
-    background-color: #4d4d4f;
+    background-color: #404040;
     border-radius: 0.2em;
-    box-shadow: 0px 0px 10px gray;
+    box-shadow: 0px 0px 20px black;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    height: 65vh;
+    height: 75vh;
     justify-content: center;
     margin: 80px 20px 20px 20px;
     width: 85%;
@@ -95,13 +98,13 @@ body{
 }
 .inside-box{
     background-color: #a7a9ac;
+    box-shadow:  inset 0px 0px 5px black;
     border-radius: 0.2em;
     display: flex;
     flex-wrap: wrap;
-    height: 480px;
+    height: 500px;
     justify-content: center;
-    margin-bottom: 13px;
-    width: 90%;
+    width: 100%;
 
 }
 .items{
@@ -178,7 +181,7 @@ i.fa-solid.fa-circle-info{
 /*FOOTER*/
 .footer-box{
     background-color: black;
-    box-shadow: 0px 0px 10px gray;
+    box-shadow: 0px 0px 20px black;
     display: flex;
     flex-wrap: wrap;
     height: 130px;
@@ -214,7 +217,7 @@ i.fa-solid.fa-circle-info{
 /*TOP*/
 .top{
     background-color: #b3d7d6;
-    box-shadow: 0px 0px 10px gray;
+    box-shadow: 0px 0px 20px black;
     color: #4d4d4f;
     display: flex;
     flex-wrap: wrap;
@@ -222,6 +225,7 @@ i.fa-solid.fa-circle-info{
     justify-content: space-between;
     position:fixed;
     width: 100%;
+    z-index: 10;
 }
 i.fa-solid.fa-bars{
     color: #292929;
@@ -264,13 +268,15 @@ i.fa-solid.fa-user{
 body{
     background-image: url(../images/fondo-nebulosa.jpg);
     background-position: bottom;
+    background-attachment: fixed;
+    background-size: cover;
 }
 .box-padre{
     align-items: center;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    height: 100%;
+    height: 100vh;
 }
 
 
@@ -278,13 +284,13 @@ body{
 /*SHOPPING CART*/
 .shoppingCart{
     align-items: center;
-    background-color: #4d4d4f;
+    background-color: #404040;
     border-radius: 0.2em;
-    box-shadow: 0px 0px 10px gray;
+    box-shadow: 0px 0px 20px black;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    height: 60vh;
+    height: 75vh;
     justify-content: space-around;
     margin: 80px 20px 20px 20px;
     width: 85%;
@@ -295,13 +301,14 @@ body{
 }
 .inside-box{
     background-color: #a7a9ac;
+    box-shadow: inset 0px 0px 5px black;
     border-radius: 0.2em;
     display: flex;
     flex-wrap: wrap;
-    height: 430px;
+    height: 490px;
     justify-content: center;
-    margin-bottom: 13px;
-    width: 90%;
+    margin-bottom: 0px;
+    width: 100%;
 
 }
 .items{
@@ -381,7 +388,7 @@ i.fa-solid.fa-circle-info{
 /*FOOTER*/
 .footer-box{
     background-color: black;
-    box-shadow: 0px 0px 10px gray;
+    box-shadow: 0px 0px 20px black;
     display: flex;
     flex-wrap: wrap;
     height: 130px;
@@ -418,7 +425,7 @@ i.fa-solid.fa-circle-info{
 /*TOP*/
 .top{
     background-color: #b3d7d6;
-    box-shadow: 0px 0px 10px gray;
+    box-shadow: 0px 0px 20px black;
     color: #4d4d4f;
     display: flex;
     flex-wrap: wrap;
@@ -468,6 +475,8 @@ i.fa-solid.fa-user{
 body{
     background-image: url(../images/fondo-nebulosa.jpg);
     background-position: bottom;
+    background-attachment: fixed;
+    background-size: cover;
 }
 .box-padre{
     align-items: center;
@@ -482,9 +491,9 @@ body{
 /*SHOPPING CART*/
 .shoppingCart{
     align-items: center;
-    background-color: #4d4d4f;
+    background-color: #404040;
     border-radius: 0.2em;
-    box-shadow: 0px 0px 10px gray;
+    box-shadow: 0px 0px 20px black;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -499,13 +508,14 @@ body{
 }
 .inside-box{
     background-color: #a7a9ac;
+    box-shadow: inset 0px 0px 5px black;
     border-radius: 0.2em;
     display: flex;
     flex-wrap: wrap;
-    height: 85vh;
+    height: 90vh;
     justify-content: center;
-    margin-bottom: 30px;
-    width: 90%;
+    margin-bottom: 0px;
+    width: 100%;
 
 }
 .items{
@@ -548,11 +558,12 @@ i.fa-solid.fa-circle-info{
     align-items: flex-start;
     display: flex;
     flex-wrap: wrap;
+    height: fit-content;
 }
 .inputs{
     border-color: white;
     border-radius: 0.3em;
-    height: 35px;
+    height: 6vh;
     margin: 10px 10px 10px 0px;
     width: 40vw;
     max-width: 400px;
@@ -567,16 +578,19 @@ i.fa-solid.fa-circle-info{
 }
 
 /*BOTON DE PAGO*/
+.button-box{
+    height: fit-content;
+}
 .botonDePago{
     align-items: center;
     background-color: #b3d7d6;
     border: hidden ;
     border-radius: 100em;
     font-size: 30px;
-    height: 60px;
+    height: 70px;
     margin-top: 20px;
     margin-bottom: 30px;
-    width: 150px;
+    width: 170px;
 }
 .botonDePago:hover{
     background-color: #8cd2d0;
@@ -587,9 +601,10 @@ i.fa-solid.fa-circle-info{
 /*FOOTER*/
 .footer-box{
     background-color: black;
-    box-shadow: 0px 0px 10px gray;
+    box-shadow: 0px 0px 20px black;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     height: 130px;
     justify-content: center;
     width: 100%;
@@ -597,8 +612,15 @@ i.fa-solid.fa-circle-info{
 .linea{
     background-color: gray;
     height: 1px;
-    margin-top: 20px;
-    width: 90%;
+    justify-content: center;
+    margin: 0px 0px 45px 0px;
+    width: 100%;
+}
+.logoInferior-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
 }
 .logoFooter{
     height: 40px;

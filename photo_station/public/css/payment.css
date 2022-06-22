@@ -14,7 +14,7 @@
 /*TOP*/
 .top{
     background-color: #b3d7d6;
-    box-shadow: 0px 0px 10px gray;
+    box-shadow: 0px 0px 20px black;
     color: #4d4d4f;
     display: flex;
     flex-wrap: wrap;
@@ -74,9 +74,9 @@ body{
 /*PAYMENT*/
 .payment-box{
     align-items: center;
-    background-color: #4d4d4f;
+    background-color: #404040;
     border-radius: 0.2em;
-    box-shadow: 0px 0px 10px gray;
+    box-shadow: 0px 0px 10px black;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -91,6 +91,7 @@ body{
 }
 .inside-box{
     background-color: #a7a9ac;
+    box-shadow: inset 0px 0px 5px black;
     border-radius: 0.2em;
     display: flex;
     flex-wrap: wrap;
@@ -166,7 +167,7 @@ body{
 /*FOOTER*/
 .footer-box{
     background-color: black;
-    box-shadow: 0px 0px 10px gray;
+    box-shadow: 0px 0px 20px black;
     display: flex;
     flex-wrap: wrap;
     height: 130px;
