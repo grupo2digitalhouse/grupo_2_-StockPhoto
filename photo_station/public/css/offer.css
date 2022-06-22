@@ -798,6 +798,7 @@ i.fa-duotone.fa-circle-arrow-right{
     cursor: pointer;
     position: relative;
     transition: .2s;
+    z-index: 2;
 }  
 .label::after{
     content: '';
@@ -819,6 +820,13 @@ background: #8cd2d0;
 }
 #switch{
 display: none;
+}
+.anualMensual{
+    font-size: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin:0px 0px 0px 11px;
+    z-index: 3;
 }
 
 
