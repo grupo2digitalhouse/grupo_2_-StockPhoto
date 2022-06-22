@@ -62,7 +62,8 @@ i.fa-solid.fa-user{
 
 /*BODY*/
 body{
-    background-color: #e3e7e8;
+    background-image: url(../images/fondo-nebulosa.jpg);
+    background-position: bottom;
 }
 .box-padre{
     align-items: center;
@@ -261,7 +262,8 @@ i.fa-solid.fa-user{
 
 /*BODY*/
 body{
-    background-color: #e3e7e8;
+    background-image: url(../images/fondo-nebulosa.jpg);
+    background-position: bottom;
 }
 .box-padre{
     align-items: center;
@@ -464,7 +466,8 @@ i.fa-solid.fa-user{
 
 /*BODY*/
 body{
-    background-color: #e3e7e8;
+    background-image: url(../images/fondo-nebulosa.jpg);
+    background-position: bottom;
 }
 .box-padre{
     align-items: center;

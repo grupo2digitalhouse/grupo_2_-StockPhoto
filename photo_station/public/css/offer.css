@@ -5,7 +5,7 @@
 .main{
     font-family: myFirstFont;
     width: 100%;
-    height: 180vh;
+    height: 120vh;
     display:flex;
     flex-wrap: nowrap;
     flex-direction: column;
@@ -14,7 +14,7 @@
 /*TOP*/
 .top{
     background-color: #b3d7d6;
-    box-shadow: 0px 0px 10px gray;
+    box-shadow: 0px 0px 20px black;
     color: #4d4d4f;
     display: flex;
     flex-wrap: wrap;
@@ -22,6 +22,7 @@
     justify-content: space-between;
     position:fixed;
     width: 100%;
+    z-index: 10;
 }
 i.fa-solid.fa-bars{
     color: #292929;
@@ -61,8 +62,11 @@ i.fa-solid.fa-user{
 
 
 /*BODY*/
-body{
-    background-color: #e3e7e8;
+body{ 
+    background-image: url(../images/fondo-nebulosa.jpg);
+    background-position: bottom;
+    background-attachment: fixed;
+    background-size: cover;
 }
 .box-padre{
     align-items: center;
@@ -75,9 +79,9 @@ body{
 /*OFERTAS INDIVIDUALES*/
 .ofertasIndividuales{
     align-items: center;
-    background-color: #4d4d4f;
+    background-color: #404040;
     border-radius: 0.2em;
-    box-shadow: 0px 0px 10px gray;
+    box-shadow: 0px 0px 20px black;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -99,6 +103,7 @@ body{
     right: 70px;
     bottom: 30px;
     width: 100px;
+    z-index: 8;
 }
 .circulo{
     box-shadow: inset 0px 0px 10px rgb(81, 81, 81);
@@ -177,9 +182,9 @@ i.fa-duotone.fa-circle-arrow-right{
 /*OFERTAS LICENCIAS*/
 .ofertasLicencias{
     align-items: center;
-    background-color: #4d4d4f;
+    background-color: #404040;
     border-radius: 0.2em;
-    box-shadow: 0px 0px 10px gray;
+    box-shadow: 0px 0px 20px black;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -232,10 +237,10 @@ display: none;
 /*FOOTER*/
 .footer-box{
     background-color: black;
-    box-shadow: 0px 0px 10px gray;
+    box-shadow: 0px 0px 20px black;
     display: flex;
     flex-wrap: wrap;
-    height: 130px;
+    height: 150px;
     justify-content: center;
     width: 100%;
 }
@@ -267,7 +272,7 @@ display: none;
 /*TOP*/
 .top{
     background-color: #b3d7d6;
-    box-shadow: 0px 0px 10px gray;
+    box-shadow: 0px 0px 20px black;
     color: #4d4d4f;
     display: flex;
     flex-wrap: wrap;
@@ -275,6 +280,7 @@ display: none;
     justify-content: space-between;
     position:fixed;
     width: 100%;
+    z-index: 10;
 }
 i.fa-solid.fa-bars{
     color: #292929;
@@ -315,7 +321,11 @@ i.fa-solid.fa-user{
 
 /*BODY*/
 body{
-    background-color: #e3e7e8;
+    background-image: url(../images/fondo-nebulosa.jpg);
+    background-position: bottom;
+    background-position: bottom;
+    background-attachment: fixed;
+    background-size: cover;
 }
 .box-padre{
     align-items: center;
@@ -330,9 +340,9 @@ body{
 /*OFERTAS INDIVIDUALES*/
 .ofertasIndividuales{
     align-items: center;
-    background-color: #4d4d4f;
+    background-color: #404040;
     border-radius: 0.2em;
-    box-shadow: 0px 0px 10px gray;
+    box-shadow: 0px 0px 20px black;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -346,7 +356,7 @@ body{
     align-items: center;
     background-color: #4d4d4f;
     border-radius: 0.3em;
-    box-shadow: 0px 0px 20px black;
+    box-shadow: 0px 0px 30px black;
     cursor: pointer;
     display: flex;
     flex-wrap: wrap;
@@ -372,6 +382,7 @@ body{
     right: 70px;
     bottom: 30px;
     width: 100px;
+    z-index: 8;
 }
 .circulo{
     box-shadow: inset 0px 0px 10px rgb(81, 81, 81);
@@ -450,9 +461,9 @@ i.fa-duotone.fa-circle-arrow-right{
 /*OFERTAS LICENCIAS*/
 .ofertasLicencias{
     align-items: center;
-    background-color: #4d4d4f;
+    background-color: #404040;
     border-radius: 0.2em;
-    box-shadow: 0px 0px 10px gray;
+    box-shadow: 0px 0px 20px black;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -466,7 +477,8 @@ i.fa-duotone.fa-circle-arrow-right{
     align-items: center;
     background-color: #4d4d4f;
     border-radius: 0.3em;
-    box-shadow: 0px 0px 20px black;
+    box-shadow: 0px 0px 30px black;
+    cursor: pointer;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -484,6 +496,7 @@ i.fa-duotone.fa-circle-arrow-right{
 /*SWITCH*/
 .switchContainer{
     margin: 10px;
+    z-index: 8;
 }
 .label{
     display: inline-block;
@@ -521,7 +534,7 @@ display: none;
 /*FOOTER*/
 .footer-box{
     background-color: black;
-    box-shadow: 0px 0px 10px gray;
+    box-shadow: 0px 0px 20px black;
     display: flex;
     flex-wrap: wrap;
     height: 130px;
@@ -557,7 +570,7 @@ display: none;
 /*TOP*/
 .top{
     background-color: #b3d7d6;
-    box-shadow: 0px 0px 10px gray;
+    box-shadow: 0px 0px 20px black;
     color: #4d4d4f;
     display: flex;
     flex-wrap: wrap;
@@ -565,6 +578,7 @@ display: none;
     justify-content: space-between;
     position:fixed;
     width: 100%;
+    z-index: 10;
 }
 i.fa-solid.fa-bars{
     color: #292929;
@@ -605,15 +619,16 @@ i.fa-solid.fa-user{
 
 /*BODY*/
 body{
-    background-color: #e3e7e8;
+    background-image: url(../images/fondo-nebulosa.jpg);
+    background-position: bottom;
 }
 .box-padre{
-    align-items: center;
+    align-items: flex-start;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
-    height: 100%;
+    height: 90vh;
 }
 
 
@@ -621,15 +636,15 @@ body{
 /*OFERTAS INDIVIDUALES*/
 .ofertasIndividuales{
     align-items: center;
-    background-color: #4d4d4f;
+    background-color: #404040;
     border-radius: 0.2em;
-    box-shadow: 0px 0px 10px gray;
+    box-shadow: 0px 0px 20px black;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    height: 520px;
-    justify-content: flex-end;
-    margin: 75px 5px 10px 5px;
+    height: 75vh;
+    justify-content: center;
+    margin: 85px 5px 10px 5px;
     width: 46vw;
 }
 .ofertasIndividuales:hover{
@@ -640,15 +655,15 @@ body{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    height: 520px;
-    justify-content: flex-end;
+    height: 76vh;
+    justify-content: center;
     margin: 75px 5px 10px 5px;
-    transition: all 600ms;
+    transition: all 900ms;
     width: 47vw;
 }
 .titulo1{
     color: #e3e7e8;
-    margin: 0px 0px 75px 0px;
+    margin: 20px 0px 35px 0px;
 }
 .box-sale{
     height: 1px;
@@ -660,6 +675,7 @@ body{
     right: 70px;
     bottom: 30px;
     width: 100px;
+    z-index: 8;
 }
 .circulo{
     box-shadow: inset 0px 0px 10px rgb(81, 81, 81);
@@ -738,14 +754,14 @@ i.fa-duotone.fa-circle-arrow-right{
 /*OFERTAS LICENCIAS*/
 .ofertasLicencias{
     align-items: center;
-    background-color: #4d4d4f;
+    background-color: #404040;
     border-radius: 0.2em;
-    box-shadow: 0px 0px 10px gray;
+    box-shadow: 0px 0px 20px black;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    height: 520px;
-    justify-content: flex-end;
+    height: 75vh;
+    justify-content: center;
     margin: 85px 5px 20px 5px;
     width: 46vw;
 }
@@ -757,19 +773,21 @@ i.fa-duotone.fa-circle-arrow-right{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    height: 520px;
-    justify-content: flex-end;
+    height: 76vh;
+    justify-content: center;
     margin: 85px 5px 20px 5px;
-    transition: all 600ms;
+    transition: all 900ms;
     width: 47vw;
 }
 .titulo2{
     color: #e3e7e8;
+    margin: 20px 0px 5px 0px;
 }
 
 /*SWITCH*/
 .switchContainer{
     margin: 10px;
+    z-index: 8;
 }
 .label{
     display: inline-block;
@@ -807,7 +825,7 @@ display: none;
 /*FOOTER*/
 .footer-box{
     background-color: black;
-    box-shadow: 0px 0px 10px gray;
+    box-shadow: 0px 0px 20px black;
     display: flex;
     flex-wrap: wrap;
     height: 150px;
