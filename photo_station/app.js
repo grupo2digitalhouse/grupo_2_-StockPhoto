@@ -23,10 +23,13 @@ app.get('/cart', (req, res)=>{
 app.get('/payment', (req, res)=>{
   res.sendFile(path.resolve(__dirname,'./views/payment.html'));
 })
-
 //register
 app.get('/register', (req, res)=>{
   res.sendFile(path.resolve(__dirname,'./views/register.html'));
+})
+//login
+app.get('/login', (req, res)=>{
+  res.sendFile(path.resolve(__dirname,'./views/login.html'));
 })
 
 
