@@ -126,6 +126,9 @@ body{
 i.fa-solid.fa-circle-info{
     margin: 10px 5px 10px 0px;
 }
+.info{
+    color: black;
+}
 .precio{    
     height: fit-content;
     margin: 10px 10px 10px 0px;
@@ -332,6 +335,9 @@ i.fa-solid.fa-circle-info{
     align-items: flex-end;
     margin: 10px 5px 10px 0px;
 }
+.info{
+    color: black;
+}
 .precio{
     height: fit-content;
     align-items: flex-end;
@@ -500,7 +506,7 @@ body{
     height: 100vh;
     justify-content: space-around;
     margin: 80px 20px 20px 20px;
-    width: 85%;
+    width: 86%;
 }
 .titulo{
     color: #e3e7e8;
@@ -512,7 +518,7 @@ body{
     border-radius: 0.2em;
     display: flex;
     flex-wrap: wrap;
-    height: 90vh;
+    height: 89vh;
     justify-content: center;
     margin-bottom: 0px;
     width: 100%;
@@ -540,6 +546,9 @@ body{
 i.fa-solid.fa-circle-info{
     align-items: flex-end;
     margin: 10px 5px 10px 0px;
+}
+.info{
+    color: black;
 }
 .precio{
     height: fit-content;

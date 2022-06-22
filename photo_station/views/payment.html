@@ -22,12 +22,12 @@ src: url(../public/fonts/CocoGothic-Regular.ttf);
 </style>
 <section class="main">
     <section class="top">
-        <i class="fa-solid fa-bars"></i>
-        <a href="http://localhost:3001"><img class="logo" src="../images/photostation-isotipo.png" alt="logoSuperior"></a>
+        <a href="http://localhost:3000/offer"><i class="fa-solid fa-bars"></i></a>
+        <a href="http://localhost:3000"><img class="logo" src="../images/photostation-isotipo.png" alt="logoSuperior"></a>
         <div class="right">
-            <i class="fa-solid fa-circle"><p></p></i>
-            <i class="fa-solid fa-cart-shopping"></i>
-            <i class="fa-solid fa-user"></i>
+            <a href="#"><i class="fa-solid fa-bell"></i></a>
+            <a href="http://localhost:3000/cart"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="#"><i class="fa-solid fa-user"></i></a>
         </div>
     </section>
     <body>
@@ -57,19 +57,21 @@ src: url(../public/fonts/CocoGothic-Regular.ttf);
                             <label for="codigoSeguridad"></label>
                             <input type="password" class="inputs" id="codigoSeguridad" placeholder=" Codigo de seguridad">
                         </div>
-                        <div class="fechaVencimiento-box"> Fecha de vencimiento
+                        <div class="fechaVencimiento-box"><a class="tituloVencimiento">Fecha de vencimiento</a>
                             <label for="fechaVencimiento"></label>
                             <input type="date" class="inputs" id="fechaVencimiento">
                         </div>
                         <div class="termino1-box">
-                            <label for="termino1"></label>
-                            <input type="checkbox" id="termino1" required>
-                            Lorem ipsum dolor sit
+                            <label for="termino1">
+                                <input type="checkbox" id="termino1" required>
+                                Lorem ipsum dolor sit
+                            </label>
                         </div>
                         <div class="termino2-box">
-                            <label for="termino2"></label>
-                            <input type="checkbox" id="termino2" required>
-                            Lorem ipsum dolor sit
+                            <label for="termino2">
+                                <input type="checkbox" id="termino2" required>
+                                Lorem ipsum dolor sit
+                            </label>
                         </div>
                         <a class="button-box"><button class="botonDePago" type="button">$</button></a>
                     </div>
@@ -78,6 +80,6 @@ src: url(../public/fonts/CocoGothic-Regular.ttf);
     </body>
     <footer class="footer-box">
     <div class="linea"></div>
-        <a href="http://localhost:3001"><img class="logoFooter" src="../images/photostation-imagotipo.png" alt="logoSuperior"></a>
+        <a class="logoInferior-box" href="http://localhost:3000"><img class="logoFooter" src="../images/photostation-imagotipo.png" alt="logoInferior"></a>
     </footer>
 </html>
