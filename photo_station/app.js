@@ -4,11 +4,14 @@ const path = require('path');
 const app = express();
 //middlewares
 app.use(express.static('public'));
-//rutas: get, post, put, delete
 
+//rutas: get, post, put, delete
 //HOME
 const routerMain = require('../photo_station/src/routes/main');
 app.use(routerMain);
+//USERS
+const routerUser = require('./src/routes/users')
+app.use(routerUser);
 
 //Carro de compra
 //productOffer
@@ -34,7 +37,6 @@ app.get('/register', (req, res)=>{
 app.get('/login', (req, res)=>{
   res.sendFile(path.resolve(__dirname,'../photo_station/src/views/login.html'));
 })
-
 
 //ruteo HEROKU
 app.set('puerto',process.env.PORT || 3000);
