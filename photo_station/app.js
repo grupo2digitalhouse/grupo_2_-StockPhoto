@@ -6,30 +6,33 @@ const app = express();
 app.use(express.static('public'));
 //rutas: get, post, put, delete
 app.get('/', (req, res)=>{
-  res.sendFile(path.resolve(__dirname,'./views/index.html'));
+  res.sendFile(path.resolve(__dirname,'../photo_station/src/views/index.html'));
 })
 
 
 //Carro de compra
 //productOffer
 app.get('/offer', (req, res)=>{
-  res.sendFile(path.resolve(__dirname,'./views/offer.html'));
+  res.sendFile(path.resolve(__dirname,'../photo_station/src/views/offer.html'));
 })
 //productCart
 app.get('/cart', (req, res)=>{
-  res.sendFile(path.resolve(__dirname,'./views/cart.html'));
+  res.sendFile(path.resolve(__dirname,'../photo_station/src/views/cart.html'));
+})
+app.get('/cart/:idImagen', (req, res)=>{
+  res.send('Bienvenido a la imagen' + req.params.idImagen);
 })
 //productPayment
 app.get('/payment', (req, res)=>{
-  res.sendFile(path.resolve(__dirname,'./views/payment.html'));
+  res.sendFile(path.resolve(__dirname,'../photo_station/src/views/payment.html'));
 })
 //register
 app.get('/register', (req, res)=>{
-  res.sendFile(path.resolve(__dirname,'./views/register.html'));
+  res.sendFile(path.resolve(__dirname,'../photo_station/src/views/register.html'));
 })
 //login
 app.get('/login', (req, res)=>{
-  res.sendFile(path.resolve(__dirname,'./views/login.html'));
+  res.sendFile(path.resolve(__dirname,'../photo_station/src/views/login.html'));
 })
 
 
