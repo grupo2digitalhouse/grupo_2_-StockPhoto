@@ -5,10 +5,10 @@ const app = express();
 //middlewares
 app.use(express.static('public'));
 //rutas: get, post, put, delete
-app.get('/', (req, res)=>{
-  res.sendFile(path.resolve(__dirname,'../photo_station/src/views/index.html'));
-})
 
+//HOME
+const routerMain = require('../photo_station/src/routes/main');
+app.use(routerMain);
 
 //Carro de compra
 //productOffer
