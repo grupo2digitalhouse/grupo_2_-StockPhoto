@@ -63,17 +63,15 @@ i.fa-solid.fa-user{
 
 /*BODY*/
 body{
-    background-image: url(../images/fondo-nebulosa.jpg);
-    background-position: bottom;
-    background-attachment: fixed;
-    background-size: cover;
+    font-family: "Roboto", sans-serif;
+    background-color: #e3e7e8;
 }
 .box-padre{
     align-items: center;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    height: 100vh;
+    height: min-content;
 }
 
 
@@ -81,28 +79,26 @@ body{
 /*SHOPPING CART*/
 .shoppingCart{
     align-items: center;
-    background-color: #404040;
+    background-color: #FFFFFF;
     border-radius: 0.2em;
-    box-shadow: 0px 0px 20px black;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    height: 75vh;
+    height: min-content;
     justify-content: center;
-    margin: 80px 20px 20px 20px;
-    width: 85%;
+    margin: 80px 0px 20px 0px;
+    width: 100%;
 }
 .titulo{
-    color: #e3e7e8;
+    color: black;
     height:fit-content;
 }
 .inside-box{
-    background-color: #a7a9ac;
-    box-shadow:  inset 0px 0px 5px black;
-    border-radius: 0.2em;
+    background: #f2f2f2;
     display: flex;
     flex-wrap: wrap;
-    height: 500px;
+    height: max-content;
     justify-content: center;
     width: 100%;
 
@@ -311,10 +307,8 @@ i.fa-solid.fa-user{
 
 /*BODY*/
 body{
-    background-image: url(../images/fondo-nebulosa.jpg);
-    background-position: bottom;
-    background-attachment: fixed;
-    background-size: cover;
+    font-family: "Roboto", sans-serif;
+    background-color: #e3e7e8;
 }
 .box-padre{
     align-items: center;
@@ -329,31 +323,31 @@ body{
 /*SHOPPING CART*/
 .shoppingCart{
     align-items: center;
-    background-color: #404040;
+    background-color: #FFFFFF;
     border-radius: 0.2em;
-    box-shadow: 0px 0px 20px black;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    height: 75vh;
+    height: 85vh;
     justify-content: space-around;
-    margin: 80px 20px 20px 20px;
-    width: 85%;
+    margin: 80px 0px 20px 0px;
+    width: 100%;
+    max-width: 500px;
 }
 .titulo{
-    color: #e3e7e8;
+    color: black;
     height:fit-content;
 }
 .inside-box{
-    background-color: #a7a9ac;
-    box-shadow: inset 0px 0px 5px black;
-    border-radius: 0.2em;
+    background: #f2f2f2;
     display: flex;
     flex-wrap: wrap;
-    height: 490px;
+    height: 385px;
     justify-content: center;
     margin-bottom: 0px;
     width: 100%;
+    max-width: 500px;
 
 }
 .items{
@@ -444,6 +438,7 @@ i.fa-solid.fa-circle-info{
     height: 35px;
     margin: 10px 10px 10px 0px;
     width: 50vw;
+    max-width: 250px;
 }
 .inputs:hover{
     border-color: #8cd2d0;
@@ -563,10 +558,8 @@ i.fa-solid.fa-user{
 
 /*BODY*/
 body{
-    background-image: url(../images/fondo-nebulosa.jpg);
-    background-position: bottom;
-    background-attachment: fixed;
-    background-size: cover;
+  font-family: "Roboto", sans-serif;
+  background-color: #e3e7e8;
 }
 .box-padre{
     align-items: center;
@@ -581,31 +574,31 @@ body{
 /*SHOPPING CART*/
 .shoppingCart{
     align-items: center;
-    background-color: #404040;
+    background-color: #FFFFFF;
     border-radius: 0.2em;
-    box-shadow: 0px 0px 20px black;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    height: 100vh;
+    height: fit-content;
     justify-content: space-around;
-    margin: 80px 20px 20px 20px;
-    width: 86%;
+    margin: 80px 0px 20px 0px;
+    width: 100%;
+    max-width: 700px;
 }
 .titulo{
-    color: #e3e7e8;
+    color: black;
     height:fit-content;
 }
 .inside-box{
-    background-color: #a7a9ac;
-    box-shadow: inset 0px 0px 5px black;
-    border-radius: 0.2em;
+    background: #f2f2f2;
     display: flex;
     flex-wrap: wrap;
-    height: 89vh;
+    height: max-content;
     justify-content: center;
     margin-bottom: 0px;
     width: 100%;
+    max-width: 700px;
 
 }
 .items{
@@ -700,8 +693,8 @@ i.fa-solid.fa-circle-info{
     border-radius: 0.3em;
     height: 6vh;
     margin: 10px 10px 10px 0px;
-    width: 40vw;
-    max-width: 400px;
+    width: 50vw;
+    max-width: 330px;
 }
 .inputs:hover{
     border-color: #8cd2d0;
@@ -765,3 +758,5 @@ i.fa-solid.fa-circle-info{
 
 
 }
+
+

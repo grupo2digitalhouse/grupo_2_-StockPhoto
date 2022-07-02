@@ -62,10 +62,8 @@ i.fa-solid.fa-user{
 
 /*BODY*/
 body{
-    background-image: url(../images/fondo-nebulosa.jpg);
-    background-position: bottom;
-    background-attachment: fixed;
-    background-size: cover;
+    font-family: "Roboto", sans-serif;
+    background-color: #e3e7e8;
 }
 .box-padre{
     align-items: center;
@@ -280,10 +278,8 @@ i.fa-solid.fa-user{
 
 /*BODY*/
 body{
-    background-image: url(../images/fondo-nebulosa.jpg);
-    background-position: bottom;
-    background-attachment: fixed;
-    background-size: cover;
+    font-family: "Roboto", sans-serif;
+    background-color: #e3e7e8;
 }
 .box-padre{
     align-items: center;
@@ -511,10 +507,8 @@ i.fa-solid.fa-user{
 
 /*BODY*/
 body{
-    background-image: url(../images/fondo-nebulosa.jpg);
-    background-position: bottom;
-    background-attachment: fixed;
-    background-size: cover;
+    font-family: "Roboto", sans-serif;
+    background-color: #e3e7e8;
 }
 .box-padre{
     align-items: center;

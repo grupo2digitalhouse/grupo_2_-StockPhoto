@@ -2,22 +2,30 @@
 const express = require('express');
 const path = require('path');
 const app = express();
-//middlewares
-app.use(express.static('public'));
 
-//rutas: get, post, put, delete
+//EJS-CONFIG
+app.set('view engine','ejs');
+app.use(express.static(path.join(__dirname,'./public')));
+
 //HOME
 const routerMain = require('../photo_station/src/routes/main');
 app.use(routerMain);
+//OFFER
+const routerOffer = require('./src/routes/offer');
+app.use(routerOffer);
 //USERS
 const routerUser = require('./src/routes/users')
 app.use(routerUser);
 
+
+
+
+
+
+
+
+
 //Carro de compra
-//productOffer
-app.get('/offer', (req, res)=>{
-  res.sendFile(path.resolve(__dirname,'../photo_station/src/views/offer.html'));
-})
 //productCart
 app.get('/cart', (req, res)=>{
   res.sendFile(path.resolve(__dirname,'../photo_station/src/views/cart.html'));
@@ -37,6 +45,11 @@ app.get('/register', (req, res)=>{
 app.get('/login', (req, res)=>{
   res.sendFile(path.resolve(__dirname,'../photo_station/src/views/login.html'));
 })
+
+
+
+
+
 
 //ruteo HEROKU
 app.set('puerto',process.env.PORT || 3000);
