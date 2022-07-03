@@ -27,14 +27,14 @@ gris claro: #E3E7E8*/
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    height: 750px;
-    margin: 0px 0px 0px 0px;
+    height: 720px;
+    margin: 0px 0px 20px 0px;
     width: 100%;
 }
 .top_pestañas{  
     display: flex;
     flex-wrap: wrap;
-    height: 7%;
+    height: 10%;
     margin: 20px 0px 0px 0%;
     justify-content: flex-start;
     width: 100%;
@@ -104,6 +104,7 @@ gris claro: #E3E7E8*/
     flex-wrap: wrap;
     height: 40%;
     justify-content: space-between;
+    margin: 20px 0px 0px 0px;
     width: 90%;
     z-index: 1;
 }
@@ -251,7 +252,7 @@ input.label{
     height: 50%;
     justify-content: center;
     margin: 2px;
-    min-width: 50px ;
+    min-width: 60px ;
 }
 .tamaño_letra:hover{
     background-color: rgb(25, 64, 255);
@@ -339,8 +340,8 @@ gris claro: #E3E7E8*/
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    height: 1000px;
-    margin: 0px 0px 0px 0px;
+    height: 700px;
+    margin: 0px 0px 50px 0px;
     width: 100%;
 }
 .boton_borrado{
@@ -366,16 +367,10 @@ gris: #A7A9AC
 gris claro: #E3E7E8*/
 
 *{box-sizing: border-box;}
-/*NAV_BAR*/
-.top{
-    background-color: #B3D7D6;
-    height: 10vh;
-    width: 100%;
-}
 
 /*BODY*/
 .viewport_body{
-    background-color: #E3E7E8;
+    background-color: rgb(243, 243, 243);
     display: flex;
     flex-wrap: wrap;
     height: 80vh;
@@ -388,18 +383,10 @@ gris claro: #E3E7E8*/
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    height: 700px;
-    justify-content: space-around;
-    margin: 0px 0px 0px 0px;
-    width: 100%;
-}
-.top_pestañas{
-    display: flex;
-    flex-wrap: wrap;
-    height: 7%;
-    margin: 20px 0px 0px 0%;
-    justify-content: flex-start; 
-    width: 100%;
+    height: 580px;
+    justify-content: center;
+    margin: 0px 0px 50px 0px;
+    width: 85%;
 }
 .pestañas_revisarSeleccion{
     align-items: center;
@@ -414,7 +401,7 @@ gris claro: #E3E7E8*/
     text-align: center;
     text-shadow: 0px 0px 8px black;
     justify-content: center;
-    margin: 2px 2px 2px 5%;
+    margin: 2px 2px 0px 8%;
     width: 15%;
 }
 .pestañas_miCompra{
@@ -429,12 +416,8 @@ gris claro: #E3E7E8*/
     height: 80%;
     text-align: center;
     justify-content: center;
-    margin: 2px 2px 2px 0%;
+    margin: 2px 2px 0px 0%;
     width: 15%;
-}
-.pestañas_miCompra:hover{
-    background-color: #B3D7D6;
-    text-shadow: 0px 0px 8px black;
 }
 .pestañas_comprobante{
     align-items: center;
@@ -448,12 +431,8 @@ gris claro: #E3E7E8*/
     height: 80%;
     text-align: center;
     justify-content: center;
-    margin: 2px 2px 2px 0%;
+    margin: 2px 2px 0px 0%;
     width: 15%;
-}
-.pestañas_comprobante:hover{
-    background-color: #B3D7D6;
-    text-shadow: 0px 0px 8px black;
 }
 
 /*VISUAL*/
@@ -464,11 +443,11 @@ gris claro: #E3E7E8*/
     border-radius: 0.5em;
     display: flex;
     flex-wrap: wrap;
-    margin: 0px 0px 20px 20px;
+    margin: 20px 0px 20px 20px;
     min-height: 320px;
-    height: 80vh;
+    height: 70vh;
     justify-content: space-between;
-    min-width: 400px;
+    min-width: 310px;
     width: 45%;
     z-index: 1;
 }
@@ -477,6 +456,7 @@ gris claro: #E3E7E8*/
     flex-wrap: wrap;
     height: 45%;
     justify-content: space-around;
+    margin: 0px 0px 0px 20px;
     width: 45%;
 }
 .boton_borrado{
