@@ -46,6 +46,20 @@ app.get('/login', (req, res)=>{
   res.sendFile(path.resolve(__dirname,'../photo_station/src/views/login.html'));
 })
 
+//PASARELA DE PAGO
+//revisarSeleccion
+app.get('/seleccion', (req, res)=>{
+  res.sendFile(path.resolve(__dirname,'../photo_station/src/views/detail_v2.html'));
+})
+//miCompra
+app.get('/pago', (req, res)=>{
+  res.sendFile(path.resolve(__dirname,'../photo_station/src/views/pago_v2.html'));
+})
+//comprobantes
+app.get('/comprobante', (req, res)=>{
+  res.sendFile(path.resolve(__dirname,'../photo_station/src/views/comprobante_v2.html'));
+})
+
 
 
 
