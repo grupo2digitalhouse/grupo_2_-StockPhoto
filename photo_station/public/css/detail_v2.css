@@ -27,7 +27,7 @@ gris claro: #E3E7E8*/
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    height: 720px;
+    height: 1000px;
     margin: 0px 0px 20px 0px;
     width: 100%;
 }
@@ -102,7 +102,7 @@ gris claro: #E3E7E8*/
     border-radius: 0.5em;
     display: flex;
     flex-wrap: wrap;
-    height: 40%;
+    height: 55vh;
     justify-content: space-between;
     margin: 20px 0px 0px 0px;
     width: 90%;
@@ -166,13 +166,43 @@ gris claro: #E3E7E8*/
     margin: 15px 15px 15px 5px;
     width: 100%;
 }
+.categorias_box{
+    display: flex;
+    flex-wrap: wrap;
+    height: 12%;
+    margin: 10px;
+    width: 95%;
+
+}
+i.fa-solid.fa-xmark{
+    
+}
+.categoria{
+    align-items: center;
+    background-color: #E3E7E8;
+    border-color: #E3E7E8;
+    border-radius: 0.1em;
+    box-shadow: 0px 0px 5px gray;
+    display: flex;
+    flex-wrap: nowrap;
+    font-weight: bold;
+    justify-content: space-around;
+    margin-right: 4px;
+    width: 100px;
+}
+.info_box{
+    
+}
+.info{
+
+}
 .resoluciones{
     align-items: flex-start;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
     justify-content: space-between;
-    height: 95%;
+    height: 65%;
     width: 100%;
 }
 .resolucion1{
@@ -282,7 +312,7 @@ i.fa-regular-fa-circle-question{
     border: #E3E7E8;
     border-radius: 2em;
     color: white;
-    height: 85%;
+    height: 65%;
     margin-top: 10px;
     width: 100%;
 }
@@ -340,9 +370,12 @@ gris claro: #E3E7E8*/
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    height: 700px;
+    height: 1200px;
     margin: 0px 0px 50px 0px;
     width: 100%;
+}
+.visual{
+    height: 80vh;
 }
 .boton_borrado{
     align-items: center;
@@ -443,7 +476,7 @@ gris claro: #E3E7E8*/
     border-radius: 0.5em;
     display: flex;
     flex-wrap: wrap;
-    margin: 20px 0px 20px 20px;
+    margin: 50px 0px 20px 20px;
     min-height: 320px;
     height: 70vh;
     justify-content: space-between;
@@ -458,6 +491,9 @@ gris claro: #E3E7E8*/
     justify-content: space-around;
     margin: 0px 0px 0px 20px;
     width: 45%;
+}
+.categorias_box{
+    margin-top: 55px;
 }
 .boton_borrado{
     align-items: center;
