@@ -3,19 +3,25 @@ const express = require('express');
 const path = require('path');
 const app = express();
 
+//ROUTERS
+const routerMain = require('../photo_station/src/routes/main');
+const routerOffer = require('./src/routes/offer');
+const routerUser = require('./src/routes/users');
+const routerPago = require('./src/routes/pago');
+const routerDetail = require('./src/routes/detail')
+
+
+
 //EJS-CONFIG
 app.set('view engine','ejs');
 app.use(express.static(path.join(__dirname,'./public')));
 
-//HOME
-const routerMain = require('../photo_station/src/routes/main');
+//APP.SET
 app.use(routerMain);
-//OFFER
-const routerOffer = require('./src/routes/offer');
 app.use(routerOffer);
-//USERS
-const routerUser = require('./src/routes/users')
 app.use(routerUser);
+app.use(routerPago);
+app.use(routerDetail);
 
 
 
