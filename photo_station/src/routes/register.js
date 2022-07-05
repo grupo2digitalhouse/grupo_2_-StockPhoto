@@ -4,5 +4,5 @@ const router = express.Router();
 const registerController = require('../controllers/registerController');
 
 /*DETAIL*/
-router.get('/registro', registerController.home);
+router.get('/register', registerController.home);
 module.exports = router;
