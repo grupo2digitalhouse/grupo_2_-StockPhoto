@@ -1,8 +1,8 @@
 const express = require('express');
 const path = require('path');
 const router = express.Router();
-const offerController = require('../controllers/offerController');
+const detailController = require('../controllers/detailController');
 
 /*DETAIL*/
-router.get('/offer', offerController.home);
+router.get('/detail', detailController.home);
 module.exports = router;

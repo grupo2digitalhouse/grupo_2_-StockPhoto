@@ -1,8 +1,8 @@
 const express = require('express');
 const path = require('path');
 const router = express.Router();
-const offerController = require('../controllers/offerController');
+const pagoController = require('../controllers/pagoController');
 
-/*DETAIL*/
-router.get('/offer', offerController.home);
+/*HOME*/
+router.get('/pago', pagoController.home);
 module.exports = router;

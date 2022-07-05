@@ -2,29 +2,31 @@
 const express = require('express');
 const path = require('path');
 const app = express();
-//middlewares
-app.use(express.static('public'));
 
-//rutas: get, post, put, delete
-//HOME
+//ROUTERS
 const routerMain = require('../photo_station/src/routes/main');
+const routerUser = require('./src/routes/users');
+const routerPago = require('./src/routes/pago');
+const routerDetail = require('./src/routes/detail');
+const routerOffer = require('./src/routes/offer');
+
+
+
+//EJS-CONFIG
+app.set('view engine','ejs');
+app.use(express.static(path.join(__dirname,'./public')));
+
+//APP.SET
 app.use(routerMain);
-//USERS
-const routerUser = require('./src/routes/users')
+app.use(routerOffer);
 app.use(routerUser);
+app.use(routerPago);
+app.use(routerDetail);
+app.use(routerOffer);
+
+
 
 //Carro de compra
-//productOffer
-app.get('/offer', (req, res)=>{
-  res.sendFile(path.resolve(__dirname,'../photo_station/src/views/offer.html'));
-})
-//productCart
-app.get('/cart', (req, res)=>{
-  res.sendFile(path.resolve(__dirname,'../photo_station/src/views/cart.html'));
-})
-app.get('/cart/:idImagen', (req, res)=>{
-  res.send('Bienvenido a la imagen' + req.params.idImagen);
-})
 //productPayment
 app.get('/payment', (req, res)=>{
   res.sendFile(path.resolve(__dirname,'../photo_station/src/views/payment.html'));
@@ -37,6 +39,25 @@ app.get('/register', (req, res)=>{
 app.get('/login', (req, res)=>{
   res.sendFile(path.resolve(__dirname,'../photo_station/src/views/login.html'));
 })
+
+//PASARELA DE PAGO
+//revisarSeleccion
+app.get('/seleccion', (req, res)=>{
+  res.sendFile(path.resolve(__dirname,'../photo_station/src/views/detail.html'));
+})
+//miCompra
+app.get('/pago', (req, res)=>{
+  res.sendFile(path.resolve(__dirname,'../photo_station/src/views/pago.html'));
+})
+//comprobantes
+app.get('/comprobante', (req, res)=>{
+  res.sendFile(path.resolve(__dirname,'../photo_station/src/views/comprobante.html'));
+})
+
+
+
+
+
 
 //ruteo HEROKU
 app.set('puerto',process.env.PORT || 3000);
