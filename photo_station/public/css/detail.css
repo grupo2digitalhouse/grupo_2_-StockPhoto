@@ -4,7 +4,7 @@ gris oscuro: #4D4D4F
 gris: #A7A9AC
 gris claro: #E3E7E8*/
 
-*{box-sizing: border-box;}
+*{box-sizing: border-box;font-family: myFirstFont;}
 /*NAV_BAR*/
 .top{
     background-color: #B3D7D6;
