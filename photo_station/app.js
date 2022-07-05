@@ -25,12 +25,6 @@ app.use(routerDetail);
 
 
 
-
-
-
-
-
-
 //Carro de compra
 //productCart
 app.get('/cart', (req, res)=>{
