@@ -3,6 +3,6 @@ const path = require('path');
 const router = express.Router();
 const offerController = require('../controllers/offerController');
 
-/*DETAIL*/
+/*OFFER*/
 router.get('/offer', offerController.home);
 module.exports = router;

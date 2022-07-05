@@ -3,6 +3,6 @@ const path = require('path');
 const router = express.Router();
 const loginController = require('../controllers/loginController');
 
-/*DETAIL*/
+/*LOGIN*/
 router.get('/login', loginController.home);
 module.exports = router;
