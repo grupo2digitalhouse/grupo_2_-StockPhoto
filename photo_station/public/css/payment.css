@@ -62,7 +62,7 @@ i.fa-solid.fa-user{
 
 /*BODY*/
 body{
-    background-image: url(../images/fondo-nebulosa.jpg);
+    /*background-image: url(../images/fondo-nebulosa.jpg);*/
     background-position: bottom;
     background-attachment: fixed;
     background-size: cover;
@@ -74,8 +74,6 @@ body{
     flex-direction: column;
     height: 100%;
 }
-
-
 
 /*PAYMENT*/
 .payment-box{

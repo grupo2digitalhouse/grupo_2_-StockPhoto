@@ -1,84 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>PStation-Login</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/635bf43688.js" crossorigin="anonymous"></script>
+        <link rel="icon" type="image/png" href="images/photostation-isotipo.png"/>
+        <link rel="stylesheet", href="/css/normalize.css">
+        <link rel="stylesheet", href="/css/register.css">
+    </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://kit.fontawesome.com/a0c0c091c3.js" crossorigin="anonymous" rel="stylesheet" ></script>
-  <link rel="icon" type="image/png" href="images/photostation-isotipo.png"/>
-    <link rel="stylesheet", href="/css/normalize.css">
+    <body>
+        <section class="top">
+            <a href="http://localhost:3000/offer"><i class="fa-solid fa-bars"></i></a>
+            <a href="http://localhost:3000/"><img class="logo" src="../images/photostation-isotipo.png" alt="logoSuperior"></a>
+            <div class="right">
+                <a href="#"><i class="fa-solid fa-bell"></i></a>
+                <a href="http://localhost:3000/cart"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href="#"><i class="fa-solid fa-user"></i></a>
+            </div>
+        </section>
 
 
-  <link rel="stylesheet" href="/css/style.css">
-  <title>Photo Station </title>
-</head>
-<style>
-  @font-face{
-      font-family: myFirstFont;
-      src: url("./fonts/made-tommy-regular.otf");
-      }
-  @font-face {
-  font-family: mySecondFont;
-  src: url(../public/fonts/CocoGothic-Regular.ttf);
-  }
-  </style>
-<body>
-  <header>
-    <div class="top-header">
-      <div class="logo">
-        <a href="http://localhost:3000/"><img class="logo" src="../images/photostation-isotipo.png" alt="logoSuperior"></a>
-      </div>
-  </header>
 
- <main>
-  <div class="signupForm">
-    <form action="/registro" class="form" method="post">
-      <h1 class="title">Sign up</h1>
+        <div class="form">
+            <form class="login-form">
+                <input type="text" placeholder="username" required/>
+                <input type="email" placeholder="email" required/>
+                <input type="password" placeholder="password" required/>
+                <input type="password" placeholder="confirm password" required/>
+                <button>Sing In</button>
+                <p class="message">Tus datos personales se utilizarán para procesar tu pedido, mejorar tu experiencia, gestionar el acceso a tu cuenta y otros própositos descriptos en nuestra  <a href="#">politica de pricvacidad</a></p>
+                <p class="message"><a href="/src/views/login.html">ya tienes una cuenta?</a></p>
+            </form>
+        </div>
 
-      <div class="inputContainer">
-        <input type="text" class="input" placeholder="a">
-        <label for="" class="label">Email</label>
-      </div>
 
-      <div class="inputContainer">
-        <input type="text" class="input" placeholder="a">
-        <label for="" class="label">Username</label>
-      </div>
-
-      <div class="inputContainer">
-        <input type="text" class="input" placeholder="a">
-        <label for="" class="label">Password</label>
-      </div>
-
-      <div class="inputContainer">
-        <input type="text" class="input" placeholder="a">
-        <label for="" class="label">Confirm Password</label>
-      </div>
-
-      <input type="submit" class="submitBtn" value="Sign up">
-    </form>
-  </div>
-
- </main>
-
- <footer>
-  <div class="infoFooter">
-  
-    <h4> Quienes somos</h4>
-    <p> Sobre nosotros</p>
-  </div>
-  <div class="infoFooter">
-   
-    <h4>herramientas</h4>
-    <p>  Coming soon </p>
-  </div>
-  <div class="infoFooter">
-    
-    <h4>Contactanos</h4>
-    <p>mail@norespondemos.com</p>
-  </div>
-</footer>
-</body>
-
+        <footer class="footer-box">
+            <div class="linea"></div>
+            <a href="http://localhost:3001"><img class="logoFooter" src="../images/photostation-imagotipo.png" alt="logoSuperior"></a>
+        </footer>
+        
+    </body>
 </html>
-
