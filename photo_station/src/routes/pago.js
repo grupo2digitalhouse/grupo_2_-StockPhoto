@@ -3,6 +3,6 @@ const path = require('path');
 const router = express.Router();
 const pagoController = require('../controllers/pagoController');
 
-/*HOME*/
+/*PAGO*/
 router.get('/pago', pagoController.home);
 module.exports = router;
