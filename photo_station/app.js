@@ -5,10 +5,10 @@ const app = express();
 
 //ROUTERS
 const routerMain = require('../photo_station/src/routes/main');
-const routerOffer = require('./src/routes/offer');
 const routerUser = require('./src/routes/users');
 const routerPago = require('./src/routes/pago');
-const routerDetail = require('./src/routes/detail')
+const routerDetail = require('./src/routes/detail');
+const routerOffer = require('./src/routes/offer');
 
 
 
@@ -22,17 +22,11 @@ app.use(routerOffer);
 app.use(routerUser);
 app.use(routerPago);
 app.use(routerDetail);
+app.use(routerOffer);
 
 
 
 //Carro de compra
-//productCart
-app.get('/cart', (req, res)=>{
-  res.sendFile(path.resolve(__dirname,'../photo_station/src/views/cart.html'));
-})
-app.get('/cart/:idImagen', (req, res)=>{
-  res.send('Bienvenido a la imagen' + req.params.idImagen);
-})
 //productPayment
 app.get('/payment', (req, res)=>{
   res.sendFile(path.resolve(__dirname,'../photo_station/src/views/payment.html'));

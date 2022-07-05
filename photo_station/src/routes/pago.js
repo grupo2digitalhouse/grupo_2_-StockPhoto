@@ -4,5 +4,5 @@ const router = express.Router();
 const pagoController = require('../controllers/pagoController');
 
 /*HOME*/
-router.get('/', pagoController.home);
+router.get('/pago', pagoController.home);
 module.exports = router;

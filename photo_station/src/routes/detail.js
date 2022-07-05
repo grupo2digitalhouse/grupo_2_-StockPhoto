@@ -4,5 +4,5 @@ const router = express.Router();
 const detailController = require('../controllers/detailController');
 
 /*DETAIL*/
-router.get('/', detailController.home);
+router.get('/detail', detailController.home);
 module.exports = router;
