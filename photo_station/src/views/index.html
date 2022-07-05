@@ -9,63 +9,141 @@
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="/css/style.css">
-  <link rel="icon" type="image/png" href="images/photostation-isotipo.png"/>
-  <link rel="stylesheet", href="/css/normalize.css">
-  <script src="https://kit.fontawesome.com/635bf43688.js" crossorigin="anonymous"></script>
-  <title>Photo Station</title>
+  <title>Mercado Liebre</title>
 </head>
-  <section class="top">
-    <a href="http://localhost:3000/offer"><i class="fa-solid fa-bars"></i></a>
-    <a href="http://localhost:3000/"><img class="logo" src="../images/photostation-logotipo-rectangular-gris-amarillo.png" alt="logoSuperior"></a>
-    <div class="right">
-        <a href="#"><i class="fa-solid fa-bell"></i></a>
-        <a href="http://localhost:3000/cart"><i class="fa-solid fa-cart-shopping"></i></a>
-        <a href="#"><i class="fa-solid fa-user"></i></a>
-    </div>
-  </section>
+
 <body>
-    <section class="tittle">
-        <h3 class="titulo-principal1">Encuentra el contenido perfecto</h3>
-        <h3 class="titulo-principal2">para tus proyectos</h3>
-        <img class='img_buscador' src="../images/img_buscador.jpg" alt="img_buscador">
-        <input class='buscador-box' type="text" placeholder=" Busca tus imagenes ideales">
-        <img class="logo-buscador" src="../images/photostation-isotipo.png" alt="logoSuperior">    
-    </section>
+  <header>
+    <div class="top-header">
+     
+   
+ 
+      <ul class="right">
+        <li><a href="/register">Creá tu cuenta </a></li>
+        <li><a href="/login">Ingresá </a></li>
+        <li><a href="#"> <i class="fas fa-shopping-basket"></i></a></li>
+      </ul>
+    </nav>
+  
+
+
+
+  </header>
+  <section class="banner">
+    <img src="images/Atardeceres-e1439417512261.jpg" alt="Banner">
+
+    <input class='buscador-box' type="text" placeholder=" Busca tus imagenes ideales">
+
+ 
+  </section>
+  
   <main>
-      <p class="subtitulo">Categorias mas buscadas</p>
-        <article class="categoria1">
-          <img class="imagen" src="images/muneco-de-nieve.jpg" alt="Invierno">
-          <h4 class="titulo-categoria1">Invierno</h4>
-        </article>
-        <article class="categoria2">
-          <img class="imagen" src="images/6-beneficios-del-cafe-para-tu-salud-que-quiza-no-conozcas_777423ca_1024x576.jpg" alt="cafe" >
-          <h4 class="titulo-categoria2">Estilo de vida</h4>
-        </article>
-        <article class="categoria3">
-          <img class="imagen" src="images/_103520143_gettyimages-908714708.jpg" alt="Mascotas">
-          <h4 class="titulo-categoria3">Mascotas</h4>
+    <section class="fotosDestacadas">
+      <h3>Encontra el contenido para tus proyectos</h3>
+
+      <div class="products">
+
+        <article>
+          <img src="images/muneco-de-nieve.jpg" alt="Muñeco" class="product_img">
+          <div class="main-article">
+            <div class="categoriaImagen">
+              <p class="nombreCategoria">Vacaciones de Invierno</p>
+            </div>
+          </div>
         </article>
 
-      <p class="subtitulo">Recomendado para ti</p>
-        <article class="recomendados">
-        <div class="inside-box">
-          <img class="imagen-recomendado" src="/images/pexels-natali-railean-2232180.jpg" alt="recomendado_1">
-          <a class='download-box' href="#"><i class="fa-solid fa-down-to-bracket"></i></a>
-        </div>
+        <article>
+          <img src="images/6-beneficios-del-cafe-para-tu-salud-que-quiza-no-conozcas_777423ca_1024x576.jpg" alt="cafe" class="product_img">
+          <div class="main-article">
+            <div class="categoriaImagen">
+              <p class="nombreCategoria">Estilo de Vida</p>
+            </div>
+          </div>
         </article>
+
+        <article>
+          <img src="images/_103520143_gettyimages-908714708.jpg" alt="gato" class="product_img">
+          <div class="main-article">
+            <div class="categoriaImagen">
+              <p class="nombreCategoria">Mascotas</p>
+            </div>
+          </div>
+        </article>
+
+        <article>
+          <img src="images/covid.jpg" alt="covid" class="product_img">
+          <div class="main-article">
+            <div class="categoriaImagen">
+              <p class="nombreCategoria">covid</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="categorias">
+      <h3>Explora nuestro Catalogo</h3>
+      <div class="products">
+        <article>
+          <img src="images/cultura-de-moda-que-es-1.jpg.webp" alt="moda" class="product_img">
+          <div class="main-article">
+            <div class="categoriaImagen">
+              <p class="nombreCategoria">Fotos de Moda</p>
+            </div>
+          </div>
+        </article>
+
+        <article>
+          <img src="images/comida.jpg" alt="comida" class="product_img">
+          <div class="main-article">
+            <div class="categoriaImagen">
+              <p class="nombreCategoria">Fotos de Comida</p>
+            </div>
+          </div>
+        </article>
+
+        <article>
+          <img src="images/naturaleza.jpg" alt="naturaleza" class="product_img">
+          <div class="main-article">
+            <div class="categoriaImagen">
+              <p class="nombreCategoria">Fotos de Naturaleza</p>
+            </div>
+          </div>
+        </article>
+
+        <article>
+          <img src="images/deportes.jpg" alt="deportes" class="product_img">
+          <div class="main-article">
+            <div class="categoriaImagen">
+              <p class="nombreCategoria">Fotos de Deportes</p>
+            </div>
+          </div>
+        </article>
+
+        <article>
+          <img src="images/blanco.jpg" alt="blanco" class="product_img">
+          <div class="main-article">
+            <div class="categoriaImagen">
+              <p class="nombreCategoria">Fotos Blanco y Negro</p>
+            </div>
+          </div>
+        </article>
+
+        <article>
+          <img src="images/negocios.webp" alt="negocios" class="product_img">
+          <div class="main-article">
+            <div class="categoriaImagen">
+              <p class="nombreCategoria">Fotos de Negocios y Finanzas</p>
+            </div>
+          </div>
+        </article>
+
+
+      </div>
+    </section>
   </main>
-  <footer class="footer-box">
-    <div class="more" href="#"><i class="fa-solid fa-circle-chevron-down"></i></div>
-    <div class="linea"></div>
-    <a href="http://localhost:3001"><img class="logoFooter" src="../images/photostation-imagotipo.png" alt="logoSuperior"></a>
-    <div class="sub-footer">
-      <p class="sub-info" href="#"></p>
-      <p class="sub-info" href="#">Terminos</p>
-      <p class="sub-info" href="#">Privacidad</p>
-      <p class="sub-info" href="#">Contacto</p>
-      <p class="sub-info" href="#">Perfil</p>
-      <p class="sub-info" href="#">Sobre Nosotros</p>
-    </div>
+  <footer>
+    
   </footer>
 
 </body>

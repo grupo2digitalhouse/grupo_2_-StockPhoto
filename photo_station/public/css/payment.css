@@ -62,8 +62,15 @@ i.fa-solid.fa-user{
 
 /*BODY*/
 body{
+<<<<<<< HEAD
+    /*background-image: url(../images/fondo-nebulosa.jpg);*/
+    background-position: bottom;
+    background-attachment: fixed;
+    background-size: cover;
+=======
     font-family: "Roboto", sans-serif;
     background-color: #e3e7e8;
+>>>>>>> 1b6f182f8c1a724222d08547fb186f125683b571
 }
 .box-padre{
     align-items: center;
@@ -72,8 +79,6 @@ body{
     flex-direction: column;
     height: 100%;
 }
-
-
 
 /*PAYMENT*/
 .payment-box{
