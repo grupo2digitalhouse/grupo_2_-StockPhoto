@@ -1,7 +1,7 @@
 const path = require('path');
 const controller = {
     home: (req, res) => {
-        res.render(path.resolve(__dirname,'../views/index.ejs'));
+        res.render(path.resolve(__dirname,'../views/users/index.ejs'));
     }
 };
 
