@@ -26,7 +26,6 @@ app.use(routerOffer);
 app.use(routerRegister);
 app.use(routerLogin);
 
-hola
 
 //ruteo HEROKU
 app.set('puerto',process.env.PORT || 3000);
