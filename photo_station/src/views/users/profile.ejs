@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>PStation-Profile</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/635bf43688.js" crossorigin="anonymous"></script>
+        <link rel="icon" type="image/png" href="images/photostation-isotipo.png"/>
+        <link rel="stylesheet", href="/css/normalize.css">
+        <link rel="stylesheet", href="/css/login.css">
+        <link rel="stylesheet", href="/css/profile.css">
+    </head>
+
+    <body>
+        <section class="top">
+            <a href="http://localhost:3000/offer"><i class="fa-solid fa-bars"></i></a>
+            <a href="http://localhost:3000/"><img class="logo" src="../images/photostation-isotipo.png" alt="logoSuperior"></a>
+            <div class="right">
+                <a href="#"><i class="fa-solid fa-bell"></i></a>
+                <a href="http://localhost:3000/cart"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href="#"><i class="fa-solid fa-user"></i></a>
+            </div>
+        </section>
+
+
+
+        <div class="form">
+            <form class="login-form">
+
+                <div class="profile-pic-div">
+                    <img src="images/profile.png" class="photo">
+                    <input type="file" id="file">
+                    <label for="file" class="uploadBtn">Subir Foto</label>
+                </div>
+                
+              
+                <input type="text" placeholder="Nombre" required/>
+                <input type="text" placeholder="Apellido" required/>
+                <input type="text" placeholder="Mail**" required/>
+                <input type="text" placeholder="Usuario**" required/>
+                <input class="date" type="date" placeholder="Fecha de nacimiento" required/>
+                <!-- https://gist.github.com/danrovito/977bcb97c9c2dfd3398a -->
+                <div class="select_option">
+                    <select>
+                      <option>País</option>
+                      <option>Option 1</option>
+                      <option>Option 2</option>
+                    </select>
+                    <div class="select_arrow"></div>
+                </div>
+                <input type="text" placeholder="Intereses" required/>
+                <input type="text" placeholder="Nombre de empresa" required/>
+                <input type="text" placeholder="Sitio web" required/>
+                <button>ENVIAR</button>
+            </form>
+        </div>
+
+
+        <footer class="footer-box">
+            <div class="linea"></div>
+            <a href="http://localhost:3001"><img class="logoFooter" src="../images/photostation-imagotipo.png" alt="logoSuperior"></a>
+        </footer>
+        
+    </body>
+</html>
