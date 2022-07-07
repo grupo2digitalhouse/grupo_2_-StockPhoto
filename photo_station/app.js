@@ -23,6 +23,8 @@ app.use(express.static(path.join(__dirname,'./public')));
 //APP.SET
 app.use(morgan('dev'));
 app.use(methodOverride('_method'));
+app.use(express.urlencoded({extended: false}))
+app.use(express.json());
 
 app.use(routerMain);
 app.use(routerOffer);
