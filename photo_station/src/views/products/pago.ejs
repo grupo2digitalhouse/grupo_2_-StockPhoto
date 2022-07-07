@@ -51,19 +51,19 @@ src: url(../public/fonts/CocoGothic-Regular.ttf);
                     <i class="fa-solid fa-ellipsis"></i>
                 </div>
             </div>
-            <div class="numero_de_tarjeta">
+            <form action=""  method="POST" class="numero_de_tarjeta">
                 <label for="numeroTarjeta">
                     <input class="box_numero_tarjeta" type="number" id="numeroTarjeta" placeholder="Número de tarjeta" required>
                 </label>
-            </div>
-            <div class="fecha_y_seguridad">
+            </form>
+            <form action=""  method="POST" class="fecha_y_seguridad">
                 <label for="fechaVencimiento">
                     <input class ="box_fecha_vencimiento" type="date" class="fecha_vencimiento" id="fechaVencimiento" placeholder="Fecha de vencimiento" required>
                 </label>
                 <label for="numeroSeguridad">
                     <input class="box_numero_seguridad" type="number" class="numero_seguridad" id="numeroSeguridad" placeholder="CVC/CVV" required>
                 </label>                
-            </div>
+            </form>
     </section>
     <section class="box_resumen">
         <section class="box_inside_resumen">
@@ -96,7 +96,7 @@ src: url(../public/fonts/CocoGothic-Regular.ttf);
                 <p class="total_numero">$49</p>
             </div>
             <div class="box_boton">
-                <button class="boton">Procesar pedido</button>
+                <button type="submit" class="boton">Procesar pedido</button>
             </div>
             <div class="box_compra_segura">
                 <i class="fa-solid fa-shield-halved"></i>

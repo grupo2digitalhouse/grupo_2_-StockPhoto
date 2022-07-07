@@ -2,6 +2,8 @@
 const express = require('express');
 const path = require('path');
 const app = express();
+const methodOverride = require('method-override');
+const morgan = require('morgan');
 
 //ROUTERS
 const routerMain = require('../photo_station/src/routes/main');//3000/
@@ -19,6 +21,9 @@ app.set('view engine','ejs');
 app.use(express.static(path.join(__dirname,'./public')));
 
 //APP.SET
+app.use(morgan('dev'));
+app.use(methodOverride('_method'));
+
 app.use(routerMain);
 app.use(routerOffer);
 app.use(routerPago);
