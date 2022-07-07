@@ -11,6 +11,7 @@ const routerOffer = require('./src/routes/offer');
 const routerRegister = require('./src/routes/register');
 const routerLogin = require('./src/routes/login')
 const routerProfile = require('./src/routes/profile')
+const routerCambioContra = require('./src/routes/cambioContra');
 
 
 //EJS-CONFIG
@@ -26,6 +27,7 @@ app.use(routerOffer);
 app.use(routerRegister);
 app.use(routerLogin);
 app.use(routerProfile);
+app.use(routerCambioContra);
 
 
 //Ruteo LOCAL
