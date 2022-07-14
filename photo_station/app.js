@@ -15,7 +15,6 @@ const routerLogin = require('./src/routes/login')
 const routerProfile = require('./src/routes/profile')
 const routerCambioContra = require('./src/routes/cambioContra');
 
-
 //EJS-CONFIG
 app.set('view engine','ejs');
 app.use(express.static(path.join(__dirname,'./public')));
@@ -26,14 +25,20 @@ app.use(methodOverride('_method'));
 app.use(express.urlencoded({extended: false}))
 app.use(express.json());
 
+//HOME//
 app.use(routerMain);
+//OFFER//
 app.use(routerOffer);
-app.use(routerPago);
+//PASARELA DE DETALLECART-PAGO-COMPROBANTE//
 app.use(routerDetail);
-app.use(routerOffer);
-app.use(routerRegister);
+app.use(routerPago);
+//LOGIN//
 app.use(routerLogin);
+//REGISTER//
+app.use(routerRegister);
+//PROFILE//
 app.use(routerProfile);
+//CAMBIO CONTRASEÑA//
 app.use(routerCambioContra);
 
 
