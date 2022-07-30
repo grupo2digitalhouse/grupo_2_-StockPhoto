@@ -1,0 +1,762 @@
+/*BREAKPOINT SMARTPHONE*/
+@media(max-width: 480px){*{box-sizing: border-box;}
+
+/*MAIN*/
+.main{
+    font-family: myFirstFont;
+    width: 100%;
+    height: 100%;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+/*TOP*/
+.top{
+    background-color: #b3d7d6;
+    box-shadow: 0px 0px 20px black;
+    color: #4d4d4f;
+    display: flex;
+    flex-wrap: wrap;
+    height:fit-content;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+i.fa-solid.fa-bars{
+    color: #292929;
+    font-size: 30px;
+    margin: 12px 0px 0px 10px;
+}
+.logo{
+    margin: 4.5px 0px 0px 0px;
+    height: 40px;
+    justify-content: center;
+    position: absolute;
+}
+.right{
+    font-size: 25px;
+    justify-content: center;
+    margin: 4.5px 10px 0px 0px;
+}
+i.fa-solid.fa-bell{
+    color: #292929;
+    height: 40px;
+    margin-top: 10px;
+    width:fit-content;
+}
+i.fa-solid.fa-cart-shopping{
+    color: #292929;
+    height: 40px;
+    margin-top: 10px;
+    width:fit-content;
+}
+i.fa-solid.fa-user{
+    color: #292929;
+    height: 40px;
+    margin-top: 10px;
+    position: relative;
+    width:fit-content;
+}
+
+
+/*BODY*/
+body{
+    font-family: "Roboto", sans-serif;
+    background-color: #e3e7e8;
+}
+.box-padre{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: min-content;
+}
+
+
+
+/*SHOPPING CART*/
+.shoppingCart{
+    align-items: center;
+    background-color: #FFFFFF;
+    border-radius: 0.2em;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: min-content;
+    justify-content: center;
+    margin: 80px 0px 20px 0px;
+    width: 100%;
+}
+.titulo{
+    color: black;
+    height:fit-content;
+}
+.inside-box{
+    background: #f2f2f2;
+    display: flex;
+    flex-wrap: wrap;
+    height: max-content;
+    justify-content: center;
+    width: 100%;
+
+}
+.items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-left: 20px;
+    width: 100%;
+}
+.itemIndividual{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 0vw;
+    width: 100%;
+}
+.quitarItem{
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+    margin: 8px;
+    width: fit-content;
+}
+i.fa-solid.fa-xmark{
+    color: #758f8e;
+}
+.check{
+    display: none;
+}
+.compras{
+    margin: 10px 0px 10px 0px;
+    width: 40vw;
+}
+.right-box{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.cantidad-box{
+    color: rgb(216, 216, 216);
+    margin-right: 20px;
+    width: 20px;
+}
+.cantidad{
+    background-color: rgb(216, 216, 216);
+    border: none;
+    border-radius: 10%;
+    color: black;
+    width: 23px;
+}
+.cantidad:hover{
+    background-color: rgb(216, 216, 216);
+    cursor: pointer;
+    color: black;
+    border-color: #b3d7d6;
+    border-radius: 10%;
+    width: 23px;
+}
+i.fa-solid.fa-circle-info{
+    margin: 10px 5px 10px 0px;
+}
+.info{
+    color: black;
+}
+.precio{    
+    height: fit-content;
+    margin: 10px 10px 10px 0px;
+
+}
+.inside-linea{
+    background-color: gray;
+    height: 1px;
+    width: 90%;
+}
+
+/*BARRA DESCUENTO*/
+.descuento-box{
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+}
+.inputs{
+    border-color: white;
+    border-radius: 0.3em;
+    height: 35px;
+    margin: 10px 10px 10px 0px;
+    width: 50vw;
+}
+.inputs:hover{
+    border-color: #8cd2d0;
+}
+.precioFinal{
+    color: rgb(37, 151, 37);
+    font-size: 25px;
+    height: fit-content;
+    margin: 20px 0px 10px 0px;
+}
+
+/*BOTON DE PAGO*/
+.botonDePago{
+    align-items: center;
+    background-color: #b3d7d6;
+    border: hidden ;
+    border-radius: 100em;
+    font-size: 30px;
+    height: 60px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: 150px;
+}
+.botonDePago:hover{
+    background-color: #8cd2d0;
+}
+
+
+
+
+
+/*FOOTER*/
+.footer-box{
+    background-color: black;
+    box-shadow: 0px 0px 20px black;
+    display: flex;
+    flex-wrap: wrap;
+    height: 130px;
+    justify-content: center;
+    width: 100%;
+}
+.linea{
+    background-color: gray;
+    height: 1px;
+    margin-top: 20px;
+    width: 90%;
+}
+.logoFooter{
+    height: 40px;
+}
+
+}
+
+/*BREAKPOINT TABLETS*/
+@media(min-width: 481px){*{box-sizing: border-box;}
+
+
+/*MAIN*/
+.main{
+    font-family: myFirstFont;
+    width: 100%;
+    height: 100%;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+/*TOP*/
+.top{
+    background-color: #b3d7d6;
+    box-shadow: 0px 0px 20px black;
+    color: #4d4d4f;
+    display: flex;
+    flex-wrap: wrap;
+    height:fit-content;
+    justify-content: space-between;
+    position:fixed;
+    width: 100%;
+    z-index: 10;
+}
+i.fa-solid.fa-bars{
+    color: #292929;
+    font-size: 30px;
+    margin: 12px 0px 0px 10px;
+}
+.logo{
+    margin: 4.5px 0px 0px 0px;
+    height: 40px;
+    justify-content: center;
+    position: absolute;
+}
+.right{
+    font-size: 25px;
+    justify-content: center;
+    margin: 4.5px 10px 0px 0px;
+}
+i.fa-solid.fa-bell{
+    color: #292929;
+    height: 40px;
+    margin-top: 10px;
+    width:fit-content;
+}
+i.fa-solid.fa-cart-shopping{
+    color: #292929;
+    height: 40px;
+    margin-top: 10px;
+    width:fit-content;
+}
+i.fa-solid.fa-user{
+    color: #292929;
+    height: 40px;
+    margin-top: 10px;
+    position: relative;
+    width:fit-content;
+}
+
+
+/*BODY*/
+body{
+    font-family: "Roboto", sans-serif;
+    background-color: #e3e7e8;
+}
+.box-padre{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 100vh;
+}
+
+
+
+/*SHOPPING CART*/
+.shoppingCart{
+    align-items: center;
+    background-color: #FFFFFF;
+    border-radius: 0.2em;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 85vh;
+    justify-content: space-around;
+    margin: 80px 0px 20px 0px;
+    width: 100%;
+    max-width: 500px;
+}
+.titulo{
+    color: black;
+    height:fit-content;
+}
+.inside-box{
+    background: #f2f2f2;
+    display: flex;
+    flex-wrap: wrap;
+    height: 385px;
+    justify-content: center;
+    margin-bottom: 0px;
+    width: 100%;
+    max-width: 500px;
+
+}
+.items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-left: 20px;
+    width: 100%;
+}
+.itemIndividual{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 4vw;
+    width: 100%;
+}
+.quitarItem{
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+    margin: 8px;
+    width: fit-content;
+}
+i.fa-solid.fa-xmark{
+    color: #758f8e;
+}
+.check{
+    display: none;
+}
+.compras{
+    margin: 10px 5px 10px 0px;
+    width: 50%;
+}
+.right-box{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-right: 5%;
+}
+.cantidad-box{
+    color: rgb(216, 216, 216);
+    margin-right: 20px;
+    width: 20px;
+}
+.cantidad{
+    background-color: rgb(216, 216, 216);
+    border: none;
+    border-radius: 10%;
+    color: black;
+    width: 23px;
+}
+.cantidad:hover{
+    background-color: rgb(216, 216, 216);
+    cursor: pointer;
+    color: black;
+    border-color: #b3d7d6;
+    border-radius: 10%;
+    width: 23px;
+}
+i.fa-solid.fa-circle-info{
+    align-items: flex-end;
+    margin: 10px 5px 10px 0px;
+}
+.info{
+    color: black;
+}
+.precio{
+    height: fit-content;
+    align-items: flex-end;
+    margin: 10px 0px 10px 0px;
+
+}
+.inside-linea{
+    background-color: gray;
+    height: 1px;
+    width: 90%;
+}
+
+/*BARRA DESCUENTO*/
+.descuento-box{
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+}
+.inputs{
+    border-color: white;
+    border-radius: 0.3em;
+    height: 35px;
+    margin: 10px 10px 10px 0px;
+    width: 50vw;
+    max-width: 250px;
+}
+.inputs:hover{
+    border-color: #8cd2d0;
+}
+.precioFinal{
+    color: rgb(37, 151, 37);
+    font-size: 25px;
+    height: fit-content;
+    margin: 10px 0px 20px 4%;
+}
+
+/*BOTON DE PAGO*/
+.botonDePago{
+    align-items: center;
+    background-color: #b3d7d6;
+    border: hidden ;
+    border-radius: 100em;
+    font-size: 30px;
+    height: 60px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: 150px;
+}
+.botonDePago:hover{
+    background-color: #8cd2d0;
+}
+
+
+
+
+
+/*FOOTER*/
+.footer-box{
+    background-color: black;
+    box-shadow: 0px 0px 20px black;
+    display: flex;
+    flex-wrap: wrap;
+    height: 130px;
+    justify-content: center;
+    width: 100%;
+}
+.linea{
+    background-color: gray;
+    height: 1px;
+    margin-top: 20px;
+    width: 90%;
+}
+.logoFooter{
+    height: 40px;
+}
+
+
+}
+
+/*BREAKPOINT DESKTOP*/
+@media(min-width: 769px){*{box-sizing: border-box;}
+
+
+/*MAIN*/
+.main{
+    font-family: myFirstFont;
+    width: 100%;
+    height: 100%;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+/*TOP*/
+.top{
+    background-color: #b3d7d6;
+    box-shadow: 0px 0px 20px black;
+    color: #4d4d4f;
+    display: flex;
+    flex-wrap: wrap;
+    height:fit-content;
+    justify-content: space-between;
+    position:fixed;
+    width: 100%;
+}
+i.fa-solid.fa-bars{
+    color: #292929;
+    font-size: 30px;
+    margin: 12px 0px 0px 10px;
+}
+.logo{
+    margin: 4.5px 0px 0px 0px;
+    height: 40px;
+    justify-content: center;
+    position: absolute;
+}
+.right{
+    font-size: 25px;
+    justify-content: center;
+    margin: 4.5px 10px 0px 0px;
+}
+i.fa-solid.fa-bell{
+    color: #292929;
+    height: 40px;
+    margin-top: 10px;
+    width:fit-content;
+}
+i.fa-solid.fa-cart-shopping{
+    color: #292929;
+    height: 40px;
+    margin-top: 10px;
+    width:fit-content;
+}
+i.fa-solid.fa-user{
+    color: #292929;
+    height: 40px;
+    margin-top: 10px;
+    position: relative;
+    width:fit-content;
+}
+
+
+/*BODY*/
+body{
+  font-family: "Roboto", sans-serif;
+  background-color: #e3e7e8;
+}
+.box-padre{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+
+/*SHOPPING CART*/
+.shoppingCart{
+    align-items: center;
+    background-color: #FFFFFF;
+    border-radius: 0.2em;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: fit-content;
+    justify-content: space-around;
+    margin: 80px 0px 20px 0px;
+    width: 100%;
+    max-width: 700px;
+}
+.titulo{
+    color: black;
+    height:fit-content;
+}
+.inside-box{
+    background: #f2f2f2;
+    display: flex;
+    flex-wrap: wrap;
+    height: max-content;
+    justify-content: center;
+    margin-bottom: 0px;
+    width: 100%;
+    max-width: 700px;
+
+}
+.items{
+    display: flex;
+    flex-wrap: wrap;
+    height: 40vh;
+    justify-content: space-around;
+    margin-top: 40px;
+    padding-left: 20px;
+    width: 100%;
+}
+.itemIndividual{    
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 7vw;
+    width: 100%;
+}
+.quitarItem{
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+    margin: 8px;
+    width: fit-content;
+}
+i.fa-solid.fa-xmark{
+    color: #758f8e;
+}
+.check{
+    display: none;
+}
+.compras{
+    font-size: 20px;
+    margin: 10px 5px 10px 0px;
+    width: 65%;
+}
+.right-box{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-right: 5%;
+}
+.cantidad-box{
+    color: rgb(216, 216, 216);
+    margin-right: 20px;
+    width: 20px;
+}
+.cantidad{
+    background-color: rgb(216, 216, 216);
+    border: none;
+    border-radius: 10%;
+    color: black;
+    width: 23px;
+}
+.cantidad:hover{
+    background-color: rgb(216, 216, 216);
+    cursor: pointer;
+    color: black;
+    border-color: #b3d7d6;
+    border-radius: 10%;
+    width: 23px;
+}
+i.fa-solid.fa-circle-info{
+    align-items: flex-end;
+    margin: 10px 5px 10px 0px;
+}
+.info{
+    color: black;
+}
+.precio{
+    font-size: 20px;
+    height: fit-content;
+    align-items: flex-end;
+    margin: 10px 0px 10px 0px;
+
+}
+.inside-linea{
+    background-color: gray;
+    height: 1px;
+    width: 90%;
+}
+
+/*BARRA DESCUENTO*/
+.descuento-box{
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+}
+.inputs{
+    border-color: white;
+    border-radius: 0.3em;
+    height: 6vh;
+    margin: 10px 10px 10px 0px;
+    width: 50vw;
+    max-width: 330px;
+}
+.inputs:hover{
+    border-color: #8cd2d0;
+}
+.precioFinal{
+    color: rgb(37, 151, 37);
+    font-size: 25px;
+    height: fit-content;
+    margin: 20px 0px 10px 0px;
+    margin-left: 9vw;
+}
+
+/*BOTON DE PAGO*/
+.button-box{
+    height: fit-content;
+}
+.botonDePago{
+    align-items: center;
+    background-color: #b3d7d6;
+    border: hidden ;
+    border-radius: 100em;
+    font-size: 30px;
+    height: 70px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: 170px;
+}
+.botonDePago:hover{
+    background-color: #8cd2d0;
+}
+
+
+
+/*FOOTER*/
+.footer-box{
+    background-color: black;
+    box-shadow: 0px 0px 20px black;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 130px;
+    justify-content: center;
+    width: 100%;
+}
+.linea{
+    background-color: gray;
+    height: 1px;
+    justify-content: center;
+    margin: 0px 0px 45px 0px;
+    width: 100%;
+}
+.logoInferior-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+.logoFooter{
+    height: 40px;
+}
+
+
+}
+
+

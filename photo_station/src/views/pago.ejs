@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PStation-Pago</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/635bf43688.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="images/photostation-isotipo.png"/>
+    <link rel="stylesheet", href="/css/normalize.css">
+    <link rel="stylesheet", href="/css/pago.css">
+    <title>Detalle</title>
+</head>
+<!--TOP-->
+<div class="top"></div>
+<body class="viewport_body">
+        <div class="top_pestañas">
+            <a class="pestañas_revisarSeleccion" href="detail">REVISAR SELECCION</a>
+            <a class="pestañas_miCompra">MI COMPRA</a>
+            <a class="pestañas_comprobante">COMPROBANTES</a>
+        </div>
+    <section class="box_padre">
+            <div class="titulo">Método de pago</div>
+            <div class="metodos_de_pago">
+                <div class="metodo">
+                    <label for="eleccion_metodo">
+                        <input type="radio" name="eleccion_metodo1" value="eleccion_metodo">
+                    </label>
+                    <div class="metodo_titulo">Tarjetas de crédito</div>
+                    <i class="fa-brands fa-cc-visa"></i>
+                    <i class="fa-brands fa-cc-mastercard"></i>
+                    <i class="fa-brands fa-cc-amex"></i>
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+                <div class="metodo">
+                    <label for="eleccion_metodo">
+                        <input type="radio" name="eleccion_metodo2" value="eleccion_metodo">
+                    </label>
+                    <div class="metodo_titulo">Otros métodos de pago</div>
+                    <i class="fa-brands fa-cc-paypal"></i>
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </div>
+            <div class="numero_de_tarjeta">
+                <label for="numeroTarjeta">
+                    <input class="box_numero_tarjeta" type="number" id="numeroTarjeta" placeholder="Número de tarjeta" required>
+                </label>
+            </div>
+            <div class="fecha_y_seguridad">
+                <label for="fechaVencimiento">
+                    <input class ="box_fecha_vencimiento" type="date" class="fecha_vencimiento" id="fechaVencimiento" placeholder="Fecha de vencimiento" required>
+                </label>
+                <label for="numeroSeguridad">
+                    <input class="box_numero_seguridad" type="number" class="numero_seguridad" id="numeroSeguridad" placeholder="CVC/CVV" required>
+                </label>                
+            </div>
+    </section>
+    <section class="box_resumen">
+        <section class="box_inside_resumen">
+            <div class="titulo_info_box">
+                <div class="check_info">
+                    <p class="titulo_info">Resumen de su pedido</p>
+                    <p class="subtitulo_info">Descargas prepagadas</p>
+                </div>
+            <section class="good_news">
+                <div class="checks_box">
+                    <i class="fa-solid fa-check"></i>
+                    <i class="fa-solid fa-check"></i>                  
+                </div>
+                <div class="checks_info">
+                    <p class="box_info">Todos los tamaños de imágenes y vectores</p>  
+                    <p class="box_info">Las descargas prepagadas son válidas durante un año desde la compra</p>
+                </div>
+            </section>
+                <div class="box_renovacion">
+                    <label for="check_renovacion">
+                        <input class="renovacion_input" type="checkbox" name="check_renovacion" id="check_renovacion">
+                    </label>
+                    <p class="renovacion_info">Renovacion automática</p>
+                    <i class="fa-regular fa-circle-question"></i>
+                </div>
+            </div>
+            <div class="linea"></div>
+            <div class="box_total">
+                <p class="total_letra">Total</p>
+                <p class="total_numero">$49</p>
+            </div>
+            <div class="box_boton">
+                <button class="boton">Procesar pedido</button>
+            </div>
+            <div class="box_compra_segura">
+                <i class="fa-solid fa-shield-halved"></i>
+                <p class="compra_segura">Compra segura. Para su comodidad, PhotoStation almacenará su información de pago encriptada para futuros pedidos.</p>
+            </div>
+        </section>
+        <div class="footer_resumen">
+            <div class="left_box">
+                <i class="fa-solid fa-hand-holding-dollar"></i>
+                <div class="lineas_footer">
+                    <p class="linea1">Reembolso</p>
+                    <p class="linea2">GARANTIZADO</p>
+                </div>
+            </div>
+            <div class="right_box">
+                <i class="fa-solid fa-coins"></i>
+                <div class="linea_moneda">
+                    <p class="moneda">USD</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+<!--FOOTER-->
+<div class="footer"></div>
+</html>
