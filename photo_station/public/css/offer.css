@@ -1,0 +1,854 @@
+/*BREAKPOINT SMARTPHONE*/
+@media screen and (max-width: 480px){*{box-sizing: border-box;}
+
+/*MAIN*/
+.main{
+    font-family: myFirstFont;
+    width: 100%;
+    height: 120vh;
+    display:flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+/*TOP*/
+.top{
+    background-color: #b3d7d6;
+    box-shadow: 0px 0px 20px black;
+    color: #4d4d4f;
+    display: flex;
+    flex-wrap: wrap;
+    height:fit-content;
+    justify-content: space-between;
+    position:fixed;
+    width: 100%;
+    z-index: 10;
+}
+i.fa-solid.fa-bars{
+    color: #292929;
+    font-size: 30px;
+    margin: 12px 0px 0px 10px;
+}
+.logo{
+    margin: 4.5px 0px 0px 0px;
+    height: 40px;
+    justify-content: center;
+    position: absolute;
+}
+.right{
+    font-size: 25px;
+    justify-content: center;
+    margin: 4.5px 10px 0px 0px;
+}
+i.fa-solid.fa-bell{
+    color: #292929;
+    height: 40px;
+    margin-top: 10px;
+    width:fit-content;
+}
+i.fa-solid.fa-cart-shopping{
+    color: #292929;
+    height: 40px;
+    margin-top: 10px;
+    width:fit-content;
+}
+i.fa-solid.fa-user{
+    color: #292929;
+    height: 40px;
+    margin-top: 10px;
+    position: relative;
+    width:fit-content;
+}
+
+
+/*BODY*/
+    /*background-image: url(../images/fondo-nebulosa.jpg);
+    background-color: #E3E7E8;
+    background-position: bottom;
+    background-attachment: fixed;
+    background-size: cover;
+}
+*/
+
+
+/*OFERTAS INDIVIDUALES*/
+.ofertasIndividuales{
+    align-items: center;
+    background-color: #404040;
+    border-radius: 0.2em;
+    box-shadow: 0px 0px 20px black;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 480px;
+    justify-content: center;
+    margin: 80px 20px 10px 20px;
+    width: 85%;
+}
+.titulo1{
+    color: #e3e7e8;
+}
+.box-sale{
+    height: 1px;
+}
+.sale{
+    height: 75px;
+    max-height: 150px;
+    position: relative;
+    right: 70px;
+    bottom: 30px;
+    width: 100px;
+    z-index: 8;
+}
+.circulo{
+    box-shadow: inset 0px 0px 10px rgb(81, 81, 81);
+    background-color: #e3e7e8;
+    border-radius: 100%;
+    height: 150px;
+    justify-items: center;
+    width: 150px;
+}
+.cantidad{
+    color: #292929;
+    font-family: myFirstFont;
+    font-weight: bold;
+    font-size: 50px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+.clase{
+    color: #292929;
+    font-family: myFirstFont;
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: 0px;
+    margin-bottom: 22px;
+    text-align: center;
+
+}
+.botones{
+    background-color: white;
+    width: 40px;
+}
+i.fa-duotone.fa-circle-arrow-left{
+    color: black;
+    height: 20px;
+    width: 20px;
+}
+i.fa-duotone.fa-circle-arrow-right{
+    color: black;
+    height: 20px;
+    width: 20px;
+
+}
+.precio{
+    color: #b3d7d6;
+    font-family: myFirstFont;
+    font-weight: bold;
+    font-size: 50px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+
+}
+.terminosYCondiciones{
+    font-family: myFirstFont;
+    font-size: 10px;
+}
+.botonDePago{
+    align-items: center;
+    background-color: #b3d7d6;
+    border: hidden ;
+    border-radius: 100em;
+    font-size: 30px;
+    height: 60px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: 150px;
+}
+.botonDePago:hover{
+    background-color: #8cd2d0;
+}
+
+
+
+
+/*OFERTAS LICENCIAS*/
+.ofertasLicencias{
+    align-items: center;
+    background-color: #404040;
+    border-radius: 0.2em;
+    box-shadow: 0px 0px 20px black;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 580px;
+    justify-content: center;
+    margin: 20px 20px 20px 20px;
+    width: 85%;
+}
+.titulo2{
+    color: #e3e7e8;
+}
+
+/*SWITCH*/
+.switchContainer{
+    margin: 10px;
+}
+.label{
+    display: inline-block;
+    width: 65px;
+    height: 33px;
+    background: #979797;
+    border-radius: 100px;
+    cursor: pointer;
+    position: relative;
+    transition: .2s;
+}  
+.label::after{
+    content: '';
+    display: block;
+    width: 25px;
+    height: 25px;
+    background: #eee;
+    border-radius: 100px;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    transition: .2s;
+}
+#switch:checked + .label::after{
+    left: 36px;
+}
+#switch:checked + .label{
+background: #8cd2d0;
+}
+#switch{
+display: none;
+}
+
+
+/*FOOTER*/
+.footer-box{
+    background-color: black;
+    box-shadow: 0px 0px 20px black;
+    display: flex;
+    flex-wrap: wrap;
+    height: 150px;
+    justify-content: center;
+    width: 100%;
+}
+.linea{
+    background-color: gray;
+    height: 1px;
+    margin-top: 20px;
+    width: 90%;
+}
+.logoFooter{
+    height: 40px;
+}
+
+}
+
+/*BREAKPOINT TABLETS*/
+@media screen and (min-width: 481px){*{box-sizing: border-box;}
+
+/*MAIN*/
+.main{
+    font-family: myFirstFont;
+    width: 100%;
+    height: 100%;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+/*TOP*/
+.top{
+    background-color: #b3d7d6;
+    box-shadow: 0px 0px 20px black;
+    color: #4d4d4f;
+    display: flex;
+    flex-wrap: wrap;
+    height:fit-content;
+    justify-content: space-between;
+    position:fixed;
+    width: 100%;
+    z-index: 10;
+}
+i.fa-solid.fa-bars{
+    color: #292929;
+    font-size: 30px;
+    margin: 12px 0px 0px 10px;
+}
+.logo{
+    margin: 4.5px 0px 0px 0px;
+    height: 40px;
+    justify-content: center;
+    position: absolute;
+}
+.right{
+    font-size: 25px;
+    justify-content: center;
+    margin: 4.5px 10px 0px 0px;
+}
+i.fa-solid.fa-bell{
+    color: #292929;
+    height: 40px;
+    margin-top: 10px;
+    width:fit-content;
+}
+i.fa-solid.fa-cart-shopping{
+    color: #292929;
+    height: 40px;
+    margin-top: 10px;
+    width:fit-content;
+}
+i.fa-solid.fa-user{
+    color: #292929;
+    height: 40px;
+    margin-top: 10px;
+    position: relative;
+    width:fit-content;
+}
+
+
+/*BODY*/
+body{
+    font-family: "Roboto", sans-serif;
+    background-color: #e3e7e8;
+}
+.box-padre{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+
+/*OFERTAS INDIVIDUALES*/
+.ofertasIndividuales{
+    align-items: center;
+    background-color: #404040;
+    border-radius: 0.2em;
+    box-shadow: 0px 0px 20px black;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 520px;
+    justify-content: flex-end;
+    margin: 75px 10px 10px 10px;
+    min-width: 400px;
+    width: 47vw;
+}
+.ofertasIndividuales:hover{
+    align-items: center;
+    background-color: #4d4d4f;
+    border-radius: 0.3em;
+    box-shadow: 0px 0px 30px black;
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 520px;
+    justify-content: flex-end;
+    margin: 75px 10px 10px 10px;
+    min-width: 420px;
+    transition: all 600ms;
+    width: 47.5vw;
+}
+.titulo1{
+    color: #e3e7e8;
+    margin: 0px 0px 75px 0px;
+}
+.box-sale{
+    height: 1px;
+}
+.sale{
+    height: 75px;
+    max-height: 150px;
+    position: relative;
+    right: 70px;
+    bottom: 30px;
+    width: 100px;
+    z-index: 8;
+}
+.circulo{
+    box-shadow: inset 0px 0px 10px rgb(81, 81, 81);
+    background-color: #e3e7e8;
+    border-radius: 100%;
+    height: 150px;
+    justify-items: center;
+    width: 150px;
+}
+.cantidad{
+    color: #292929;
+    font-family: myFirstFont;
+    font-weight: bold;
+    font-size: 50px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+.clase{
+    color: #292929;
+    font-family: myFirstFont;
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: 0px;
+    margin-bottom: 22px;
+    text-align: center;
+
+}
+.botones{
+    background-color: white;
+    width: 40px;
+}
+i.fa-duotone.fa-circle-arrow-left{
+    color: black;
+    height: 20px;
+    width: 20px;
+}
+i.fa-duotone.fa-circle-arrow-right{
+    color: black;
+    height: 20px;
+    width: 20px;
+
+}
+.precio{
+    color: #b3d7d6;
+    font-family: myFirstFont;
+    font-weight: bold;
+    font-size: 50px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+
+}
+.terminosYCondiciones{
+    font-family: myFirstFont;
+    font-size: 10px;
+}
+.botonDePago{
+    align-items: center;
+    background-color: #b3d7d6;
+    border: hidden ;
+    border-radius: 100em;
+    font-size: 30px;
+    height: 60px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: 150px;
+}
+.botonDePago:hover{
+    background-color: #8cd2d0;
+}
+
+
+
+
+/*OFERTAS LICENCIAS*/
+.ofertasLicencias{
+    align-items: center;
+    background-color: #404040;
+    border-radius: 0.2em;
+    box-shadow: 0px 0px 20px black;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 550px;
+    justify-content: flex-end;
+    margin: 20px 10px 20px 10px;
+    min-width: 400px;
+    width: 47vw;
+}
+.ofertasLicencias:hover{
+    align-items: center;
+    background-color: #4d4d4f;
+    border-radius: 0.3em;
+    box-shadow: 0px 0px 30px black;
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 520px;
+    justify-content: flex-end;
+    margin: 20px 10px 10px 10px;
+    min-width: 420px;
+    transition: all 600ms;
+    width: 47.5vw;
+}
+.titulo2{
+    color: #e3e7e8;
+}
+
+/*SWITCH*/
+.switchContainer{
+    margin: 10px;
+    z-index: 8;
+}
+.label{
+    display: inline-block;
+    width: 65px;
+    height: 33px;
+    background: #979797;
+    border-radius: 100px;
+    cursor: pointer;
+    position: relative;
+    transition: .2s;
+}  
+.label::after{
+    content: '';
+    display: block;
+    width: 25px;
+    height: 25px;
+    background: #eee;
+    border-radius: 100px;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    transition: .2s;
+}
+#switch:checked + .label::after{
+    left: 36px;
+}
+#switch:checked + .label{
+background: #8cd2d0;
+}
+#switch{
+display: none;
+}
+
+
+/*FOOTER*/
+.footer-box{
+    background-color: black;
+    box-shadow: 0px 0px 20px black;
+    display: flex;
+    flex-wrap: wrap;
+    height: 130px;
+    justify-content: center;
+    width: 100%;
+}
+.linea{
+    background-color: gray;
+    height: 1px;
+    margin-top: 20px;
+    width: 90%;
+}
+.logoFooter{
+    height: 40px;
+}
+
+
+}
+
+/*BREAKPOINT DESKTOP*/
+@media(min-width: 960px){*{box-sizing: border-box;}
+
+/*MAIN*/
+.main{
+    font-family: myFirstFont;
+    width: 100%;
+    height: 100%;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+/*TOP*/
+.top{
+    background-color: #b3d7d6;
+    box-shadow: 0px 0px 20px black;
+    color: #4d4d4f;
+    display: flex;
+    flex-wrap: wrap;
+    height:fit-content;
+    justify-content: space-between;
+    position:fixed;
+    width: 100%;
+    z-index: 10;
+}
+i.fa-solid.fa-bars{
+    color: #292929;
+    font-size: 30px;
+    margin: 12px 0px 0px 10px;
+}
+.logo{
+    margin: 4.5px 0px 0px 0px;
+    height: 40px;
+    justify-content: center;
+    position: absolute;
+}
+.right{
+    font-size: 25px;
+    justify-content: center;
+    margin: 4.5px 10px 0px 0px;
+}
+i.fa-solid.fa-bell{
+    color: #292929;
+    height: 40px;
+    margin-top: 10px;
+    width:fit-content;
+}
+i.fa-solid.fa-cart-shopping{
+    color: #292929;
+    height: 40px;
+    margin-top: 10px;
+    width:fit-content;
+}
+i.fa-solid.fa-user{
+    color: #292929;
+    height: 40px;
+    margin-top: 10px;
+    position: relative;
+    width:fit-content;
+}
+
+
+/*BODY*/
+body{
+    font-family: "Roboto", sans-serif;
+    background-color: #e3e7e8;
+}
+.box-padre{
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 90vh;
+}
+
+
+
+/*OFERTAS INDIVIDUALES*/
+.ofertasIndividuales{
+    align-items: center;
+    background-color: #404040;
+    border-radius: 0.2em;
+    box-shadow: 0px 0px 20px black;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 75vh;
+    justify-content: center;
+    margin: 85px 5px 10px 5px;
+    width: 46vw;
+}
+.ofertasIndividuales:hover{
+    align-items: center;
+    background-color: #4d4d4f;
+    border-radius: 0.3em;
+    box-shadow: 0px 0px 30px black;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 76vh;
+    justify-content: center;
+    margin: 75px 5px 10px 5px;
+    transition: all 900ms;
+    width: 47vw;
+}
+.titulo1{
+    color: #e3e7e8;
+    margin: 20px 0px 35px 0px;
+}
+.box-sale{
+    height: 1px;
+}
+.sale{
+    height: 75px;
+    max-height: 150px;
+    position: relative;
+    right: 70px;
+    bottom: 30px;
+    width: 100px;
+    z-index: 8;
+}
+.circulo{
+    box-shadow: inset 0px 0px 10px rgb(81, 81, 81);
+    background-color: #e3e7e8;
+    border-radius: 100%;
+    height: 150px;
+    justify-items: center;
+    width: 150px;
+}
+.cantidad{
+    color: #292929;
+    font-family: myFirstFont;
+    font-weight: bold;
+    font-size: 50px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+.clase{
+    color: #292929;
+    font-family: myFirstFont;
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: 0px;
+    margin-bottom: 22px;
+    text-align: center;
+
+}
+.botones{
+    background-color: white;
+    width: 40px;
+}
+i.fa-duotone.fa-circle-arrow-left{
+    color: black;
+    height: 20px;
+    width: 20px;
+}
+i.fa-duotone.fa-circle-arrow-right{
+    color: black;
+    height: 20px;
+    width: 20px;
+
+}
+.precio{
+    color: #b3d7d6;
+    font-family: myFirstFont;
+    font-weight: bold;
+    font-size: 50px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+
+}
+.terminosYCondiciones{
+    font-family: myFirstFont;
+    font-size: 10px;
+}
+.botonDePago{
+    align-items: center;
+    background-color: #b3d7d6;
+    border: hidden ;
+    border-radius: 100em;
+    font-size: 30px;
+    height: 60px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: 150px;
+}
+.botonDePago:hover{
+    background-color: #8cd2d0;
+}
+
+
+
+
+/*OFERTAS LICENCIAS*/
+.ofertasLicencias{
+    align-items: center;
+    background-color: #404040;
+    border-radius: 0.2em;
+    box-shadow: 0px 0px 20px black;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 75vh;
+    justify-content: center;
+    margin: 85px 5px 20px 5px;
+    width: 46vw;
+}
+.ofertasLicencias:hover{
+    align-items: center;
+    background-color: #4d4d4f;
+    border-radius: 0.3em;
+    box-shadow: 0px 0px 30px black;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 76vh;
+    justify-content: center;
+    margin: 85px 5px 20px 5px;
+    transition: all 900ms;
+    width: 47vw;
+}
+.titulo2{
+    color: #e3e7e8;
+    margin: 20px 0px 5px 0px;
+}
+
+/*SWITCH*/
+.switchContainer{
+    margin: 10px;
+    z-index: 8;
+}
+.label{
+    display: inline-block;
+    width: 65px;
+    height: 33px;
+    background: #979797;
+    border-radius: 100px;
+    cursor: pointer;
+    position: relative;
+    transition: .2s;
+    z-index: 2;
+}  
+.label::after{
+    content: '';
+    display: block;
+    width: 25px;
+    height: 25px;
+    background: #eee;
+    border-radius: 100px;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    transition: .2s;
+}
+#switch:checked + .label::after{
+    left: 36px;
+}
+#switch:checked + .label{
+background: #8cd2d0;
+}
+#switch{
+display: none;
+}
+.anualMensual{
+    font-size: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin:0px 0px 0px 11px;
+    z-index: 3;
+}
+
+
+/*FOOTER*/
+.footer-box{
+    background-color: black;
+    box-shadow: 0px 0px 20px black;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 130px;
+    justify-content: center;
+    width: 100%;
+}
+.linea{
+    background-color: gray;
+    height: 1px;
+    justify-content: center;
+    margin: 0px 0px 45px 0px;
+    width: 100%;
+}
+.logoInferior-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+.logoFooter{
+    height: 40px;
+}
+
+
+}

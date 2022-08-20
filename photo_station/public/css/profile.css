@@ -1,0 +1,78 @@
+.select_option{
+    position: relative;
+    width: 100%;
+}
+
+.select_option select{
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+    cursor: pointer;
+    color: #7b7b7b;
+    appearance: none;
+
+}
+
+.select_arrow {
+position: absolute;
+top: 32%;
+right: 15px;
+width: 0;
+height: 0;
+pointer-events: none;
+border-width: 8px 5px 0 5px;
+border-style: solid;
+border-color: #7b7b7b transparent transparent transparent;
+}
+
+.date{
+    color: #7b7b7b;
+}
+
+.profile-pic-div{
+
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.photo{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+#file{
+    display: none;
+}
+
+.uploadBtn{
+    top: 40%;
+    right: 15px;
+    width: 100%;
+    height: 0;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    background-color: #b3d7d6;
+    font-weight: bold;
+    color: #7b7b7b;
+    line-height: 30px;
+    font-size: 15px;
+    cursor: pointer;
+    display: none;
+}
+.profile-pic-div:hover .uploadBtn{
+    display: inline;
+}

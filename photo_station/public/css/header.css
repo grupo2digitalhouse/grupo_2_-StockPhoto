@@ -1,0 +1,43 @@
+#caja-titulo{
+	box-sizing: border-box;
+	width:  100vw;
+	height:  50px;
+	background-color: #b3d7d6; /* #f3c42f #4d4d4f #a7a9ac #e3e7e8 */
+}
+
+
+#caja-titulo ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #b3d7d6;
+}
+
+#caja-titulo li {
+  float: right;
+}
+
+#caja-titulo li#logo-portada{
+  float: left;
+}
+
+#caja-titulo li#logo-portada img{
+	height: 100%;
+}
+
+#caja-titulo li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 25px 16px;
+  text-decoration: none;
+}
+
+#caja-titulo li a:hover:not(.active) {
+  background-color: #4d4d4f;
+}
+
+.active {
+  background-color: #04AA6D;
+}

@@ -1,0 +1,446 @@
+* {
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  body {
+    font-family: "Roboto", sans-serif;
+    background-color: #ebebeb;
+  }
+  
+  h3 {
+    font-size: 24px;
+  }
+  
+  p {
+    font-size: 12px;
+  }
+  
+  /* --- Header --- */
+  header {
+    background-color: #b3d7d6;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+  .top-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .top-header .logo {
+    width: 40%;
+  }
+  .top-header .form {
+    width: 55%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .top-header .buy {
+    width: 100%;
+  }
+  header .form .submit {
+    border: none;
+    background-color: transparent;
+    position: relative;
+    margin-left: -30px;
+    padding: 5px;
+  }
+  
+  header nav {
+    font-size: 12px;
+  }
+  
+  header ul li {
+    list-style-type: none;
+  }
+  
+  header ul li a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  header .form .input {
+    background-color:#ebebeb;
+    outline: none;
+    color: #666;
+    padding: 5px;
+    width: 100%;
+    border-radius: 15px;
+    font-size: 12px;
+  }
+  header .form .submit {
+    background-color: #ebebeb;
+    border: 1px solid #000;
+    color: #666;
+    width: 10%;
+  }
+  
+  header div.top-header p {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+  div.burger-menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  div.burger-menu i {
+    background-color: #0044aa;
+    border-radius: 5px;
+    color: #ebebeb;
+    font-size: 20px;
+    margin: 10px 0px;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+  }
+  
+  header .form .submit {
+    border: none;
+    background-color: transparent;
+    position: relative;
+    margin-left: -30px;
+    padding: 5px;
+  }
+
+  .flexNav {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1em 0.5em;
+  }
+
+  
+  .active {
+    display: flex;
+  }
+  /* banner */
+  section.banner img {
+    height: 300px;
+    width: 100%;
+    z-index: 1;
+  
+  }
+
+  .buscador-box{
+    box-shadow: 0px 0px 5px #a7a9ac;
+    border-radius: 2em;
+    border-color: #a7a9ac;
+    background-color: #e3e7e8;
+    color: white;
+    height: 28px;
+    justify-content: center;
+    position: absolute;
+    top: 185px;
+    left: 28vw;
+    width: 55vw;
+    z-index: 2;
+  }
+  
+  
+  /* --------- imagenes------- */
+  .fotosDestacadas h3,
+  .categorias h3 {
+    font-size: 24px;
+    margin: 1em auto 0.5em;
+    color: #666;
+    padding: 0em 1em;
+    text-align: center;
+  }
+  /* ----- productos ----- */
+  main {
+    margin: 1em auto;
+  }
+  article div.main-article {
+    box-sizing: border-box;
+    width: 100%;
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    /* clase 14 */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .categoriaImagen {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .discount {
+    color: #39b54a;
+    margin-left: 1em;
+  }
+  .description {
+    opacity: 0;
+    transition: all 0.2s;
+  }
+  .products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .products article {
+    box-sizing: border-box;
+    width: 90%;
+    background-color:#ebebeb;
+    margin: 0.5em auto;
+  }
+  .products article img {
+    width: 100%;
+  }
+  .products .main-article {
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+  }
+  
+  main section article i {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color:#ebebeb;
+    border-radius: 50%;
+    right: 20px;
+    align-self: flex-end;
+    margin-top: -35px;
+    position: relative;
+  }
+ 
+ 
+  /* ----- footer ----- */
+  footer {
+    background-color: #ebebeb;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .infoFooter {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1em auto;
+  }
+  .infoFooter i {
+    color: #0044aa;
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  .infoFooter h4 {
+    font-size: 14px;
+  }
+  .infoFooter p {
+    text-align: center;
+  }
+  /* tablet */
+  @media (min-width: 361px) {
+    .top-header {
+      justify-content: space-around;
+    }
+    .top-header .form {
+      width: 30%;
+    }
+    .top-header .buy {
+      width: 30%;
+    }
+    .top-header .logo {
+      width: 30%;
+    }
+    div.burger-menu {
+      display: none;
+    }
+  
+    .flexNav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 1em 0.5em;
+    }
+    ul.left {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: center;
+      width: 45%;
+    }
+    ul.right {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      align-items: center;
+      width: 45%;
+    }
+    header nav ul li {
+      margin-right: 15px;
+    }
+    main section article:hover {
+      box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .products {
+      flex-flow: row wrap;
+    }
+    .products article {
+      width: 45%;
+      box-sizing: border-box;
+    }
+  
+    .main-article:hover .description {
+      display: block;
+      font-size: 16px;
+      font-weight: 400;
+      opacity: 1;
+    }
+    .main-article .categoriaImagen p {
+      font-size: 24px;
+    }
+  
+    footer {
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+    }
+  }
+  
+  /* ----- Formularios----- */
+  form.formRegistro {
+    width: 90%;
+    margin: 1em auto;
+    padding: 0.5em;
+    box-sizing: border-box;
+  }
+  form.formRegistro input {
+    outline: none;
+    border: none;
+    width: 100%;
+    padding: 0.5em;
+    border-radius: 5px;
+    margin: 0.5em auto;
+  }
+  form.formRegistro h2 {
+    font-size: 18px;
+    margin: 0.5em auto;
+    font-weight: 400;
+  }
+  form.formRegistro input[type="date"] {
+    background-color:#ebebeb;
+  }
+  .perfilUsuario label,
+  .categoriaInteres label,
+  .picture label  {
+    font-size: 18px;
+    margin: 0.5em auto;
+  }
+  .perfilInput {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    margin: 0.5em auto;
+    width: 100%;
+  }
+  
+  .intereses {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 14px;
+    margin: 0.5em auto;
+    width: 100%;
+  }
+  .flexIntereses {
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+  }
+  .intereses .flexIntereses input[type="checkbox"]{
+    width: fit-content;
+    margin: 0.5em;
+  }
+  .intereses input[type="checkbox"] {
+    display: inline;
+    width: 100%;
+    margin: 0em;
+  }
+  
+  /* mensajes de error */
+  input {
+    border: 2px solid currentcolor;
+  }
+  input:invalid {
+    border: 2px dashed red;
+  }
+  input:invalid:focus {
+    background-color: red;
+    content: "Insuficientes caracteres";
+    color: black;
+  }
+  
+  .contentBtn{
+    display: flex;
+    justify-content: flex-end;
+  }
+  button.send{
+    outline: none;
+    border: none;
+    background-color: #eac926;
+    padding: 0.5em;
+  }
+  button.delete{
+    outline: none;
+    border: none;
+    background-color: #0044aa;
+    padding: 0.5em;
+    margin-right: 0.5em;
+    color: #eac926;
+  }
+  button.send a{
+    text-decoration: none;
+    color: #0044aa;
+  }
+  
+  /* notebook and desktop */
+  @media (min-width: 769px) {
+    header .form .input{
+      font-size: 16px;
+    }
+    .products {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+    }
+    .products article {
+      margin: auto 0.5em;
+      width: 25%;
+    }
+    .categoriaImagen {
+      justify-content: space-between;
+    }
+    .top-header .logo {
+      width: 30%;
+    }
+    .top-header .form {
+      width: 30%;
+    }
+    .top-header .buy {
+      width: 30%;
+    }
+  }
+
+  

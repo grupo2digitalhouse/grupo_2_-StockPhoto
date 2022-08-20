@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PStation-Offers</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/635bf43688.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="images/photostation-isotipo.png"/>
+    <link rel="stylesheet", href="/css/normalize.css">
+    <link rel="stylesheet", href="/css/offer.css">
+</head>
+<style>
+@font-face{
+    font-family: myFirstFont;
+    src: url("./fonts/made-tommy-regular.otf");
+  }
+@font-face {
+font-family: mySecondFont;
+src: url(../public/fonts/CocoGothic-Regular.ttf);
+}
+</style>
+<section class="main">
+    <%- include('../partials/header.ejs')%>
+    <body>
+        <div class="box-padre">
+            <section class="ofertasIndividuales" href="#">
+                <h1 class="titulo1">Boxes</h1>
+                <div class="circulo"><p class="cantidad">10</p><p class="clase">imagenes</p></div>
+                <div class="box-sale"><img class="sale" src="../images/sale.png" alt="logoSale"></div>
+                <div>
+                    <i class="fa-duotone fa-circle-arrow-left"></i>
+                    <i class="fa-duotone fa-circle-arrow-right"></i>
+                </div>        
+                    <p class="precio">$000,00</p>
+                    <p class="terminosYCondiciones"><a href="#" alt="terminosYCondiciones">Terminos y condiciones</a></p>
+                    <a href="http://localhost:3000/cart"><button class="botonDePago" type="button">$</button></a>
+            </section>
+
+            <section class="ofertasLicencias" href="#">
+                <h1 class="titulo2">Licencias</h1>
+                <div class="switchContainer">
+                    <input type="checkbox" id="switch">
+                    <label for="switch" class="label">
+                        <a class="anualMensual"><p>año . mes</p></a>
+                    </label>
+                </div>
+                <div class="circulo"><p class="cantidad">20</p><p class="clase">imagenes</p></div>
+                <div class="box-sale"><img class="sale" src="../images/sale.png" alt="logoSale"></div>
+                <div>
+                    <i class="fa-duotone fa-angle-left"></i>
+                    <i class="fa-duotone fa-angle-right"></i>
+                </div>
+                    <p class="precio">$000,00</p>
+                    <p class="terminosYCondiciones"><a href="#" alt="terminosYCondiciones">Terminos y condiciones</a></p>
+                    <a href="http://localhost:3000/cart"><button class="botonDePago" type="button">$</button></a>
+            </section>
+        </div>
+    </body>
+    <footer class="footer-box">
+    <div class="linea"></div>
+        <a class="logoInferior-box" href="http://localhost:3000"><img class="logoFooter" src="../images/photostation-imagotipo.png" alt="logoInferior"></a>
+    </footer>
+</section>
+</html>

@@ -1,0 +1,820 @@
+/*celeste: #B3D7D6
+amarillo: #F3C42F
+gris oscuro: #4D4D4F
+gris: #A7A9AC
+gris claro: #E3E7E8*/
+
+*{box-sizing: border-box;font-family: myFirstFont;}
+/*NAV_BAR*/
+.top{
+    background-color: #B3D7D6;
+    height: 10vh;
+    width: 100%;
+}
+
+/*BODY*/
+.viewport_body{
+    background-color: #E3E7E8;
+    display: flex;
+    flex-wrap: wrap;
+    height: 80vh;
+    justify-content: center;
+    width: 100%;
+}
+.top_pestañas{  
+    display: flex;
+    flex-wrap: wrap;
+    height: 10%;
+    margin: 20px 0px 0px 0%;
+    justify-content: flex-start;
+    width: 100%;
+}
+.pestañas_revisarSeleccion{
+    align-items: center;
+    background-color: #4D4D4F;
+    border-radius: 0.1em;
+    color: #E3E7E8;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 80%;
+    font-weight: bold;
+    height: 80%;
+    text-align: center;
+    text-shadow: 0px 0px 8px black;
+    justify-content: center;
+    margin: 2px 2px 2px 5%;
+    width: 30%;
+}
+.pestañas_revisarSeleccion:hover{
+    background-color: #B3D7D6;
+    text-shadow: 0px 0px 8px black;
+}
+.pestañas_miCompra{
+    align-items: center;
+    background-color: #B3D7D6;
+    border-radius: 0.1em;
+    color: #E3E7E8;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 80%;
+    font-weight: bold;
+    height: 80%;
+    text-align: center;
+    text-shadow: 0px 0px 8px black;
+    justify-content: center;
+    margin: 2px 2px 2px 0%;
+    width: 30%;
+}
+.pestañas_comprobante{
+    align-items: center;
+    background-color: #4D4D4F;
+    border-radius: 0.1em;
+    color: #E3E7E8;
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: 80%;
+    font-weight: bold;
+    height: 80%;
+    text-align: center;
+    justify-content: center;
+    margin: 2px 2px 2px 0%;
+    width: 28%;
+}
+.pestañas_comprobante:hover{
+    background-color: #B3D7D6;
+    text-shadow: 0px 0px 8px black;
+}
+
+/*BOX1*/
+.box_padre{
+    align-items: flex-start;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    height: 400px;
+    margin: 0px 0px 20px 0px;
+    width: 100%;
+}
+.titulo{
+    font-size: 25px;
+    font-weight: bold;
+    height: 30px;
+    margin: 40px 20px 20px 20px;
+    width: 100%;
+}
+.metodos_de_pago{
+    align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    height: 30%;
+    justify-content: space-around;
+    width: 100%;
+}
+.metodo{
+    align-items: center;
+    border-radius: 0.3em;
+    display: flex;
+    flex-wrap: nowrap;
+    height: 45%;
+    justify-content: space-around;
+    width: 92%;
+}
+.metodo:hover{
+    background-color: #dcecff;
+    border: 1px solid #59a4ff;
+    cursor: pointer;
+    height: 46%;
+    transition: 400ms;
+    width: 94%;
+}
+.metodo_titulo{
+    font-weight: bold;
+    margin: 0px 8px 0px 8px;
+}
+i.fa-brands.fa-cc-visa{
+    color: rgb(47, 47, 123);
+    font-size: 22px;
+    margin: 2px;
+}
+i.fa-brands.fa-cc-mastercard{
+    color: rgb(218, 153, 31);
+    font-size: 22px;
+    margin: 2px;
+}
+i.fa-brands.fa-cc-amex{
+    color: rgb(34, 34, 167);
+    font-size: 22px;
+    margin: 2px 5px 2px 2px;
+}
+i.fa-brands.fa-cc-paypal{
+    color: rgb(40, 112, 235);
+    font-size: 22px;
+    margin: 2px 5px 2px 2px;
+}
+i.fa-solid.fa-ellipsis{
+
+}
+
+
+.numero_de_tarjeta{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    width: 100%;
+}
+.box_numero_tarjeta{
+    background-color: white;
+    border: 1px solid rgb(219, 219, 219);
+    border-radius: 0.2em;
+    height: 45px;
+    width: 90vw;
+}
+.fecha_y_seguridad{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    width: 100%;    
+}
+.fecha_vencimiento{
+
+}
+.box_fecha_vencimiento{
+    background-color: white;
+    border: 1px solid rgb(219, 219, 219);
+    border-radius: 0.2em;
+    height: 45px;
+    margin-right: 8px;
+    width: 44vw;
+}
+.numero_seguridad{
+
+}
+.box_numero_seguridad{
+    background-color: white;
+    border: 1px solid rgb(219, 219, 219);
+    border-radius: 0.2em;
+    height: 45px;
+    width: 44vw;
+}
+
+/*BOX2*/
+.box_resumen{
+    align-items: flex-start;
+    background-color: #fbfbfb;
+    display: flex;
+    flex-wrap: wrap;
+    height: 640px;
+    justify-content: space-around;
+    margin: 0px 0px 20px 0px;
+    width: 100%;
+}
+.box_inside_resumen{
+    background-color: rgb(226, 225, 225);
+    border-radius: 0.2em;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    height: 550px;
+    margin-top: 10px;
+    width: 95%;
+}
+.titulo_info_box{
+    width: 100%;
+}
+.titulo_info{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 20px;
+    width: 100%;
+}
+.subtitulo_info{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px;
+    width: 100%;
+}
+.good_news{
+    display: flex;
+    margin: 0px 10px 0px 10px;
+}
+.checks_box{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+i.fa-solid.fa-check{
+    margin: 10px;
+}
+.checks_info{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+}
+.box_info{
+    margin: 0px;
+}
+
+.box_renovacion{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+.renovacion_input{
+    margin: 0px 0px 0px 20px;
+}
+.renovacion_info{
+    margin: 0px 0px 0px 20px;
+}
+i.fa-regular.fa-circle-question{
+    margin: 0px 20px 0px 20px;
+}
+
+.linea{
+    background-color: rgb(180, 180, 180);
+    height: 1px ;
+    margin: 40px 0px 0px 20px;
+    width: 85vw;
+}
+
+.box_total{
+    display: flex;
+    height: 10%;
+    justify-content: space-between;
+    margin: 20px 25px 20px 25px;
+    width: 100%;
+}
+.total_letra{
+    font-size: 20px;
+    font-weight: bold;
+}
+.total_numero{
+    font-size: 30px;
+    font-weight: bold;
+    margin: 18px 70px 0px 0px ;
+}
+
+.box_boton{
+    align-items: center;
+    display: flex;
+    height: 60px;
+    justify-content: center;
+    width: 100%;
+}
+.boton{
+    background-color: #B3D7D6;
+    border: none;
+    border-radius: 2em;
+    color: white;
+    font-size: 20px;
+    height: 100%;
+    width: 80%;
+}
+
+.box_compra_segura{
+    display: flex;
+}
+i.fa-solid.fa-shield-halved{
+    align-items: center;
+    display: flex;
+    font-size: 20px;
+    height: 100%;
+    margin: 10px 5px 0px 12vw;
+}
+.compra_segura{
+    align-items: center;
+    display: flex;
+    font-size: 12px;
+    text-align: start;
+    margin: 20px 30px 0px 5px;
+}
+
+.footer_resumen{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.left_box{
+    display: flex;
+}
+i.fa-solid.fa-hand-holding-dollar{
+    color: rgb(79, 189, 79);
+    margin: 15px 5px 10px 20px;
+}
+.lineas_footer{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    height: 100%;
+}
+.linea1{
+    color: rgb(79, 189, 79);
+    font-weight: bold;
+    margin: 6px 0px 0px 0px;
+}
+.linea2{
+    font-weight: bold;
+    margin: 0%;
+}
+     
+.right_box{
+    display: flex;
+}
+i.fa-solid.fa-coins{
+    align-items: center;
+    display: flex;
+    margin-right: 5px;
+}
+.linea_moneda{
+    display: flex;
+    flex-wrap: nowrap;
+    height: 100%;
+}
+.moneda{
+    font-weight: bold;
+    margin: 15px 30px 0px 0px;
+}
+
+
+/*FOOTER*/
+.footer{
+    background-color: #4D4D4F;
+    height: 10vh;
+    width: 100%;
+}
+
+/*TABLET*/
+@media(min-width: 468px){
+
+/*celeste: #B3D7D6
+amarillo: #F3C42F
+gris oscuro: #4D4D4F
+gris: #A7A9AC
+gris claro: #E3E7E8*/
+
+*{box-sizing: border-box;}
+
+.box_padre{
+    box-shadow: 0px 0px 1px gray;
+    max-width: 470px;
+}
+.box_numero_tarjeta{
+    max-width: 420px;
+}
+.fecha_y_seguridad{
+    max-width: 620px;   
+}
+.box_fecha_vencimiento{
+    background-color: white;
+    border: 1px solid rgb(219, 219, 219);
+    border-radius: 0.2em;
+    height: 45px;
+    margin-right: 8px;
+    max-width: 206px;
+}
+
+.box_numero_seguridad{
+    background-color: white;
+    border: 1px solid rgb(219, 219, 219);
+    border-radius: 0.2em;
+    height: 45px;
+    max-width: 206px;
+}
+.box_resumen{
+    box-shadow: 0px 0px 1px gray;
+    max-width: 470px;
+}
+
+}
+
+
+/*DESKTOP*/
+@media(min-width: 768px){
+
+/*celeste: #B3D7D6
+amarillo: #F3C42F
+gris oscuro: #4D4D4F
+gris: #A7A9AC
+gris claro: #E3E7E8*/
+
+*{box-sizing: border-box;}
+
+/*NAV_BAR*/
+.top{
+    background-color: #B3D7D6;
+    height: 10vh;
+    width: 100%;
+}
+
+/*BODY*/
+.viewport_body{
+    background-color: #E3E7E8;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 100vh;
+    justify-content: flex-start;
+    width: 100%;
+}
+.top_pestañas{  
+    display: flex;
+    flex-wrap: wrap;
+    height: 8%;
+    margin: 20px 0px -15px 0%;
+    justify-content: flex-start;
+    width: 100%;
+}
+.pestañas_revisarSeleccion{
+    align-items: center;
+    background-color: #4D4D4F;
+    border-radius: 0.1em;
+    color: #E3E7E8;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 80%;
+    font-weight: bold;
+    height: 80%;
+    text-align: center;
+    text-shadow: 0px 0px 8px black;
+    justify-content: center;
+    margin: 2px 2px 2px 5%;
+    width: 8%;
+}
+.pestañas_revisarSeleccion:hover{
+    background-color: #B3D7D6;
+    text-shadow: 0px 0px 8px black;
+}
+.pestañas_miCompra{
+    align-items: center;
+    background-color: #B3D7D6;
+    border-radius: 0.1em;
+    color: #E3E7E8;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 80%;
+    font-weight: bold;
+    height: 80%;
+    text-align: center;
+    text-shadow: 0px 0px 8px black;
+    justify-content: center;
+    margin: 2px 2px 2px 0%;
+    width: 8%;
+}
+.pestañas_comprobante{
+    align-items: center;
+    background-color: #4D4D4F;
+    border-radius: 0.1em;
+    color: #E3E7E8;
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: 80%;
+    font-weight: bold;
+    height: 80%;
+    text-align: center;
+    justify-content: center;
+    margin: 2px 2px 2px 0%;
+    width: 8%;
+}
+.pestañas_comprobante:hover{
+    background-color: #B3D7D6;
+    text-shadow: 0px 0px 8px black;
+}
+
+/*BOX1*/
+.box_padre{
+    box-shadow: 0px 0px 1px gray;
+    height: 430px;
+    margin: 0px 1vh 0px 75px;
+    max-width: 400px;
+}
+.titulo{
+    font-size: 25px;
+    font-weight: bold;
+    height: 30px;
+    margin: 40px 20px 20px 20px;
+    width: 100%;
+}
+.metodos_de_pago{
+    align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    height: 30%;
+    justify-content: space-around;
+    width: 100%;
+}
+.metodo{
+    align-items: center;
+    border-radius: 0.3em;
+    display: flex;
+    flex-wrap: nowrap;
+    height: 45%;
+    justify-content: space-around;
+    width: 92%;
+}
+.metodo:hover{
+    background-color: #dcecff;
+    border: 1px solid #59a4ff;
+    cursor: pointer;
+    height: 46%;
+    transition: 400ms;
+    width: 94%;
+}
+.metodo_titulo{
+    font-weight: bold;
+    margin: 0px 8px 0px 8px;
+}
+i.fa-brands.fa-cc-visa{
+    color: rgb(47, 47, 123);
+    font-size: 22px;
+    margin: 2px;
+}
+i.fa-brands.fa-cc-mastercard{
+    color: rgb(218, 153, 31);
+    font-size: 22px;
+    margin: 2px;
+}
+i.fa-brands.fa-cc-amex{
+    color: rgb(34, 34, 167);
+    font-size: 22px;
+    margin: 2px 5px 2px 2px;
+}
+i.fa-brands.fa-cc-paypal{
+    color: rgb(40, 112, 235);
+    font-size: 22px;
+    margin: 2px 5px 2px 2px;
+}
+i.fa-solid.fa-ellipsis{
+
+}
+
+
+.numero_de_tarjeta{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    width: 100%;
+}
+.box_numero_tarjeta{
+    max-width: 360px;
+}
+.fecha_y_seguridad{
+    max-width: 100%;   
+}
+.fecha_vencimiento{
+
+}
+.box_fecha_vencimiento{
+    background-color: white;
+    border: 1px solid rgb(219, 219, 219);
+    border-radius: 0.2em;
+    height: 45px;
+    margin-right: 8px;
+    max-width: 174px;
+}
+.numero_seguridad{
+
+}
+.box_numero_seguridad{
+    background-color: white;
+    border: 1px solid rgb(219, 219, 219);
+    border-radius: 0.2em;
+    height: 45px;
+    max-width: 180px;
+}
+
+/*BOX2*/
+.box_resumen{
+    box-shadow: 0px 0px 1px gray;
+    height: 430px;
+    margin-left: 1vh;
+    max-width: 400px;
+}
+.box_inside_resumen{
+    background-color: rgb(226, 225, 225);
+    border-radius: 0.2em;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    height: 360px;
+    margin-top: 10px;
+    width: 95%;
+}
+.titulo_info_box{
+    width: 100%;
+}
+.titulo_info{
+    font-size: 25px;
+    font-weight: bold;
+    height: fit-content;
+    margin: 20px;
+    width: 100%;
+}
+.subtitulo_info{
+    font-size: 20px;
+    font-weight: bold;
+    height: fit-content;
+    margin: 20px;
+    width: 100%;
+}
+.good_news{
+    display: flex;
+    height: 75px;
+    margin: 0px 5px 0px 5px;
+}
+.checks_box{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 10x;
+    margin: 0px;
+}
+i.fa-solid.fa-check{
+    margin: 10px;
+}
+.checks_info{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+}
+.box_info{
+    margin: 0px;
+}
+
+.box_renovacion{
+    display: flex;
+    justify-content: flex-start;
+    height: fit-content;
+    margin-top: 5px;
+}
+.renovacion_input{
+    margin: 0px 0px 0px 20px;
+}
+.renovacion_info{
+    margin: 0px 0px 0px 20px;
+}
+i.fa-regular.fa-circle-question{
+    margin: 0px 20px 0px 20px;
+}
+
+.linea{
+    background-color: rgb(180, 180, 180);
+    display: none;
+    height: 1px ;
+    margin: 40px 0px 0px 20px;
+    width: 85vw;
+}
+
+.box_total{
+    display: flex;
+    height: 10%;
+    justify-content: space-between;
+    margin: -10px 25px 20px 25px;
+    width: 100%;
+}
+.total_letra{
+    font-size: 20px;
+    font-weight: bold;
+}
+.total_numero{
+    font-size: 30px;
+    font-weight: bold;
+    margin: 18px 70px 0px 0px ;
+}
+
+.box_boton{
+    align-items: center;
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    width: 100%;
+}
+.boton{
+    background-color: #B3D7D6;
+    border: none;
+    border-radius: 2em;
+    color: white;
+    font-size: 20px;
+    height: 100%;
+    width: 80%;
+}
+
+.box_compra_segura{
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+i.fa-solid.fa-shield-halved{
+    align-items: center;
+    display: flex;
+    font-size: 20px;
+    margin: 0px 0px 0px 40px;
+    height: 100%;
+}
+.compra_segura{
+    align-items: center;
+    display: flex;
+    font-size: 12px;
+    margin: 0px 30px 0px 0px;
+    text-align: start;
+}
+
+.footer_resumen{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.left_box{
+    display: flex;
+}
+i.fa-solid.fa-hand-holding-dollar{
+    color: rgb(79, 189, 79);
+    margin: 15px 5px 10px 20px;
+}
+.lineas_footer{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    height: 100%;
+}
+.linea1{
+    color: rgb(79, 189, 79);
+    font-weight: bold;
+    margin: 6px 0px 0px 0px;
+}
+.linea2{
+    font-weight: bold;
+    margin: 0%;
+}
+     
+.right_box{
+    display: flex;
+}
+i.fa-solid.fa-coins{
+    align-items: center;
+    display: flex;
+    margin-right: 5px;
+}
+.linea_moneda{
+    display: flex;
+    flex-wrap: nowrap;
+    height: 100%;
+}
+.moneda{
+    font-weight: bold;
+    margin: 15px 30px 0px 0px;
+}
+
+
+/*FOOTER*/
+.footer{
+    background-color: #4D4D4F;
+    height: 10vh;
+    width: 100%;
+}
+}
