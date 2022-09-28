@@ -1,6 +1,8 @@
 const path = require('path');
 //const product = requiere // requerir json 
-let prevId=2;
+const db = require('../database/models/index');
+
+const op = db.Sequelize.Op;
 
 
 const productsControllers = {
@@ -8,16 +10,25 @@ const productsControllers = {
         res.render(path.resolve(__dirname,'../views/products/product.ejs'));
     },
 
-    getAllProduct : (req,res)=>{
-        const product = req.query.product;
-    
-        if(product){
-            const productName = product.filter((e) => e.product.toLowerCase().includes(product.toLowerCase()));
-            productName.length ? res.send(productName) : res.sendStatus(400);
-        }else{
-            res.send(product);
-        }
-    },
+
+    list: (req, res) => {
+        db.Product.findAll({
+           /* include: [ //inner join
+                {
+                    association: 'relcategory',
+                },
+                {
+                    association: 'reluser',
+                },
+            ]*/
+        })
+            .then(product => {
+                res.send(list)
+                //res.render(path.resolve(__dirname,'../views/products/product.ejs'))
+                /*res.render('productList',{'product': product})*/
+            });
+           
+        },
 
     getProductId: (req,res)=>{
         const { id } = req.params;
@@ -33,7 +44,7 @@ const productsControllers = {
     
     },
 
-    postProduct: (req,res)=>{
+    /*postProduct: (req,res)=>{
         const {
             product_name,
             descripcion,
@@ -51,9 +62,9 @@ const productsControllers = {
     
         product.push(obj);
         res.send(obj);
-    },
+    },*/
 
-    putProduct:(req,res)=>{
+    /*putProduct:(req,res)=>{
         const { id } = req.params;
         const { product_name, descripcion, category, img} = req.body;
     
@@ -67,15 +78,15 @@ const productsControllers = {
             product.category = category;
             product.img = img;
             res.send(product);
-        }
-    },
+        }*/
+    }
 
-    deleteProduct:(req,res)=>{
+   /* deleteProduct:(req,res)=>{
         const { id } = req.params;
        product = product.filter((e)=>e.id != parseInt(id));
         res.send(product);
-    }
-};
+    }*/
+
 
 module.exports= productsControllers;
 

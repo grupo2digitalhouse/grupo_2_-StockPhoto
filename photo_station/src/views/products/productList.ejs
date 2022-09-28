@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado de Productos</title>
+    <link rel='stylesheet' href='/css/style.css' />
+
+</head>
+
+<body>
+    <figure>
+        <img src="/public/images/logo.png" alt="Logo">
+    </figure>
+    <h1>LISTADO DE Productos</h1>
+    <ul>
+        <% for( let i = 0; i < product.length; i++ ) { %>
+        <li>
+            
+            <a href="/product/detail/<%= product[i].id %>"><%= product[i].name %></a>
+            
+            <%}%>
+        </li>
+       
+        <% } %>
+
+    </ul>
+</body>
+
+</html>
