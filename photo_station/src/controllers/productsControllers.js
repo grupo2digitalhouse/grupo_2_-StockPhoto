@@ -23,9 +23,9 @@ const productsControllers = {
             ]*/
         })
             .then(product => {
-                res.send(list)
-                //res.render(path.resolve(__dirname,'../views/products/product.ejs'))
-                /*res.render('productList',{'product': product})*/
+               
+                res.render(path.resolve(__dirname,'../views/products/productList.ejs'))
+                //res.render('productList',{'product': product})
             });
            
         },
