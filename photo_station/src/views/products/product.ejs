@@ -15,15 +15,26 @@
       
 
         <div class="form"> 
-            <form class="login-form" method="POST" action="/product">
-                <input type="text" placeholder="Nombre de la foto" name="product_name" required/>
-                <textarea name="descripcion">Descripción </textarea> 
-                <br>  
+            <form class="login-form" method="POST" action="/product/crear">
+               <div>
+                    <label for="">Nombre de la foto</label>
+                    <input type="text" name="name">
+                 </div>
+                 <div>
+                    <label for="">Descripcion</label>
+                    <input type="text" name="description">
+                 </div>
 
-                <input type="checkbox" id="categoria1" name="categoria1"  value="paisajes">
-                <label for="paisajes"> Paisajes </label>
-                <input type="checkbox" id="categoria2" name="categoria2"  value="blanco y negro">
-                <label for="blanco y negro"> blanco y negro </label>
+                 <div>
+                    <label for="">Categoria</label>
+                   
+                           
+
+                        
+                        </option>
+                   % } %>
+                    </select>
+                 </div>
 
                                
                <input type="file" id="imagen" name="img" accept="image/jpeg, image/png"/>

@@ -1,7 +1,7 @@
 module.exports=(sequelize, dataTypes)=>{
-
-    const Category = sequelize.define('Category',{
-
+    
+        const alias = "Category"; 
+        const cols =  { 
         id:{
             type:dataTypes.INTEGER,
             autoIncrement : true,
@@ -17,19 +17,20 @@ module.exports=(sequelize, dataTypes)=>{
 
         },
 
-    },
-        {
-            
-            timestamps : false
-         }
-    );
+    };
+    const config = {
+        tableName: 'category',
+        timestamps: false
+    };
+    const Category = sequelize.define(alias, cols, config)
+      
 
     Category.associate = (models) => {
-        Category.belongsToMany(models.Product,{
+        Category.hasMany(models.Product,{
             as: 'relproduct',
-            through: 'productxcategory', //mediante que tabla intermedia??
+           // through: 'productxcategory', //mediante que tabla intermedia??
             foreignKey: 'category_id',
-            otherKey: 'category_table',
+           // otherKey: 'category_table',
             timestamps: false,
         })
     };

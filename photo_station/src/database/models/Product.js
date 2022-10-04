@@ -1,6 +1,7 @@
 
 module.exports = (sequelize, dataTypes) =>{
-    const Product = sequelize.define("Product",{
+      const alias = "Product"; 
+      const cols =  { 
         id:{
             type: dataTypes.INTEGER,
             primaryKey: true,
@@ -25,24 +26,20 @@ module.exports = (sequelize, dataTypes) =>{
 
         price:{
             type: dataTypes.DECIMAL
-        },
-    },
-    {
+        }
+    };
+    const config = {
         tableName: 'product',
         timestamps: false
-    });
+    };
+    const Product = sequelize.define(alias, cols, config)
 
     Product.associate = (models) => {
-       /* Movie.belongsTo(models.Genre, {
-            as: 'genre',
-            foreignKey: 'genre_id'
-        });**/
-
         Product.belongsToMany(models.Category,{
             as: 'relcategory',
             through: 'productxcategory', //mediante que tabla intermedia??
-            foreignKey: 'category_table',
-            otherKey: 'category_id',
+            foreignKey: 'category_id',
+            otherKey: 'category_table',
             timestamps: false,
         })
     };

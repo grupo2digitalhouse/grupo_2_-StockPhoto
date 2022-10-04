@@ -1,7 +1,7 @@
 module.exports=(sequelize, dataTypes)=>{
-
-    const User = sequelize.define('User',{
-
+    
+    const alias = "User"; 
+    const cols =  { 
         id:{
             type:dataTypes.INTEGER,
             autoIncrement : true,
@@ -36,13 +36,12 @@ module.exports=(sequelize, dataTypes)=>{
             type:dataTypes.STRING
         },
 
-    },
-        {
-            tableName:  'user',
-            timestamps : false
-         }
-    );
+    };
+    const config = {
+        tableName: 'User',
+        timestamps: false
+    };
+    const User = sequelize.define(alias, cols, config)
 
-   
     return User
 }
