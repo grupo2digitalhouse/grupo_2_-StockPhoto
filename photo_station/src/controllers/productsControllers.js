@@ -5,45 +5,62 @@ const op = db.Sequelize.Op;
 
 
 const productsControllers = {
-    crear: (req, res) => {
-
-        res.render(path.resolve(__dirname,'../views/products/product.ejs'))
-           
-},
 
     productList: (req, res) => {
         db.Product.findAll()
             .then(product => {
                 //retorna la vista listado productos
-                res.render(path.resolve(__dirname,'../views/products/productList.ejs'))
-            //res.render("listadoCategorias", {category:category});
+                res.render(path.resolve(__dirname,'../views/products/productList.ejs'),{'product': product})
+
             });
         },
+
+    detail: async (req, res) => {
+           db.Product.findByPk(req.params.id)
+           .then(detalle => {
+                res.render(path.resolve(__dirname,'../views/products/productDetail.ejs'),{'detalle': detalle})
+            /*} catch (error) {
+                console.log(error);*/
+            });
+        },
+           
+    crear: (req, res) => {
+        db.Category.findAll()
+        .then(category => {
+            //res.send(category)
+        res.render(path.resolve(__dirname,'../views/products/product.ejs'), {'category': category})
+        })
+},
 
     guardar: async (req, res) => {
             //tomo los datos del formulario
              const {
                 name,
                 description,
-                category_id,
              } = req.body;
          
              const newProduct = {
                 name,
                 description,
-                category_id,
              }
              try {
                  // de la base de datos db, accede ala tala y hace un create
                  await db.Product.create(newProduct);
-                 res.redirect('productList');
+                 res.redirect('/product/List')
                  // si creo el formulario muestra todas las peliculas
              } catch (error) {
                  console.log(error);
              }
          },
+    
+    edit: async (req,res)=>{
+            const product = await db.Product.findByPk(req.params.id);
+            res.render(path.resolve(__dirname,'../views/products/productEdit.ejs'), {product})
+            //res.render('/product/productEdit', {product});
+        },
+
          
-        update: async (req, res) => {
+    update: async (req, res) => {
             // tiene que recibir todos los datos q le mando x body
             const {
                 name,

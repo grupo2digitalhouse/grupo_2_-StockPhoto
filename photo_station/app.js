@@ -23,7 +23,7 @@ app.use(session({
 
 //ROUTERS
 const routerMain = require('../photo_station/src/routes/main');//3000/
-//const routerPago = require('./src/routes/pago');//3000/
+//const routerPago = require('./src/routes/pago');//3000
 //const routerDetail = require('./src/routes/detail');
 const routerOffer = require('./src/routes/offer');
 const routerRegister = require('./src/routes/register');
