@@ -1,5 +1,6 @@
-OCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,9 @@ OCTYPE html>
 <body>
     
     <h1><%= product.name %> </h1>    
+    <br>
+    
+    <img src="/images/photos/<%= product.image %>">
     <br>
     <p>DESCRIPCION : <%= product.description %> </p>
     <p>PRECIO: <%= product.price %> </p>

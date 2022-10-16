@@ -15,7 +15,7 @@
       
 
         <div class="form"> 
-            <form class="login-form" method="POST" action="/product/crear">
+            <form class="login-form" method="POST" action="/product/crear" enctype="multipart/form-data">
                  <div>
                     <label for="">Nombre de la foto</label>
                     <input type="text" name="name">
@@ -23,6 +23,10 @@
                  <div>
                     <label for="">Descripcion</label>
                     <input type="text" name="description">
+                </div>
+                <div>   
+                    <label for="">Subi tu Iamgen</label>
+                    <input type="file" name="image">
                 </div>
 
                 <div>
@@ -36,7 +40,11 @@
                        
                         <% } %>
                     </select>
-                 </div>                 
+                 </div>  
+                 <div>
+                    <label for="">Precio</label>
+                    <input type="number" name="price">
+                </div>               
                  <button>Cargar</button> 
         </div>
 

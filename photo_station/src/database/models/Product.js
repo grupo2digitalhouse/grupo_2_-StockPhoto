@@ -9,15 +9,23 @@ module.exports = (sequelize, dataTypes) =>{
         },
 
         name:{
-            type: dataTypes.STRING
+            type: dataTypes.STRING,
+            allowNull: false,
+            unique: true
         },
 
+        image: {
+            type: dataTypes.STRING,
+            allowNull: false,
+        },
+        
         description: {
             type: dataTypes.STRING
         },
 
         price:{
-            type: dataTypes.DECIMAL
+            type: dataTypes.DECIMAL,
+            allowNull: false,
         }
     };
     const config = {
@@ -26,15 +34,15 @@ module.exports = (sequelize, dataTypes) =>{
     };
     const Product = sequelize.define(alias, cols, config)
 
-    Product.associate = (models) => {
+    /*Product.associate = (models) => {
         Product.belongsToMany(models.Category,{
             as: 'relcategory',
-            through: 'productxcategory', //mediante que tabla intermedia??
+            through: 'productxcategory', //mediante que tabla intermedia
             foreignKey: 'category_id',
-            otherKey: 'category_table',
+            otherKey: 'product_id',
             timestamps: false,
         })
-    };
+    };*/
 
     return Product;
 }

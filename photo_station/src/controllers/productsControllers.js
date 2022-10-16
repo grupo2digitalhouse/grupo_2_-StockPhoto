@@ -11,14 +11,13 @@ const productsControllers = {
             .then(product => {
                 //retorna la vista listado productos
                 res.render(path.resolve(__dirname,'../views/products/productList.ejs'),{'product': product})
-
             });
         },
 
-    detail: async (req, res) => {
+    detail: (req, res) => {
            db.Product.findByPk(req.params.id)
-           .then(detalle => {
-                res.render(path.resolve(__dirname,'../views/products/productDetail.ejs'),{'detalle': detalle})
+           .then(product => {
+                res.render(path.resolve(__dirname,'../views/products/productDetail.ejs'),{'product': product})
             /*} catch (error) {
                 console.log(error);*/
             });
@@ -37,22 +36,26 @@ const productsControllers = {
              const {
                 name,
                 description,
+                image,
+                price,
              } = req.body;
          
              const newProduct = {
                 name,
                 description,
+                image: req.file? req.file.filename: image,
+                price,
              }
              try {
-                 // de la base de datos db, accede ala tala y hace un create
+                 // de la base de datos db, accede a la tabla y hace un create
                  await db.Product.create(newProduct);
                  res.redirect('/product/List')
                  // si creo el formulario muestra todas las peliculas
              } catch (error) {
                  console.log(error);
-             }
+             } 
          },
-    
+
     edit: async (req,res)=>{
             const product = await db.Product.findByPk(req.params.id);
             res.render(path.resolve(__dirname,'../views/products/productEdit.ejs'), {product})
@@ -65,7 +68,7 @@ const productsControllers = {
             const {
                 name,
                 description,
-                category_id,
+                price,
             } = req.body;
         
             try {
@@ -73,7 +76,7 @@ const productsControllers = {
                     { 
                        name,
                        description,
-                       category_id,
+                       price,
                     },
                     {
                         where: { // filtro del update
@@ -99,7 +102,7 @@ const productsControllers = {
                     }
                 });
                 // se puede poner una vista q diga se elimino 
-                res.redirect('/product');
+                res.redirect('/product/List');
             } catch (error) {
                 console.log(error);
             }

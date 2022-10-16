@@ -15,10 +15,11 @@
         <% for( let i = 0; i < product.length; i++ ) { %>
         <li>
             
-            <a href="/product/detail/<% product[i].id %>"><%= product[i].name %></a>
-         
-        <% } %>
+            <a href="/product/detail/<%=product[i].id %>"><%= product[i].name %></a>
+            <img src="/images/photos/<%= product[i].image %>">
         </li>>
+        <% } %>
+       
     </ul>
 
 
