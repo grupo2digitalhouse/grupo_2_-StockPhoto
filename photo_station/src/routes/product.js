@@ -1,20 +1,33 @@
 const express = require('express');
 
+const multer = require('multer');
+const path = require('path');
 const productsControllers = require('../controllers/productsControllers');
 const router = express.Router();
 
-router.get('/product',productsControllers.form); //carga formulario de productos
+const storage = multer.diskStorage({
+    destination: (req, file, cb) =>{
+      cb(null, path.join(__dirname,'../../public/images/photos'))
+    },
+    filename: (req, file, cb) =>{
+       let newFilename = 'photo-' + Date.now() + path.extname(file.originalname);
+       cb(null, newFilename);
+    }
+  });
 
- // muestra lista de productos
 
-router.get('/product/list',productsControllers.list);
+const upload = multer({ storage: storage })
 
-/*router.get('/products/:id',productsControllers.getProductId);
+router.get('/product/list',productsControllers.productList);  // muestra lista de productos
+router.get('/product/detail/:id',productsControllers.detail); //ruta detalle
 
-router.post('/product',productsControllers.postProduct);
+router.get('/product/crear', productsControllers.crear); //carga formulario de productos
+router.post('/product/crear', upload.single('image'),productsControllers.guardar);
 
-router.put('/products/:id',productsControllers.putProduct);
+router.get('/edit/:id', productsControllers.edit);
+router.post('/product/edit/:id',productsControllers.update); // actualiza
+//para eliminar. no uso delete como nombre del controler xq delete es palabra resevada
+router.post('/product/delete/:id', productsControllers.borrar);
 
-router.delete('/products/:id',productsControllers.deleteProduct);*/
 
 module.exports=router;

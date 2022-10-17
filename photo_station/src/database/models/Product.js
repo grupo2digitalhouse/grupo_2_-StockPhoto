@@ -1,30 +1,30 @@
 
 module.exports = (sequelize, dataTypes) =>{
-    const Product = sequelize.define("Product",{
+    const Product = sequelize.define('Product',{
         id:{
             type: dataTypes.INTEGER,
+            autoIncrement : true,
             primaryKey: true,
-            autoIncrement: true,
+            allowNull: false
         },
 
         name:{
-            type: dataTypes.STRING
+            type: dataTypes.STRING,
+            allowNull: false
+        },
+
+        image: {
+            type: dataTypes.STRING,
+            allowNull: false,
         },
 
         description: {
             type: dataTypes.STRING
         },
 
-        category_id: {
-            type: dataTypes.INTEGER
-        },
-
-        owner_id: {
-            type: dataTypes.INTEGER
-        },
-
         price:{
-            type: dataTypes.DECIMAL
+            type: dataTypes.DECIMAL,
+            allowNull: false
         },
     },
     {
@@ -33,18 +33,23 @@ module.exports = (sequelize, dataTypes) =>{
     });
 
     Product.associate = (models) => {
-       /* Movie.belongsTo(models.Genre, {
-            as: 'genre',
-            foreignKey: 'genre_id'
-        });**/
+        Product.belongsToMany(models.User, {
+            as: 'user',
+            through: 'userxproduct',
+            foreignKey: 'product_id',
+            otherKey: 'user_id',
+            timestamps: false
+        })
 
         Product.belongsToMany(models.Category,{
-            as: 'relcategory',
-            through: 'productxcategory', //mediante que tabla intermedia??
-            foreignKey: 'category_table',
+            as: 'category',
+            through: 'productxcategory',
+            foreignKey: 'product_id',
             otherKey: 'category_id',
             timestamps: false,
         })
+
+
     };
 
     return Product;

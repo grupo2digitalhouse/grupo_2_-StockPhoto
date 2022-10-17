@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>PStation-Login</title>
+        <title>PStation-Crear</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://kit.fontawesome.com/635bf43688.js" crossorigin="anonymous"></script>
@@ -15,20 +15,41 @@
       
 
         <div class="form"> 
-            <form class="login-form" method="POST" action="/product">
-                <input type="text" placeholder="Nombre de la foto" name="product_name" required/>
-                <textarea name="descripcion">Descripción </textarea> 
-                <br>  
+            <form class="login-form" method="POST" action="/product/crear" enctype="multipart/form-data">
+                 <div>
+                    <label for="">Nombre de la foto</label>
+                    <input type="text" name="name">
+                 </div>
+                 <div>
+                    <label for="">Descripcion</label>
+                    <input type="text" name="description">
+                </div>
+                <div>   
+                    <label for="">Subi tu Iamgen</label>
+                    <input type="file" name="image">
+                </div>
 
-                <input type="checkbox" id="categoria1" name="categoria1"  value="paisajes">
-                <label for="paisajes"> Paisajes </label>
-                <input type="checkbox" id="categoria2" name="categoria2"  value="blanco y negro">
-                <label for="blanco y negro"> blanco y negro </label>
+                <div>
+                    <label for="">Categoria</label>
+                    <select name ="category">
+                        <% for (let i = 0; i < category.lenght; i++) { %>
+                        <option value="<%=category[i].id%>">
+                            <%=category[i].category_name %>
+                         
+                        </option>
+                       
+                        <% } %>
+                    </select>
+                 </div>  
+                 <div>
+                    <label for="">Precio</label>
+                    <input type="number" name="price">
+                </div>               
+                 <button>Cargar</button> 
+        </div>
 
                                
-               <input type="file" id="imagen" name="img" accept="image/jpeg, image/png"/>
 
-                <button>Cargar</button>
                
                
             </form>
