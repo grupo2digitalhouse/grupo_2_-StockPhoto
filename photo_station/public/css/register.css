@@ -136,3 +136,11 @@ body {
 .logoFooter{
   height: 40px;
 }
+
+.errores{
+  color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}

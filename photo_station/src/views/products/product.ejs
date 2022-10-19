@@ -12,13 +12,12 @@
     </head>
 
     <body>
-      
 
         <div class="form"> 
             <form class="login-form" method="POST" action="/product/crear" enctype="multipart/form-data">
                  <div>
                     <label for="">Nombre de la foto</label>
-                    <input type="text" name="name">
+                    <input id="name" type="text" name="name">
                  </div>
                  <div>
                     <label for="">Descripcion</label>
@@ -47,16 +46,13 @@
                 </div>               
                  <button>Cargar</button> 
         </div>
-
-                               
-
-               
-               
-            </form>
+            
+        <div class="errores">
+            <ul></ul>
         </div>
 
 
       
-        
+        <script src="/js/productAddValidator.js"></script>
     </body>
 </html>
