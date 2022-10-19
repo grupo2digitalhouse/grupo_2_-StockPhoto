@@ -48,7 +48,13 @@ const controller = {
     },
 
     getProduct: (req, res) => {
-        DB.Product.findByPk(req.params.id)
+        DB.Product.findByPk(req.params.id, {
+            include: [
+                {
+                    association: 'category',
+                },
+            ]
+        })
         .then(product => {
             return res.json({
                 data: product,

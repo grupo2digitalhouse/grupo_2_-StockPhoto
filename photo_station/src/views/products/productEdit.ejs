@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title class="titulo">Editar Foto</title>
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet", href="/css/register.css">
 </head>
 
 <body>
@@ -15,11 +16,11 @@
         <form action="/product/edit/<%= product.id %>" method="POST">
 
             <label for="">Nombre de la foto</label>
-            <input type="text" name="name" id="name" value="<%= product.name %>" required></p>
+            <input type="text" name="name" id="name" value="<%= product.name %>"></p>
             <label for="">Descripcion</label>
-            <input type="text" name="description" id="description" value="<%= product.description%>" required></p>
+            <input type="text" name="description" id="description" value="<%= product.description%>"></p>
             <label for="price">Precio </label>
-            <p><input type="number" name="price" id="price" value="<%= product.price %>" required></p>
+            <p><input type="number" name="price" id="price" value="<%= product.price %>"></p>
 
             <br>
             <p> <button class="botonAgregar" type="submit">Actualizar</button>
@@ -27,6 +28,15 @@
             <a  class="botonVolver" href="/product/list">Listado de Fotos</a></p>
         </form>
     </section>
+
+    <div class="errores">
+        <ul></ul>
+    </div>
+
+
+  
+    <script src="/js/productEditValidator.js"></script>
+
 </body>
 
 </html>
