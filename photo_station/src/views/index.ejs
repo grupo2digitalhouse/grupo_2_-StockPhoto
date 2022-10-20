@@ -8,38 +8,34 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
   <title>PStation</title>
 </head>
 
 <body>
   <header>
+    <%- include("./partials/header") %>
+  </header>
+  
+  <!--
     <div class="top-header">
-     
-   
- 
       <ul class="right">
         <li><a href="/register">Creá tu cuenta </a></li>
         <li><a href="/login">Ingresá </a></li>
         <li><a href="#"> <i class="fas fa-shopping-basket"></i></a></li>
       </ul>
     </nav>
-  
-
-
-
-  </header>
+  -->
   <section class="banner">
     <img src="images/Atardeceres-e1439417512261.jpg" alt="Banner">
 
     <input class='buscador-box' type="text" placeholder=" Busca tus imagenes ideales">
-
- 
   </section>
   
   <main>
     <section class="fotosDestacadas">
-      <h3>Encontra el contenido para tus proyectos</h3>
+      <h3>Encontrá el contenido para tus proyectos</h3>
 
       <div class="products">
 
@@ -82,13 +78,13 @@
     </section>
 
     <section class="categorias">
-      <h3>Explora nuestro Catalogo</h3>
+      <h3>Explorá nuestro Catálogo</h3>
       <div class="products">
         <article>
           <img src="images/cultura-de-moda-que-es-1.jpg.webp" alt="moda" class="product_img">
           <div class="main-article">
             <div class="categoriaImagen">
-              <p class="nombreCategoria">Fotos de Moda</p>
+              <p class="nombreCategoria">Moda</p>
             </div>
           </div>
         </article>
@@ -97,7 +93,7 @@
           <img src="images/comida.jpg" alt="comida" class="product_img">
           <div class="main-article">
             <div class="categoriaImagen">
-              <p class="nombreCategoria">Fotos de Comida</p>
+              <p class="nombreCategoria">Comida</p>
             </div>
           </div>
         </article>
@@ -106,7 +102,7 @@
           <img src="images/naturaleza.jpg" alt="naturaleza" class="product_img">
           <div class="main-article">
             <div class="categoriaImagen">
-              <p class="nombreCategoria">Fotos de Naturaleza</p>
+              <p class="nombreCategoria">Naturaleza</p>
             </div>
           </div>
         </article>
@@ -115,7 +111,7 @@
           <img src="images/deportes.jpg" alt="deportes" class="product_img">
           <div class="main-article">
             <div class="categoriaImagen">
-              <p class="nombreCategoria">Fotos de Deportes</p>
+              <p class="nombreCategoria">Deportes</p>
             </div>
           </div>
         </article>
@@ -124,7 +120,7 @@
           <img src="images/blanco.jpg" alt="blanco" class="product_img">
           <div class="main-article">
             <div class="categoriaImagen">
-              <p class="nombreCategoria">Fotos Blanco y Negro</p>
+              <p class="nombreCategoria">Blanco y Negro</p>
             </div>
           </div>
         </article>
@@ -133,17 +129,15 @@
           <img src="images/negocios.webp" alt="negocios" class="product_img">
           <div class="main-article">
             <div class="categoriaImagen">
-              <p class="nombreCategoria">Fotos de Negocios y Finanzas</p>
+              <p class="nombreCategoria">Negocios y Finanzas</p>
             </div>
           </div>
         </article>
-
-
       </div>
     </section>
   </main>
   <footer>
-    
+    <%- include("./partials/footer") %>
   </footer>
 
 </body>

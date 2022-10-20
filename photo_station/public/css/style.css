@@ -1,3 +1,8 @@
+@font-face {
+	font-family: "made tommy";
+	src: url('../fonts/made-tommy-regular.otf'); 
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -17,11 +22,13 @@
   }
   
   /* --- Header --- */
+  /*
   header {
     background-color: #b3d7d6;
     padding: 15px;
     box-sizing: border-box;
   }
+  */
   .top-header {
     display: flex;
     flex-direction: row;
@@ -124,7 +131,7 @@
     height: 300px;
     width: 100%;
     z-index: 1;
-  
+    object-fit: cover;
   }
 
   .buscador-box{
@@ -152,6 +159,7 @@
     padding: 0em 1em;
     text-align: center;
   }
+  
   /* ----- productos ----- */
   main {
     margin: 1em auto;
@@ -195,7 +203,10 @@
   }
   .products article img {
     width: 100%;
+    height: 200px;
+    object-fit: cover;  /*De esta forma la foto se adapta al contenedor sin deformarse*/
   }
+  
   .products .main-article {
     border-top: 1px solid #ebebeb;
     padding: 15px;
@@ -218,6 +229,7 @@
  
  
   /* ----- footer ----- */
+  /*
   footer {
     background-color: #ebebeb;
     padding: 15px;
@@ -226,6 +238,7 @@
     justify-content: center;
     align-items: center;
   }
+  */
   .infoFooter {
     width: 90%;
     display: flex;
@@ -285,9 +298,11 @@
       align-items: center;
       width: 45%;
     }
+    /*
     header nav ul li {
       margin-right: 15px;
     }
+    */
     main section article:hover {
       box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
@@ -308,12 +323,14 @@
     .main-article .categoriaImagen p {
       font-size: 24px;
     }
-  
+    
+    /*
     footer {
       flex-direction: row;
       justify-content: space-around;
       align-items: center;
     }
+    */
   }
   
   /* ----- Formularios----- */

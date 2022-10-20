@@ -12,16 +12,10 @@
     </head>
 
     <body>
-        <section class="top">
-            <a href="http://localhost:3000/offer"><i class="fa-solid fa-bars"></i></a>
-            <a href="http://localhost:3000/"><img class="logo" src="../images/photostation-isotipo.png" alt="logoSuperior"></a>
-            <div class="right">
-                <a href="#"><i class="fa-solid fa-bell"></i></a>
-                <a href="http://localhost:3000/cart"><i class="fa-solid fa-cart-shopping"></i></a>
-                <a href="#"><i class="fa-solid fa-user"></i></a>
-            </div>
-        </section>
 
+        <header>
+            <%- include("../partials/header") %>
+        </header>
 
 
         <div class="form">
@@ -35,10 +29,8 @@
         </div>
 
 
-        <footer class="footer-box">
-            <div class="linea"></div>
-            <a href="http://localhost:3001"><img class="logoFooter" src="../images/photostation-imagotipo.png" alt="logoSuperior"></a>
+        <footer>
+            <%- include("../partials/footer") %>
         </footer>
-        
     </body>
 </html>

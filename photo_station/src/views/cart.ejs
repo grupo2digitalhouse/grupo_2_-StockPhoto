@@ -20,17 +20,10 @@ font-family: mySecondFont;
 src: url(../public/fonts/CocoGothic-Regular.ttf);
 }
 </style>
-<section class="main">
-    <section class="top">
-        <a href="http://localhost:3000/offer"><i class="fa-solid fa-bars"></i></a>
-        <a href="http://localhost:3000/"><img class="logo" src="../images/photostation-isotipo.png" alt="logoSuperior"></a>
-        <div class="right">
-            <a href="#"><i class="fa-solid fa-bell"></i></a>
-            <a href="http://localhost:3000/cart"><i class="fa-solid fa-cart-shopping"></i></a>
-            <a href="#"><i class="fa-solid fa-user"></i></a>
-        </div>
-    </section>
-    <body>
+<body>
+    <header>
+        <%- include("./partials/header") %>
+    </header> 
         <section class="box-padre">
             <div class="shoppingCart">
             <h2 class="titulo"> Mis Compras </h2>
@@ -123,7 +116,7 @@ src: url(../public/fonts/CocoGothic-Regular.ttf);
         </section>
     </body>
     <footer class="footer-box">
-    <div class="linea"></div>
-        <a class="logoInferior-box" href="http://localhost:3000"><img class="logoFooter" src="../images/photostation-imagotipo.png" alt="logoInferior"></a>
+    <footer>
+        <%- include("./partials/footer") %>
     </footer>
 </html>
