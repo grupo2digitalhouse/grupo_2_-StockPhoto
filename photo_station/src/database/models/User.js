@@ -5,7 +5,8 @@ module.exports=(sequelize, dataTypes)=>{
         id:{
             type:dataTypes.INTEGER,
             autoIncrement : true,
-            primaryKey: true
+            primaryKey: true,
+            allowNull: false
         },
         username:{
             type:dataTypes.STRING,
@@ -39,10 +40,20 @@ module.exports=(sequelize, dataTypes)=>{
 
     };
     const config = {
-        tableName: 'User',
+        tableName: 'user',
         timestamps: false
     };
     const User = sequelize.define(alias, cols, config)
+    
+    User.associate = (models) => {
+        User.belongsToMany(models.Product, {
+            as: 'product',
+            through: 'userxproduct',
+            foreignKey: 'user_id',
+            otherKey: 'product_id',
+            timestamps: false
+        })
+    };
 
     return User
 }

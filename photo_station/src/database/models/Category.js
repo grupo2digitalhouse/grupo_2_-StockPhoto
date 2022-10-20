@@ -5,7 +5,8 @@ module.exports=(sequelize, dataTypes)=>{
         id:{
             type:dataTypes.INTEGER,
             autoIncrement : true,
-            primaryKey: true
+            primaryKey: true,
+            allowNull: false
         },
         category_name:{
             type:dataTypes.STRING,
@@ -18,16 +19,16 @@ module.exports=(sequelize, dataTypes)=>{
         timestamps: false
     };
     const Category = sequelize.define(alias, cols, config)
-      
 
-   /* Category.associate = (models) => {
-        Category.hasMany(models.Product,{
-            as: 'relproduct',
-           // through: 'productxcategory', //mediante que tabla intermedia??
+    Category.associate = (models) => {
+       
+        Category.belongsToMany(models.Product,{
+            as: 'product',
+            through: 'productxcategory',
             foreignKey: 'category_id',
-           // otherKey: 'product_id',
+            otherKey: 'product_id',
             timestamps: false,
         })
-    };*/
-    return Category
+    };
+    return Category;
 }

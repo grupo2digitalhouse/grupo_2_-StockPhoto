@@ -36,15 +36,18 @@ const controller = {
                 },
             ]
         })
-            .then(products => {
-                return res.json({
-                    count: products.length,
-                    // countByCategory: category, 
-                    data: products, //TODO: COMO MUESTRO LA CATEGORIA?
-                    // category: products.category.category_name
-                    // detail: TODO: URL DEL PRODUCTO 
-                })
+
+        //sequalize count group by
+
+        .then(products => {
+            return res.json({
+                // count: products.length,
+                // countByCategory: category, 
+                data: products, //TODO: COMO MUESTRO LA CATEGORIA?
+                // category: products.category.category_name
+                // detail: TODO: URL DEL PRODUCTO 
             })
+        })
     },
 
     getProduct: (req, res) => {
@@ -63,5 +66,7 @@ const controller = {
         })
     }
 };
+
+
 
 module.exports = controller;
