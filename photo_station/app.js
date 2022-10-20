@@ -24,15 +24,14 @@ app.use(session({
 //ROUTERS
 const routerMain = require('../photo_station/src/routes/main');//3000/
 //const routerPago = require('./src/routes/pago');//3000
-//const routerDetail = require('./src/routes/detail');
+
 const routerOffer = require('./src/routes/offer');
-const routerRegister = require('./src/routes/register');
-const routerLogin = require('./src/routes/login')
+
+const routerUsers = require('./src/routes/users');
+
 const routerProduct = require('./src/routes/product');
 const routerProfile = require('./src/routes/profile')
 //const routerCambioContra = require('./src/routes/cambioContra');
-
-
 
 //HOME//
 app.use(routerMain);
@@ -41,10 +40,9 @@ app.use(routerOffer);
 //PASARELA DE DETALLECART-PAGO-COMPROBANTE//
 //app.use(routerDetail);
 //app.use(routerPago);
-//LOGIN//
-app.use(routerLogin);
+
 //REGISTER//
-app.use(routerRegister);
+app.use(routerUsers);
 //PROFILE//
 app.use(routerProfile);
 //CAMBIO CONTRASEÑA//

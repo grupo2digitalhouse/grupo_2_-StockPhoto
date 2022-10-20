@@ -10,7 +10,7 @@ module.exports=(sequelize, dataTypes)=>{
         username:{
             type:dataTypes.STRING,
             allowNull: false,
-            unique: true
+           // unique: true
         },
 
         first_name:{
@@ -25,7 +25,7 @@ module.exports=(sequelize, dataTypes)=>{
         email:{
             type:dataTypes.STRING,
             allowNull: false,
-            unique: true
+            //unique: true
         },
         birthdate:{
             type:dataTypes.DATE
@@ -35,6 +35,10 @@ module.exports=(sequelize, dataTypes)=>{
         },
         website:{
             type:dataTypes.STRING
+        },
+        password:{
+            type:dataTypes.STRING,
+            //allowNull: false,
         },
 
     };

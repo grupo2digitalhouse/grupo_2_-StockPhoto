@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="titulo">Edita tus datos</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  
+    <h1 class="titulo">Edita tus datos:  <%=  user.username %></h1>
+    <section class="formulario">
+        <form action="/register/edit/<%= user.id %>" method="POST">
+           
+            <label for="">contraseña</label>
+            <input type="text" name="password" id="password" value="<%= user.password %>" required></p>
+            <label for="">Confirma la contraseña</label>
+            <input type="text" name="password" id="password" value="<%= user.password %>" required></p>
+            <label for="">Cambia tu Foto de Perfil</label>
+                <input type="file" name="image">
+            </div>
+            <br>
+            <p> <button class="botonAgregar" type="submit">Actualizar</button>
+        
+            
+        </form>
+    </section>
+</body>
+
+</html>

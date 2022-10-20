@@ -1,33 +1,105 @@
-const fs = require('fs');
+
 const path = require('path');
-const jsonPath = path.join(__dirname,'../database/users.json');
-const json = JSON.parse(fs.readFileSync(jsonPath, 'utf-8'));
+const db = require('../database/models/index');
 
-const allUsers = json.map(e => {
-    return {
-      id: e.id,
-      name: e.name,
-      email: e.email,
-      lat: e.address.geo.lat,
-    }
-  })
+const op = db.Sequelize.Op;
 
-
-const controller = {
-    allUsers: (req, res) =>{
-        res.render(path.join(__dirname, '../views/users',{'allUsers':allUsers}));
+const userController = {
+    home: (req, res) => { //formulario de registro
+                res.render(path.resolve(__dirname,'../views/users/register.ejs'));
     },
-    getUserId: (req, res)=>{
-        const id = req.params.id;
-        const user = users.find((element) => element.id === parseInt(id));
-        if(user){
-            res.send(user);
-        }else{
-            res.send('Not found')
+    guardar: async (req, res) => {
+        //tomo los datos del formulario
+         const {
+            username,
+            first_name,
+            last_name,
+            email,
+            image,
+           // password,
+         } = req.body;
+     
+         const newUser = {
+            username,
+            first_name,
+            last_name,
+            email,
+            image: req.file? req.file.filename: image,
+           // password,
+         }
+         try {
+             // de la base de datos db, accede a la tabla y hace un create
+             await db.User.create(newUser);
+             res.redirect('/login')
+             //('/register/detail')
+             // si creo el formulario muestra todas las peliculas
+         } catch (error) {
+             console.log(error);
+         }    
+     },
+     login: (req, res) => {
+        res.render(path.resolve(__dirname,'../views/users/login.ejs'));
+    },
+     detail: (req, res) => {
+        db.User.findByPk(req.params.id)
+        .then(user => {
+             res.render(path.resolve(__dirname,'../views/user/userDetail.ejs'),{'user': user})
+         /*} catch (error) {
+             console.log(error);*/
+         });
+     },
+
+    edit: async (req,res)=>{
+        const user = await db.User.findByPk(req.params.id);
+        res.render(path.resolve(__dirname,'../views/user/userEdit.ejs'), {user})
+     
+    },
+
+     update: async (req, res) => {
+        const {
+            username,
+            first_name,
+            last_name,
+            email,
+            image,
+        } = req.body;
+    
+        try {
+            await db.User.update(
+                { 
+                    username,
+                    first_name,
+                    last_name,
+                    email,
+                    image: req.file? req.file.filename: image,
+                },
+                {
+                    where: { // filtro del update
+                        id: req.params.id,
+                    }
+                }
+            );
+            res.redirect(`/product/detail/${req.params.id}`);
+        } 
+         catch (error) {
+            console.log(error);
+        }
+    
+    },
+
+    borrar: async (req,res) =>{
+        try {
+           await db.User.destroy({
+                where: {
+                    id: req.params.id
+                }
+            });
+            // se puede poner una vista q diga se elimino 
+            res.redirect('/product/List');
+        } catch (error) {
+            console.log(error);
         }
     },
-
-    setUser: ()=>{},
+    
 };
-
-module.exports = controller;
+module.exports = userController;

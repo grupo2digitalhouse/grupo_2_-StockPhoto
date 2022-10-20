@@ -25,16 +25,44 @@
 
 
         <div class="form">
-            <form class="login-form">
-                <input type="text" placeholder="username" required/>
-                <input type="email" placeholder="email" required/>
-                <input type="password" placeholder="password" required/>
-                <input type="password" placeholder="confirm password" required/>
+            <form class="login-form" method="POST" action="/register/crear" enctype="multipart/form-data">   
+                <div>
+                    <label for="">Ingresa tu nombre de Ususario</label>
+                    <input type="text" name="username">
+                 </div>
+                 <div>
+                    <label for="">Ingresa tu nombre</label>
+                    <input type="text" name="first_name">
+                 </div>
+                 <div>
+                    <label for="">Ingresa tu Apellido</label>
+                    <input type="text" name="last_name">
+                 </div>
+                 <div>
+                    <label for="">Ingresa tu Email</label>
+                    <input type="email" name="email">
+                 </div>
+                 <div>   
+                    <label for="">Subi tu Foto de Perfil</label>
+                    <input type="file" name="image">
+                </div>
+                 <div>
+                    <label for="">Crea una contraseña</label>
+                    <input type="text" name="password">
+                 </div>
+                 <div>
+                    <label for="">Comfirma tu contraseña</label>
+                    <input type="text">
+                 </div>
+            
+
+
                 <button>Registrate</button>
                 <p class="message">Tus datos personales se utilizarán para procesar tu pedido, mejorar tu experiencia, gestionar el acceso a tu cuenta y otros própositos descriptos en nuestra  <a href="#">politica de pricvacidad</a></p>
                 <p class="message"><a href="login">ya tienes una cuenta?</a></p>
             </form>
         </div>
+
 
 
         <footer class="footer-box">

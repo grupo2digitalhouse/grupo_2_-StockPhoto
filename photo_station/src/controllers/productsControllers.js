@@ -56,13 +56,12 @@ const productsControllers = {
              } 
          },
 
-    edit: async (req,res)=>{
+         edit: async (req,res)=>{
             const product = await db.Product.findByPk(req.params.id);
             res.render(path.resolve(__dirname,'../views/products/productEdit.ejs'), {product})
-            //res.render('/product/productEdit', {product});
+         
         },
 
-         
     update: async (req, res) => {
             // tiene que recibir todos los datos q le mando x body
             const {
