@@ -1,7 +1,15 @@
 footer{
+  /* Acá se puede ver cómo funciona la forma de ubicar tanto el main como el footer:
+	https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/ */
+	/*bottom: 0;
+	width: 100%;
+	position: absolute;
+	height: 100px;
+	*/
+	margin-top: 50px;
 	position: absolute;
   bottom: 0;
-	width: 100%;
+  width: 100%;
 }
 
 .menu-footer {
@@ -14,7 +22,7 @@ footer{
 	list-style: none;
 	margin: 0;
 	padding: 0;
-	height: 70px;
+	height: 100px;
 	display: flex;
 	justify-content: space-around;
 	 /* align-items: center; Centra los items verticalmente (aunque solo el texto) */
