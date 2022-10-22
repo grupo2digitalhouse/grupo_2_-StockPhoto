@@ -58,6 +58,9 @@ header{
 	 flex: 8;
 }
 
+/*Esto aplica sólo a display:block, pero es un adicional para hacer, que es que se pueda hacer click en todo el elemento:
+https://stackoverflow.com/questions/8160494/how-to-make-a-whole-div-clickable-in-html-and-css-without-javascript
+*/
 .navigation a {
 	color: white;
 	letter-spacing: 2px;

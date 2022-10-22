@@ -3,6 +3,11 @@
 	src: url('../fonts/made-tommy-regular.otf'); 
 }
 
+@font-face {
+	font-family: "cocogothic";
+	src: url('../fonts/CocoGothic-Regular.ttf');
+}
+
 * {
 	margin: 0px;
 	padding: 0px;
