@@ -19,6 +19,11 @@ window.onload = function(){
             errores.push("La foto debe ser cargada");
         } 
 
+        let category = document.querySelectorAll(".myCheckBox:checked");
+        if(category.length == 0){
+            errores.push("Debes seleccionar al menos 1 categoria");
+        } 
+
         let price = document.querySelector("[name='price']");
         if(price.value < 0){
             errores.push("El precio debe ser mayor a 0");

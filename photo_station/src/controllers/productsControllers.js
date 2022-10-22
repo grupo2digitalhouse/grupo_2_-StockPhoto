@@ -1,3 +1,4 @@
+const { request } = require('http');
 const path = require('path');
 const db = require('../database/models/index');
 
@@ -29,32 +30,57 @@ const productsControllers = {
             //res.send(category)
         res.render(path.resolve(__dirname,'../views/products/product.ejs'), {'category': category})
         })
-},
+        },
 
     guardar: async (req, res) => {
-            //tomo los datos del formulario
-             const {
-                name,
-                description,
-                image,
-                price,
-             } = req.body;
-         
-             const newProduct = {
-                name,
-                description,
-                image: req.file? req.file.filename: image,
-                price,
-             }
-             try {
-                 // de la base de datos db, accede a la tabla y hace un create
-                 await db.Product.create(newProduct);
-                 res.redirect('/product/List')
-                 // si creo el formulario muestra todas las peliculas
-             } catch (error) {
+        try{
+            let {
+                    name, 
+                    description,
+                    image,
+                    price,
+                    category,
+            } = req.body;    
+
+            //si es 1 string
+            //si son 2 o mas object
+            if(typeof(category) == 'object'){
+                let newProduct= await db.Product.create({
+                    name, 
+                    description,
+                    image: req.file? req.file.filename: image.req.body ,
+                    price,
+                })
+                console.log(category);
+                category.forEach(id => {
+                    newProduct.addCategory(id);
+                });
+
+            }
+
+            if(typeof(category) == "string"){
+                let newProduct= await db.Product.create({
+                        name, 
+                        description,
+                        image: req.file? req.file.filename: image.req.body ,
+                        price,
+                })
+
+                let codCategory = await db.Category.findAll({
+                        where:{
+                               id: category, 
+                        }
+                })
+
+                newProduct.addCategory(codCategory);
+            }            
+            res.redirect('/product/List')
+        
+        } catch (error) {
                  console.log(error);
              } 
-         },
+
+        },
 
     edit: async (req,res)=>{
             const product = await db.Product.findByPk(req.params.id);

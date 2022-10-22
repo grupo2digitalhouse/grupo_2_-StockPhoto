@@ -28,17 +28,44 @@
                     <input type="file" name="image">
                 </div>
 
-                <div>
-                    <label for="">Categoria</label>
-                    <select name ="category">
-                        <% for (let i = 0; i < category.lenght; i++) { %>
-                        <option value="<%=category[i].id%>">
-                            <%=category[i].category_name %>
-                         
-                        </option>
-                       
-                        <% } %>
-                    </select>
+                <div>            
+                    <label for="">
+                        paisaje
+                        <input type="checkbox" name="category" value="1" class="myCheckBox">
+                    </label>
+                    <label for="">
+                        moda
+                        <input type="checkbox" name="category" value="2" class="myCheckBox">                       
+                    </label>
+                    <label for="">
+                        comida
+                        <input type="checkbox" name="category" value="3" class="myCheckBox">                        
+                    </label>
+                    <label for="">
+                        animales
+                        <input type="checkbox" name="category" value="4" class="myCheckBox">                   
+                    </label>
+                    <label for="">
+                        personas
+                        <input type="checkbox" name="category" value="5" class="myCheckBox">                        
+                    </label>
+                    <label for="">
+                        varios
+                        <input type="checkbox" name="category" value="6" class="myCheckBox">                     
+                    </label>
+                    <label for="">
+                        deportes
+                        <input type="checkbox" name="category" value="7" class="myCheckBox">            
+                    </label>
+                    <label for="">
+                        blanco y negro
+                        <input type="checkbox" name="category" value="8" class="myCheckBox">                       
+                    </label>
+                    <label for="">
+                        arquitectura
+                        <input type="checkbox" name="category" value="9" class="myCheckBox">                 
+                    </label>
+
                  </div>  
                  <div>
                     <label for="">Precio</label>
