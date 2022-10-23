@@ -27,6 +27,9 @@ module.exports=(sequelize, dataTypes)=>{
             allowNull: false,
             //unique: true
         },
+        image: {
+            type: dataTypes.STRING,
+        },
         birthdate:{
             type:dataTypes.DATE
         },

@@ -2,9 +2,11 @@ const express = require('express');
 
 const multer = require('multer');
 const path = require('path');
+const { body } = require('express-validator');
 const userController = require('../controllers/userController');
 const router = express.Router();
 
+// config multer
 const storage = multer.diskStorage({
     destination: (req, file, cb) =>{
       cb(null, path.join(__dirname,'../../public/images/profile'))
@@ -15,23 +17,44 @@ const storage = multer.diskStorage({
     }
   });
 
-
 const upload = multer({ storage: storage })
 
-router.get('/register', userController.home); //carga formulario registro
-router.post('/register/crear', upload.single('image'), userController.guardar);
+const validations =[
+  
+  body('username').notEmpty().withMessage('Debe Completar el usuario'),
+  body('first_name').notEmpty().withMessage('Debe Completar el Nombre'),
+  body('last_name').notEmpty().withMessage('Debe Completar el Apellido'),
+  body('email').notEmpty().withMessage('Debe Completar el Email').bail()
+      .isEmail().withMessage('Debe ser un email valido'),
+  body('password').notEmpty().withMessage('Debe Completar la contraseña'),
+  
+     
+];
 
+const guestMiddleware = require('../middlewares/guestMiddleware');
+
+router.get('/register', guestMiddleware, userController.home); //carga formulario registro
+router.post('/register/crear', upload.single('image'), validations, userController.guardar);
+
+router.get('/usuarios', userController.userList); // lisatdo de usuarios
 router.get('/register/detail/:id',userController.detail); //ruta detalle
+
+
 
 router.get('/register/edit/:id', userController.edit);
 router.post('/register/edit/:id', userController.update); // actualiza
 
-router.post('/register/delete/:id', userController.borrar);
+router.post('/user/delete/:id', userController.borrar);
 
-router.get('/login', userController.login);
+//logueo
+router.get('/login', guestMiddleware, userController.login);
+router.post('/login', /*validateRegister,*/userController.logueado);
+router.get('/userProfile', userController.profile);
 
 
-//router.get('/product/list',productsControllers.productList);  // muestra lista de productos
+//out
+router.get('/logout', userController.logout);
+
 
 
 

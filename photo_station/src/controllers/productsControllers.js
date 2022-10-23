@@ -26,7 +26,7 @@ const productsControllers = {
     crear: (req, res) => {
         db.Category.findAll()
         .then(category => {
-            //res.send(category)
+           
         res.render(path.resolve(__dirname,'../views/products/product.ejs'), {'category': category})
         })
 },

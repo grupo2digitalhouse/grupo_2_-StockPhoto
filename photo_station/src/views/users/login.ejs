@@ -24,10 +24,26 @@
 
 
 
-        <div class="form">
-            <form class="login-form" method="GET" action="/profile">
-                <input type="text" placeholder="username" required/>
-                <input type="password" placeholder="password" required/>
+        <div class="form" >
+            <form class="login-form" method="POST" action="/login">
+
+                <input type="email" name="email" placeholder="Ingrese su Email">
+                <div class="text-danger">
+                    <% if ( locals.errors && errors.email){ %>
+                       <p> <%= errors.email.msg %> </p>
+                    
+                        <% } %>  
+                </div>
+
+                <input type="password" name="password"  placeholder="Ingrese su contraseña">
+                <div class="text-danger">
+                    <% if ( locals.errors && errors.password){ %>
+                       <p> <%= errors.password.msg %> </p>
+                    
+                        <% } %> 
+                     
+                </div>
+
                 <button>login</button>
                 <p class="message">Not registered? <a href="register">Create an account</a></p>
                 <p class="message"><a href="#">Forgot your password?</a></p>

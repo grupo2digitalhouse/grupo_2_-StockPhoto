@@ -26,21 +26,51 @@
 
         <div class="form">
             <form class="login-form" method="POST" action="/register/crear" enctype="multipart/form-data">   
+
                 <div>
                     <label for="">Ingresa tu nombre de Ususario</label>
-                    <input type="text" name="username">
+                    <input type="text" name="username"
+                           value="<%=locals.old && old.username? old.username :"" %> ">
+                            
+                        <div class="text-danger">
+                                    <% if ( locals.errors && errors.username){ %>
+                                        <p> <%= errors.username.msg %> </p>
+                                    <% } %> 
+                       </div>
+
                  </div>
                  <div>
                     <label for="">Ingresa tu nombre</label>
-                    <input type="text" name="first_name">
+                    <input type="text" name="first_name"
+                           value="<%=locals.old && old.first_name? old.first_name :"" %> ">
+                            
+                        <div class="text-danger">
+                                    <% if ( locals.errors && errors.first_name){ %>
+                                        <p> <%= errors.first_name.msg %> </p>
+                                    <% } %> 
+                       </div> 
                  </div>
                  <div>
                     <label for="">Ingresa tu Apellido</label>
-                    <input type="text" name="last_name">
+                    <input type="text" name="last_name"
+                           value="<%=locals.old && old.last_name? old.last_name :"" %> ">
+                            
+                    <div class="text-danger">
+                                <% if ( locals.errors && errors.last_name ){ %>
+                                    <p> <%= errors.last_name.msg %> </p>
+                                <% } %> 
+                   </div> 
                  </div>
                  <div>
                     <label for="">Ingresa tu Email</label>
-                    <input type="email" name="email">
+                    <input type="email" name="email"
+                           value="<%=locals.old && old.email? old.email :"" %> ">
+                            
+                    <div class="text-danger">
+                                <% if ( locals.errors && errors.email){ %>
+                                    <p> <%= errors.email.msg %> </p>
+                                <% } %> 
+                   </div>
                  </div>
                  <div>   
                     <label for="">Subi tu Foto de Perfil</label>
@@ -48,11 +78,16 @@
                 </div>
                  <div>
                     <label for="">Crea una contraseña</label>
-                    <input type="text" name="password">
+                    <input type="password" name="password">
+                    <div class="text-danger">
+                        <% if ( locals.errors && errors.password){ %>
+                            <p> <%= errors.password.msg %> </p>
+                        <% } %> 
                  </div>
+                </div>
                  <div>
                     <label for="">Comfirma tu contraseña</label>
-                    <input type="text">
+                    <input type="password">
                  </div>
             
 
