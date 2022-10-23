@@ -1,0 +1,74 @@
+footer{
+  /* Acá se puede ver cómo funciona la forma de ubicar tanto el main como el footer:
+	https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/ */
+	/*bottom: 0;
+	width: 100%;
+	position: absolute;
+	height: 100px;
+	*/
+	margin-top: 50px;
+	position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.menu-footer {
+	box-sizing: border-box;
+	margin: 0 auto;
+}
+
+.navigation-footer ul {
+	background: #B3D7D6; 
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	height: 100px;
+	display: flex;
+	justify-content: space-around;
+	 /* align-items: center; Centra los items verticalmente (aunque solo el texto) */
+}
+
+.navigation-footer li.bloque-footer{
+	font-family:  "made tommy";
+	font-size: 20px;
+	/* Pero para que además del texto, todo el elemento ocupe el alto, hay que hacer esto: 
+	 (ver acá: https://stackoverflow.com/questions/28254332/how-to-vertically-center-the-contents-of-a-flexbox-item)*/
+	display: flex;
+	align-self: stretch;
+}
+
+.navigation-footer div {
+	color: white;
+	letter-spacing: 2px;
+	text-decoration: none;
+	/* padding: 20px 0px;		/* Espacio del elemento de 20px arriba y abajo */
+	display: inline-block;	/* Un elemento junto a otro */
+	width: 100%;
+	text-align: center;
+}
+
+
+@media all and (max-width: 1000px) {
+	 .navigation-footer ul {
+		flex-wrap: wrap;
+	 }
+	/*
+	 .navigation li {
+		flex: 1 1 50%;
+	 }
+
+	 .navigation .user {
+		flex: 1 1 33.33%;
+	 }
+  */
+}
+
+@media all and (max-width: 480px) {
+	 .navigation-footer li {
+		flex-basis: 100%;
+	 }
+
+	 .navigation-footer .user {
+		flex-basis: 50%;
+	 }
+}

@@ -41,11 +41,10 @@ const controller = {
 
         .then(products => {
             return res.json({
-                // count: products.length,
+                count: products.length,
                 // countByCategory: category, 
-                data: products, //TODO: COMO MUESTRO LA CATEGORIA?
-                // category: products.category.category_name
-                // detail: TODO: URL DEL PRODUCTO 
+                data: products
+                // url: "http://localhost:3001/product/detail/" + product.id + "/" 
             })
         })
     },
@@ -61,7 +60,8 @@ const controller = {
         .then(product => {
             return res.json({
                 data: product,
-                //TODO: URL DE IMAGEN Y CATEGORIA
+                url: "http://localhost:3001/product/detail/" + product.id + "/"
+                //TODO: URL DE IMAGEN
             })
         })
     }

@@ -1,137 +1,81 @@
-/*TOP*/
-.top{
-    background-color: #b3d7d6;
-    box-shadow: 0px 0px 20px black;
-    color: #4d4d4f;
-    display: flex;
-    flex-wrap: wrap;
-    height:fit-content;
-    justify-content: space-between;
-    position: sticky;
-    width: 100%;
+html, body{
+	height: 100%;	/* Esto es fundamental para los elementos que ocupen la pantalla */
 }
-i.fa-solid.fa-bars{
-    color: #292929;
-    font-size: 30px;
-    margin: 12px 0px 0px 10px;
-}
-.logo{
-    margin: 4.5px 0px 0px 0px;
-    height: 40px;
-    justify-content: center;
-    position: absolute;
-}
-.right{
-    font-size: 25px;
-    justify-content: center;
-    margin: 4.5px 10px 0px 0px;
-}
-i.fa-solid.fa-bell{
-    color: #292929;
-    height: 40px;
-    margin-top: 10px;
-    width:fit-content;
-}
-i.fa-solid.fa-cart-shopping{
-    color: #292929;
-    height: 40px;
-    margin-top: 10px;
-    width:fit-content;
-}
-i.fa-solid.fa-user{
-    color: #292929;
-    height: 40px;
-    margin-top: 10px;
-    position: relative;
-    width:fit-content;
+
+body{
+	background-color: #e3e7e8;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 /* form */
-
 .form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    min-height: 78.2vh;
+	padding-top: 50px;
+	box-sizing: border-box;	/* Con esto los padding no suman espacio al objeto */
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */	
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	padding-bottom: 150px; /* Con esto evitamos que se superponga con el footer */
+    
+	
+	/* versión anterior: centrada en la página
+	margin-top: 70px; /* Compensa de los -70px del header, que se usan para que éste no ocupe parte del 100% del height total */
+	/*height: 100%;	/* Para poder centrarlo, le decimos que el form ocupa verticalmente lo mismo que el body y html, ya definidos en 100% */
+	/*display: flex;
+	justify-content: center;
+	align-items: center;*/
 }
 
 .login-form{
-    position: relative;
-    z-index: 1;
-    background: #FFFFFF;
-    max-width: 360px;
-    padding: 45px;
-    text-align: center;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+	position: relative;
+	z-index: 1;
+	background: #FFFFFF;
+	max-width: 360px;
+	padding: 45px;
+	text-align: center;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 
 .form input {
-    font-family: "Roboto", sans-serif;
-    outline: 0;
-    background: #f2f2f2;
-    width: 100%;
-    border: 0;
-    margin: 0 0 15px;
-    padding: 15px;
-    box-sizing: border-box;
-    font-size: 14px;
+	font-family: "made tommy";
+	outline: 0;
+	background: #f2f2f2;
+	width: 100%;
+	border: 0;
+	margin: 0 0 15px;
+	padding: 15px;
+	box-sizing: border-box;
+	font-size: 14px;
 }
 
 .form button {
-    font-family: "Roboto", sans-serif;
-    text-transform: uppercase;
-    outline: 0;
-    background: #B3D7D6;
-    width: 100%;
-    border: 0;
-    padding: 15px;
-    color: #460707;
-    font-size: 14px;
-    -webkit-transition: all 0.3 ease;
-    transition: all 0.3 ease;
-    cursor: pointer;
+	font-family: "made tommy";
+	/* text-transform: uppercase; */
+	outline: 0;
+	background: #B3D7D6;
+	width: 100%;
+	border: 0;
+	padding: 15px;
+	color: white;
+	font-size: 20px;
+	-webkit-transition: all 0.3 ease;
+	transition: all 0.3 ease;
+	cursor: pointer;
 }
   
 .form button:hover,.form button:active,.form button:focus {
-    background: #f3c42f;
+	background: #f3c42f;
 }
   
 .form .message {
-    margin: 15px 0 0;
-    color: #b3b3b3;
-    font-size: 12px;
+	margin: 15px 0 0;
+	color: #b3b3b3;
+	font-size: 12px;
 }
   
 .form .message a {
-    color: #B3D7D6;
-    text-decoration: none;
-}
-
-body {
-    background-color: #e3e7e8;
-    font-family: "Roboto", sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;      
-}
-
-  
-/*FOOTER*/
-.footer-box{
-    background-color: black;
-    box-shadow: 0px 0px 20px black;
-    display: flex;
-    flex-wrap: wrap;
-    height: 150px;
-    justify-content: center;
-    width: 100%;
-}
-.linea{
-    background-color: gray;
-    height: 1px;
-    margin-top: 20px;
-    width: 90%;
-}
-.logoFooter{
-    height: 40px;
+	color: #B3D7D6;
+	text-decoration: none;
 }
