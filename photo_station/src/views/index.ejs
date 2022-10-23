@@ -1,152 +1,135 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css">
-  <title>PStation</title>
-</head>
+	<head>
+		<meta charset="UTF-8">
+		<title>Photo Station</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+			rel="stylesheet">
+			<link rel="icon" type="image/png" href="images/photostation-isotipo.png"/>
+		<link rel="stylesheet" href="/css/normalize.css">
+		<link rel="stylesheet" href="/css/style.css">
+	</head>
 
 <body>
-  <header>
-    <div class="top-header">
-     
-   
- 
-      <ul class="right">
-        <li><a href="/register">Creá tu cuenta </a></li>
-        <li><a href="/login">Ingresá </a></li>
-        <li><a href="#"> <i class="fas fa-shopping-basket"></i></a></li>
-      </ul>
-    </nav>
-  
+	<div id="page-container">
+		<header>
+			<%- include("./partials/header") %>
+		</header>
 
+		<main>
+			<section class="banner">
+				<img src="images/Atardeceres-e1439417512261.jpg" alt="Banner">
+				<input class='buscador-box' type="text" placeholder=" Busca tus imagenes ideales">
+			</section>
+		
+			<section class="fotosDestacadas">
+				<h3>Encontrá el contenido para tus proyectos</h3>
 
+				<div class="products">
+					<article>
+						<img src="images/muneco-de-nieve.jpg" alt="Muñeco" class="product_img">
+						<div class="main-article">
+							<div class="categoriaImagen">
+								<p class="nombreCategoria">Vacaciones de Invierno</p>
+							</div>
+						</div>
+					</article>
 
-  </header>
-  <section class="banner">
-    <img src="images/Atardeceres-e1439417512261.jpg" alt="Banner">
+					<article>
+						<img src="images/6-beneficios-del-cafe-para-tu-salud-que-quiza-no-conozcas_777423ca_1024x576.jpg" alt="cafe" class="product_img">
+						<div class="main-article">
+							<div class="categoriaImagen">
+								<p class="nombreCategoria">Estilo de Vida</p>
+							</div>
+						</div>
+					</article>
 
-    <input class='buscador-box' type="text" placeholder=" Busca tus imagenes ideales">
+					<article>
+						<img src="images/_103520143_gettyimages-908714708.jpg" alt="gato" class="product_img">
+						<div class="main-article">
+							<div class="categoriaImagen">
+								<p class="nombreCategoria">Mascotas</p>
+							</div>
+						</div>
+					</article>
 
- 
-  </section>
-  
-  <main>
-    <section class="fotosDestacadas">
-      <h3>Encontra el contenido para tus proyectos</h3>
+					<article>
+						<img src="images/covid.jpg" alt="covid" class="product_img">
+						<div class="main-article">
+							<div class="categoriaImagen">
+								<p class="nombreCategoria">covid</p>
+							</div>
+						</div>
+					</article>
+				</div>
+			</section>
 
-      <div class="products">
+			<section class="categorias">
+				<h3>Explorá nuestro Catálogo</h3>
+				<div class="products">
+					<article>
+						<img src="images/cultura-de-moda-que-es-1.jpg.webp" alt="moda" class="product_img">
+						<div class="main-article">
+							<div class="categoriaImagen">
+								<p class="nombreCategoria">Moda</p>
+							</div>
+						</div>
+					</article>
 
-        <article>
-          <img src="images/muneco-de-nieve.jpg" alt="Muñeco" class="product_img">
-          <div class="main-article">
-            <div class="categoriaImagen">
-              <p class="nombreCategoria">Vacaciones de Invierno</p>
-            </div>
-          </div>
-        </article>
+					<article>
+						<img src="images/comida.jpg" alt="comida" class="product_img">
+						<div class="main-article">
+							<div class="categoriaImagen">
+								<p class="nombreCategoria">Comida</p>
+							</div>
+						</div>
+					</article>
 
-        <article>
-          <img src="images/6-beneficios-del-cafe-para-tu-salud-que-quiza-no-conozcas_777423ca_1024x576.jpg" alt="cafe" class="product_img">
-          <div class="main-article">
-            <div class="categoriaImagen">
-              <p class="nombreCategoria">Estilo de Vida</p>
-            </div>
-          </div>
-        </article>
+					<article>
+						<img src="images/naturaleza.jpg" alt="naturaleza" class="product_img">
+						<div class="main-article">
+							<div class="categoriaImagen">
+								<p class="nombreCategoria">Naturaleza</p>
+							</div>
+						</div>
+					</article>
 
-        <article>
-          <img src="images/_103520143_gettyimages-908714708.jpg" alt="gato" class="product_img">
-          <div class="main-article">
-            <div class="categoriaImagen">
-              <p class="nombreCategoria">Mascotas</p>
-            </div>
-          </div>
-        </article>
+					<article>
+						<img src="images/deportes.jpg" alt="deportes" class="product_img">
+						<div class="main-article">
+							<div class="categoriaImagen">
+								<p class="nombreCategoria">Deportes</p>
+							</div>
+						</div>
+					</article>
 
-        <article>
-          <img src="images/covid.jpg" alt="covid" class="product_img">
-          <div class="main-article">
-            <div class="categoriaImagen">
-              <p class="nombreCategoria">covid</p>
-            </div>
-          </div>
-        </article>
-      </div>
-    </section>
+					<article>
+						<img src="images/blanco.jpg" alt="blanco" class="product_img">
+						<div class="main-article">
+							<div class="categoriaImagen">
+								<p class="nombreCategoria">Blanco y Negro</p>
+							</div>
+						</div>
+					</article>
 
-    <section class="categorias">
-      <h3>Explora nuestro Catalogo</h3>
-      <div class="products">
-        <article>
-          <img src="images/cultura-de-moda-que-es-1.jpg.webp" alt="moda" class="product_img">
-          <div class="main-article">
-            <div class="categoriaImagen">
-              <p class="nombreCategoria">Fotos de Moda</p>
-            </div>
-          </div>
-        </article>
-
-        <article>
-          <img src="images/comida.jpg" alt="comida" class="product_img">
-          <div class="main-article">
-            <div class="categoriaImagen">
-              <p class="nombreCategoria">Fotos de Comida</p>
-            </div>
-          </div>
-        </article>
-
-        <article>
-          <img src="images/naturaleza.jpg" alt="naturaleza" class="product_img">
-          <div class="main-article">
-            <div class="categoriaImagen">
-              <p class="nombreCategoria">Fotos de Naturaleza</p>
-            </div>
-          </div>
-        </article>
-
-        <article>
-          <img src="images/deportes.jpg" alt="deportes" class="product_img">
-          <div class="main-article">
-            <div class="categoriaImagen">
-              <p class="nombreCategoria">Fotos de Deportes</p>
-            </div>
-          </div>
-        </article>
-
-        <article>
-          <img src="images/blanco.jpg" alt="blanco" class="product_img">
-          <div class="main-article">
-            <div class="categoriaImagen">
-              <p class="nombreCategoria">Fotos Blanco y Negro</p>
-            </div>
-          </div>
-        </article>
-
-        <article>
-          <img src="images/negocios.webp" alt="negocios" class="product_img">
-          <div class="main-article">
-            <div class="categoriaImagen">
-              <p class="nombreCategoria">Fotos de Negocios y Finanzas</p>
-            </div>
-          </div>
-        </article>
-
-
-      </div>
-    </section>
-  </main>
-  <footer>
-    
-  </footer>
-
+					<article>
+						<img src="images/negocios.webp" alt="negocios" class="product_img">
+						<div class="main-article">
+							<div class="categoriaImagen">
+								<p class="nombreCategoria">Negocios y Finanzas</p>
+							</div>
+						</div>
+					</article>
+				</div>
+			</section>
+		</main>
+		
+		<footer>
+			<%- include("./partials/footer") %>
+		</footer>
+	</div>
 </body>
 
 </html>
-
