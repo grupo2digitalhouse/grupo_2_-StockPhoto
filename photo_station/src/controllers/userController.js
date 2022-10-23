@@ -28,7 +28,10 @@ const userController = {
             last_name,
             email,
             image,
-            //password,           
+            birthdate,
+            id_country,
+            website,
+                       
          } = req.body;
 
          const newUser = {
@@ -37,6 +40,9 @@ const userController = {
             last_name,
             email,
             image: req.file? req.file.filename: image,
+            birthdate,
+            id_country,
+            website,
             password: bcryptjs.hashSync(req.body.password, 10),
          }
         
@@ -50,33 +56,7 @@ const userController = {
 
 
      
-    /*guardar: async (req, res) => {
-        let userInDB = await db.User.findOne({ where:{email: req.body.email}})
-        if(userInDB){
-            return res.render(path.resolve(__dirname,'../views/users/register.ejs'),{errors:{email:{msg:'Este usuario ya exste'}
-        },
-    old:req.body});
-    }
-    const errores = validationResult(req);
-        
-    if(errores.isEmpty()){
-        db.User.create({
-            username: req.body.username,
-            first_name: req.body.first_name,
-            last_name: req.body.last_name,
-            email: req.body.email,
-            image: req.file? req.file.filename: image,
-            password: bcryptjs.hashSync(req.body.password, 10)
-        });  
-       
-        return res.redirect('/login')
-    }else{      // Hay errores, volvemos al formulario con los mensajes
-        res.render(path.join(__dirname, '../views/users/register.ejs'), {
-            errors :errores.mapped(), old:req.body });
-   }
-},*/
-
-
+    
      login: (req, res) => {
         res.render(path.resolve(__dirname,'../views/users/login.ejs'));
     },
@@ -101,17 +81,23 @@ const userController = {
      
     },
 
+   
      update: async (req, res) => {
         const {
-            password,
             image,
+            id_country,
+            birthdate,
+            website,
         } = req.body;
     
         try {
             await db.User.update(
-                { 
-                    password,
-                    image: req.file? req.file.filename: image,
+                {   
+                    password: bcryptjs.hashSync(req.body.password, 10),
+                     image: req.file ? req.file.filename : image,
+                    id_country,
+                    birthdate,
+                    website,
                 },
                 {
                     where: { // filtro del update
@@ -134,7 +120,7 @@ const userController = {
                     id: req.params.id
                 }
             });
-            // se puede poner una vista q diga se elimino 
+            
             res.redirect('/usuarios');
            
         } catch (error) {

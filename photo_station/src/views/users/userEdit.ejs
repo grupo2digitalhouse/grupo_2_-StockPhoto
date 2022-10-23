@@ -1,45 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>PStation-Login</title>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="https://kit.fontawesome.com/635bf43688.js" crossorigin="anonymous"></script>
-        <link rel="icon" type="image/png" href="images/photostation-isotipo.png"/>
-        <link rel="stylesheet", href="/css/normalize.css">
-        <link rel="stylesheet", href="/css/cambioContrasena.css">
-    </head>
+<html lang="es">
 
-    <body>
-        <section class="top">
-            <a href="http://localhost:3000/offer"><i class="fa-solid fa-bars"></i></a>
-            <a href="http://localhost:3000/"><img class="logo" src="../images/photostation-isotipo.png" alt="logoSuperior"></a>
-            <div class="right">
-                <a href="#"><i class="fa-solid fa-bell"></i></a>
-                <a href="http://localhost:3000/cart"><i class="fa-solid fa-cart-shopping"></i></a>
-                <a href="#"><i class="fa-solid fa-user"></i></a>
-            </div>
-        </section>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="titulo">Editar Foto</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+    
 
 <body>
   
     <h1 class="titulo">Edita tus datos:  <%=  user.username %></h1>
     <section class="formulario">
-        <form action="/register/edit/<%= user.id %>" method="POST" enctype="multipart/form-data"></form>>
+        <form action="/register/edit/<%= user.id %>" method="POST" enctype="multipart/form-data">
 
-         
+        <label for="">Cambia una contraseña</label>
+        <input type="password" name="password"> </p>
+
+        <label for="">Cambia tu Foto de Perfil</label>
+        <input type="file" name="image"> </p>
            
-            <label for="">Ingresa nueva contraseña</label>
-            <input type="password" name="password" id="password" ></p>
-            <label for="">Confirma la contraseña</label>
-            <input type="password" name="password" id="password"> </p>
-            <label for="">Cambia tu Foto de Perfil</label>
-                <input type="file" name="image">
+            <label for="">Cambia tu pais</label>
+            <input type="text" name="id_country" id="id_country" ></p>
+
+            <label for="">Cambia tu fecha de Nacimiento</label>
+            <input type="date" name="birthdate" id="birthdate"> </p>
+
+
+            <label for="">Cambia tu website</label>
+                <input type="text" name="website" id="website"> </p>
             </div>
             <br>
             <p> <button class="botonAgregar" type="submit">Actualizar</button>
         
+                <a  class="botonVolver" href="/">Pagina Principal</a></p>
             
         </form>
     </section>

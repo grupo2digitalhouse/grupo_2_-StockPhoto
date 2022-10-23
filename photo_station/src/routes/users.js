@@ -19,6 +19,7 @@ const storage = multer.diskStorage({
 
 const upload = multer({ storage: storage })
 
+
 const validations =[
   
   body('username').notEmpty().withMessage('Debe Completar el usuario'),
@@ -36,13 +37,13 @@ const guestMiddleware = require('../middlewares/guestMiddleware');
 router.get('/register', guestMiddleware, userController.home); //carga formulario registro
 router.post('/register/crear', upload.single('image'), validations, userController.guardar);
 
-router.get('/usuarios', userController.userList); // lisatdo de usuarios
+router.get('/usuarios', userController.userList); // listado de usuarios
 router.get('/register/detail/:id',userController.detail); //ruta detalle
 
 
 
 router.get('/register/edit/:id', userController.edit);
-router.post('/register/edit/:id', userController.update); // actualiza
+router.post('/register/edit/:id', upload.single('image'), userController.update); // actualiza
 
 router.post('/user/delete/:id', userController.borrar);
 
