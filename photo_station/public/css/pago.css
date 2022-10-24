@@ -6,7 +6,7 @@ gris claro: #E3E7E8*/
 
 #box-general {	/* Box principal*/
 	height: 600px;
-	width: 90vw;
+	width: 70vw;
 	margin: auto;
 	margin-top: 50px;
 	display: flex;
@@ -74,12 +74,6 @@ gris claro: #E3E7E8*/
 	display: flex;
 }
 
-#box-imagen img{	/* Se centra la imagen en el div, que se reescalará al contenido	 */
-	max-width: 90%;
-	height: auto;
-	margin: auto;
-	margin-top: 0px;
-}
 #descripcion{
 	background: #E3E7E8;
 }
@@ -91,12 +85,15 @@ gris claro: #E3E7E8*/
 	height: auto;
 	margin: 0px 10px 10px;
 	border-radius: 5px;
-	padding: 10px;
+	padding: 20px;
 }
 
-#descripcion>div{
+.metodo_titulo{
+	font-size: 18px;
+}
+
+#descripcion>div, #metodos-pago>div{
 	padding-bottom: 15px;
-	font-size: 25px;
 	text-align: left;
 	margin-left: 20px;
 	font-family: "cocogothic";
@@ -107,10 +104,107 @@ gris claro: #E3E7E8*/
 	font-weight: bold;
 }
 
-#categorias-box .categoria, .metodo{
-	font-size: 18px;
-	text-align: left;
-	line-height: 25px;
+#titulo-imagen>span{
+	font-size: 30px !important;
+}
+
+#precio{
+	font-size: 25px;
+	display: flex;
+	justify-content: space-between;
+	
+}
+
+.metodo{
+	align-items: center;
+	border-radius: 0.3em;
+	display: flex;
+	flex-wrap: nowrap;
+	height: 60px;
+	justify-content: flex-start;
+	width: 100%;
+	padding: 10px;
+}
+
+.metodo>*{
+	margin-right: 10px;
+}
+
+.metodo:hover{
+	background-color: #F3C42F;
+	border: 1px solid #59a4ff;
+	cursor: pointer;
+	transition: 200ms;
+}
+
+.numero-tarjeta, .fecha-seguridad{
+	width: 90%;
+	align-self: center;
+}
+
+.numero-tarjeta{
+	display: flex;
+	justify-content: center;
+	margin: 5px;
+	
+}
+
+.numero-tarjeta label {
+	flex-grow: 1;
+}
+
+.box_numero_tarjeta{
+	background-color: white;
+	border: 1px solid rgb(219, 219, 219);
+	border-radius: 0.2em;
+	height: 45px;
+	width: 100%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+label[for=fechaVencimiento]{
+	flex-grow: 15;
+}
+
+label[for=numeroSeguridad]{
+	flex-grow: 1;
+}
+
+.fecha-seguridad{
+	display: flex;
+	justify-content: center;
+	margin: 5px;
+}
+
+.fecha-seguridad label input{
+	width: 100%;
+}
+
+.box_fecha_vencimiento{
+	background-color: white;
+	border: 1px solid rgb(219, 219, 219);
+	border-radius: 0.2em;
+	height: 45px;
+	margin-right: 8px;
+
+}
+
+.box_numero_seguridad{
+	background-color: white;
+	border: 1px solid rgb(219, 219, 219);
+	border-radius: 0.2em;
+	height: 45px;
+
 }
 
 #categorias-box .categoria i{
@@ -150,8 +244,12 @@ button:hover{
 	background-color: #F3C42F;
 }
 
-.boton-borrado:hover{
-	background-color: red;
+button span{
+	font-size: 18px;
+}
+
+.boton-anterior{
+	visibility: hidden;
 }
 
 

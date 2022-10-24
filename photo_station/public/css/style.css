@@ -341,11 +341,14 @@ form.formRegistro input[type="date"] {
 input {
 	border: 2px solid currentcolor;
 }
+
+/*
 input:invalid {
 	border: 2px dashed red;
 }
+*/
 input:invalid:focus {
-	background-color: red;
+	background-color: #ffd4cc;
 	content: "Insuficientes caracteres";
 	color: black;
 }

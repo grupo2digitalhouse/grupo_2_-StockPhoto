@@ -423,7 +423,7 @@ i.fa-regular-fa-circle-question{
 	*/
 	#box-general {	/* Box principal*/
 		height: 600px;
-		width: 90vw;
+		width: 70vw;
 		margin: auto;
 		margin-top: 50px;
 		display: flex;
@@ -506,7 +506,7 @@ i.fa-regular-fa-circle-question{
 		height: auto;
 		margin: 0px 10px 10px;
 		border-radius: 5px;
-		padding: 10px;
+		padding: 20px;
 	}
 
 	#descripcion>div{
@@ -559,6 +559,10 @@ i.fa-regular-fa-circle-question{
 		-webkit-transition: all 0.3 ease;
 		transition: all 0.3 ease;
 		cursor: pointer;
+	}
+
+	button span{
+		font-size: 18px;
 	}
 
 	button:hover{

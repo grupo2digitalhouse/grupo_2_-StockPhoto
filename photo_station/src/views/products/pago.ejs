@@ -32,7 +32,7 @@
 								<div class="titulo">Método de pago</div>
 								<div class="metodo">
 									<label for="eleccion_metodo">
-										<input type="radio" name="eleccion_metodo1" value="eleccion_metodo">
+										<input type="radio" name="eleccion_metodo" value="eleccion_metodo">
 									</label>
 									<div class="metodo_titulo">Tarjetas de crédito</div>
 									<i class="fa-brands fa-cc-visa"></i>
@@ -40,27 +40,48 @@
 									<i class="fa-brands fa-cc-amex"></i>
 									<i class="fa-solid fa-ellipsis"></i>
 								</div>
+								<div class="metodo">
+									<label for="eleccion_metodo">
+										<input type="radio" name="eleccion_metodo" value="eleccion_metodo">
+									</label>
+									<div class="metodo_titulo">Otros métodos de pago</div>
+									<i class="fa-brands fa-cc-paypal"></i>
+									<i class="fa-solid fa-ellipsis"></i>
+								</div>
+
+								<form action=""  method="POST" class="numero-tarjeta">
+									<label for="numeroTarjeta">
+										<input class="box_numero_tarjeta" type="number" id="numeroTarjeta" placeholder="Número de tarjeta" required>
+									</label>
+								</form>
+								<form action=""  method="POST" class="fecha-seguridad">
+									<label for="fechaVencimiento">
+										<input class ="box_fecha_vencimiento" type="date" class="fecha_vencimiento" id="fechaVencimiento" placeholder="Fecha de vencimiento" required>
+									</label>
+									<label for="numeroSeguridad">
+										<input class="box_numero_seguridad" type="number" class="numero_seguridad" id="numeroSeguridad" placeholder="CVC/CVV" required>
+									</label>                
+								</form>
 							</div>
-						</div>
+
+							
+						</div>	
 						
 						<div id="box-descripcion">
 							<div id="descripcion">
-								
-								<div class="titulo">Título de imagen</div>
-								
-								<div class="info_box">
-									<p id="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero illum dolor sunt consectetur quisquam delectus molestias ipsam provident voluptates perferendis totam eligendi consequatur quod, fuga repellendus a temporibus voluptatibus amet?</p>
+								<div class="titulo">Resumen de tu pedido</div>
+
+								<div id="titulo-imagen"><span>Título de imagen</span>
 								</div>
 
-								<div id="categorias-box">Categorías
-									<div class="categoria"><i class="fa-solid fa-circle-dot"></i>Naturaleza</div>
-									<div class="categoria"><i class="fa-solid fa-circle-dot"></i>Free</div>
-									<div class="categoria"><i class="fa-solid fa-circle-dot"></i>Estilo de vida</div>
+								<div id="precio">
+									<div>Total:</div>
+									<div>$800</div>
 								</div>
 
 								<div id="botones">
-									<button class="boton-borrado" type="button" name="boton_borrado" id="boton_borrado"><span>Cancelar</span></button>
-									<button class="boton-pago" type="button" name="boton_pago" id="boton_pago"><span>Continuar</span></button>
+									<button class="boton-anterior" type="button" name="boton_anterior" id="boton_anterior"><span>Anterior</span></button>
+									<button class="boton-pago" type="button" name="boton_pago" id="boton_pago"><span>Finalizar pago</span></button>
 								</div>
 							</div>	
 						</div>
