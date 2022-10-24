@@ -28,6 +28,9 @@ module.exports=(sequelize, dataTypes)=>{
             allowNull: false,
             unique: true
         },
+        image: {
+            type: dataTypes.STRING,
+        },
         birthdate:{
             type:dataTypes.DATE
         },
@@ -36,6 +39,10 @@ module.exports=(sequelize, dataTypes)=>{
         },
         website:{
             type:dataTypes.STRING
+        },
+        password:{
+            type:dataTypes.STRING,
+            allowNull: false,
         },
 
     };

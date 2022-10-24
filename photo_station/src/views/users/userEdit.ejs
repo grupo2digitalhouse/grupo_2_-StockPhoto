@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="titulo">Editar Foto</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+    
+
+<body>
+  
+    <h1 class="titulo">Edita tus datos:  <%=  user.username %></h1>
+    <section class="formulario">
+        <form action="/register/edit/<%= user.id %>" method="POST" enctype="multipart/form-data">
+
+        <label for="">Cambia una contraseña</label>
+        <input type="password" name="password"> </p>
+
+        <label for="">Cambia tu Foto de Perfil</label>
+        <input type="file" name="image"> </p>
+           
+            <label for="">Cambia tu pais</label>
+            <input type="text" name="id_country" id="id_country" ></p>
+
+            <label for="">Cambia tu fecha de Nacimiento</label>
+            <input type="date" name="birthdate" id="birthdate"> </p>
+
+
+            <label for="">Cambia tu website</label>
+                <input type="text" name="website" id="website"> </p>
+            </div>
+            <br>
+            <p> <button class="botonAgregar" type="submit">Actualizar</button>
+        
+                <a  class="botonVolver" href="/">Pagina Principal</a></p>
+            
+        </form>
+    </section>
+</body>
+
+</html>

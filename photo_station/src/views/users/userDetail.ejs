@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= user.username %> </title>
+    <link rel='stylesheet' href='/css/style.css' />
+
+</head>
+<body>
+    
+    <h1><%= user.username %> </h1>    
+    <br>
+    
+    <img src="/images/profile/<%= user.image %>">
+    <br>
+    <p>Nombre : <%= user.first_name %> </p>
+    <p>Apellido: <%= user.last_name %> </p>
+    <p>Email: <%= user.email %> </p>
+
+    
+    <br>
+    <a href="/register/edit/<%= user.id %>">Editar</a>
+    <form action="/user/delete/<%= user.id %>" method="POST">
+        <button type="submit" >Eliminar</button>
+    </form>
+</body>
+</html>
