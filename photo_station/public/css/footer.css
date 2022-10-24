@@ -21,7 +21,7 @@ footer{
 	background: #B3D7D6; 
 	list-style: none;
 	margin: 0;
-	padding: 0;
+	padding-top: 10px;
 	height: 100px;
 	display: flex;
 	justify-content: space-around;

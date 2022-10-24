@@ -1,83 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>PStation-Crear</title>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="https://kit.fontawesome.com/635bf43688.js" crossorigin="anonymous"></script>
-        <link rel="icon" type="image/png" href="images/photostation-isotipo.png"/>
-        <link rel="stylesheet", href="/css/normalize.css">
-        <link rel="stylesheet", href="/css/register.css">
-    </head>
+	<head>
+		<meta charset="UTF-8">
+		<title>Photo Station / Producto</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://kit.fontawesome.com/635bf43688.js" crossorigin="anonymous"></script>
+		<link rel="icon" type="image/png" href="images/photostation-isotipo.png"/>
+		<link rel="stylesheet", href="/css/normalize.css">
+		<link rel="stylesheet" href="/css/style.css">
+		<link rel="stylesheet", href="/css/register.css">
+	</head>
 
     <body>
+        <div id="page-container">
+			<header>
+				<%- include("../partials/header") %>
+			</header>
 
-        <div class="form"> 
-            <form class="login-form" method="POST" action="/product/crear" enctype="multipart/form-data">
-                 <div>
-                    <label for="">Nombre de la foto</label>
-                    <input id="name" type="text" name="name">
-                 </div>
-                 <div>
-                    <label for="">Descripcion</label>
-                    <input type="text" name="description">
-                </div>
-                <div>   
-                    <label for="">Subi tu Iamgen</label>
-                    <input type="file" name="image">
-                </div>
+                    <div class="form"> 
+                        <form class="login-form" method="POST" action="/product/crear" enctype="multipart/form-data">
+                            <div>
+                                <label for="">Nombre de la foto</label>
+                                <input id="name" type="text" name="name">
+                            </div>
+                            <div>
+                                <label for="">Descripcion</label>
+                                <input type="text" name="description">
+                            </div>
+                            <div>   
+                                <label for="">Subi tu Iamgen</label>
+                                <input type="file" name="image">
+                            </div>
 
-                <div>            
-                    <label for="">
-                        paisaje
-                        <input type="checkbox" name="category" value="1" class="myCheckBox">
-                    </label>
-                    <label for="">
-                        moda
-                        <input type="checkbox" name="category" value="2" class="myCheckBox">                       
-                    </label>
-                    <label for="">
-                        comida
-                        <input type="checkbox" name="category" value="3" class="myCheckBox">                        
-                    </label>
-                    <label for="">
-                        animales
-                        <input type="checkbox" name="category" value="4" class="myCheckBox">                   
-                    </label>
-                    <label for="">
-                        personas
-                        <input type="checkbox" name="category" value="5" class="myCheckBox">                        
-                    </label>
-                    <label for="">
-                        varios
-                        <input type="checkbox" name="category" value="6" class="myCheckBox">                     
-                    </label>
-                    <label for="">
-                        deportes
-                        <input type="checkbox" name="category" value="7" class="myCheckBox">            
-                    </label>
-                    <label for="">
-                        blanco y negro
-                        <input type="checkbox" name="category" value="8" class="myCheckBox">                       
-                    </label>
-                    <label for="">
-                        arquitectura
-                        <input type="checkbox" name="category" value="9" class="myCheckBox">                 
-                    </label>
+                            <div>            
+                                <label for="">
+                                    paisaje
+                                    <input type="checkbox" name="category" value="1" class="myCheckBox">
+                                </label>
+                                <label for="">
+                                    moda
+                                    <input type="checkbox" name="category" value="2" class="myCheckBox">                       
+                                </label>
+                                <label for="">
+                                    comida
+                                    <input type="checkbox" name="category" value="3" class="myCheckBox">                        
+                                </label>
+                                <label for="">
+                                    animales
+                                    <input type="checkbox" name="category" value="4" class="myCheckBox">                   
+                                </label>
+                                <label for="">
+                                    personas
+                                    <input type="checkbox" name="category" value="5" class="myCheckBox">                        
+                                </label>
+                                <label for="">
+                                    varios
+                                    <input type="checkbox" name="category" value="6" class="myCheckBox">                     
+                                </label>
+                                <label for="">
+                                    deportes
+                                    <input type="checkbox" name="category" value="7" class="myCheckBox">            
+                                </label>
+                                <label for="">
+                                    blanco y negro
+                                    <input type="checkbox" name="category" value="8" class="myCheckBox">                       
+                                </label>
+                                <label for="">
+                                    arquitectura
+                                    <input type="checkbox" name="category" value="9" class="myCheckBox">                 
+                                </label>
 
-                 </div>  
-                 <div>
-                    <label for="">Precio</label>
-                    <input type="number" name="price">
-                </div>               
-                 <button>Cargar</button> 
-        </div>
-            
-        <div class="errores">
-            <ul></ul>
-        </div>
+                            </div>  
+                            <div>
+                                <label for="">Precio</label>
+                                <input type="number" name="price">
+                            </div>               
+                            <button>Cargar</button> 
+                    </div>
+          
+        
+                    <div class="errores">
+                        <ul></ul>
+                    </div>
 
+                    <footer>
+                        <%- include("../partials/footer") %>
+                    </footer>
+
+        </div> 
 
       
         <script src="/js/productAddValidator.js"></script>

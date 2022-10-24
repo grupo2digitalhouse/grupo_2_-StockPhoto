@@ -4,27 +4,36 @@ gris oscuro: #4D4D4F
 gris: #A7A9AC
 gris claro: #E3E7E8*/
 
-@font-face{
-	font-family: "made tommy";
-	src: url('../fonts/made-tommy-regular.otf'); 
-}
-@font-face {
-	font-family: "cocogothic";
-	src: url('../fonts/CocoGothic-Regular.ttf');
-}
-
 *{
-	box-sizing: border-box;
+	/*box-sizing: border-box;*/
 	font-family: "made tommy";
 }
 
 /*BODY*/
-.viewport_body{
+/*.viewport_body{
 	background-color: #E3E7E8;
 	display: flex;
 	flex-wrap: wrap;
 	height: 80vh;
 	justify-content: center;
+	width: 100%;
+}
+
+.box-general{
+	background-color: #E3E7E8;
+	display: flex;
+	flex-wrap: wrap;
+	height: 80vh;
+	justify-content: center;
+	width: 100%;
+}
+
+.top-pestanas{  
+	display: flex;
+	flex-wrap: wrap;
+	height: 10%;
+	margin: 20px 0px 0px 0%;
+	justify-content: flex-start;
 	width: 100%;
 }
 
@@ -39,14 +48,6 @@ gris claro: #E3E7E8*/
 	width: 100%;
 }
 
-.top_pestañas{  
-	display: flex;
-	flex-wrap: wrap;
-	height: 10%;
-	margin: 20px 0px 0px 0%;
-	justify-content: flex-start;
-	width: 100%;
-}
 .pestañas_revisarSeleccion{
 	align-items: center;
 	background-color: #B3D7D6;
@@ -104,10 +105,10 @@ gris claro: #E3E7E8*/
 .pestañas_comprobante:hover{
 	background-color: #B3D7D6;
 	text-shadow: 0px 0px 8px black;
-}
+}*/
 
 /*VISUAL*/
-.visual{
+/*.visual{
 	align-items: center;
 	background: url(/images/pexels-natali-railean-2232180.jpg);
 	background-size: cover;
@@ -357,162 +358,312 @@ i.fa-regular-fa-circle-question{
 	cursor: pointer;
 	transition: 200ms;
 }
+*/
 
-
-/*FOOTER*/
-.footer{
-	background-color: #4D4D4F;
-	height: 10vh;
-	width: 100%;
-}
 
 /*TABLET*/
 @media(min-width: 468px){
 
-/*celeste: #B3D7D6
-amarillo: #F3C42F
-gris oscuro: #4D4D4F
-gris: #A7A9AC
-gris claro: #E3E7E8*/
+	/*celeste: #B3D7D6
+	amarillo: #F3C42F
+	gris oscuro: #4D4D4F
+	gris: #A7A9AC
+	gris claro: #E3E7E8*/
 
-*{box-sizing: border-box;}
-.box_padre{
-	align-items: center;
-	background-color: white;
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: column;
-	height: 1200px;
-	margin: 0px 0px 50px 0px;
-	width: 100%;
-}
-.visual{
-	height: 80vh;
-}
-.boton_borrado{
-	align-items: center;
-	font-size: 20px;
-	font-weight: bold;
-	height: 17%;
-	justify-content: center;
-	margin: 0px 15px 0px 15px;
-	width: 12%;
-	min-width: 35px;
-	max-width: 40px;
-}
+	/* *{box-sizing: border-box;} */
+	
+	/*
+	.box-padre{
+		align-items: center;
+		background-color: white;
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		height: 1200px;
+		margin: 0px 0px 50px 0px;
+		width: 100%;
+	}
+	.visual{
+		height: 80vh;
+	}
+	.boton_borrado{
+		align-items: center;
+		font-size: 20px;
+		font-weight: bold;
+		height: 17%;
+		justify-content: center;
+		margin: 0px 15px 0px 15px;
+		width: 12%;
+		min-width: 35px;
+		max-width: 40px;
+	}*/
 }
 
 /*DESKTOP*/
 @media(min-width: 768px){
 
-/*celeste: #B3D7D6
-amarillo: #F3C42F
-gris oscuro: #4D4D4F
-gris: #A7A9AC
-gris claro: #E3E7E8*/
+	/*celeste: #B3D7D6
+	amarillo: #F3C42F
+	gris oscuro: #4D4D4F
+	gris: #A7A9AC
+	gris claro: #E3E7E8*/
 
-*{box-sizing: border-box;}
+	/* *{box-sizing: border-box;} */
 
-/*BODY*/
-.viewport_body{
-	background-color: rgb(243, 243, 243);
-	display: flex;
-	flex-wrap: wrap;
-	height: 80vh;
-	justify-content: center;
-	width: 100%;
-}
-.box_padre{
-	align-items: flex-start;
-	background-color: white;
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: row;
-	height: 580px;
-	justify-content: center;
-	margin: 0px 0px 50px 0px;
-	width: 85%;
-}
-.pestañas_revisarSeleccion{
-	align-items: center;
-	background-color: #B3D7D6;
-	border-radius: 0.1em;
-	color: #E3E7E8;
-	display: flex;
-	flex-wrap: wrap;
-	font-size: 80%;
-	font-weight: bold;
-	height: 80%;
-	text-align: center;
-	text-shadow: 0px 0px 8px black;
-	justify-content: center;
-	margin: 2px 2px 0px 8%;
-	width: 15%;
-}
-.pestañas_miCompra{
-	align-items: center;
-	background-color: #4D4D4F;
-	border-radius: 0.1em;
-	color: #E3E7E8;
-	display: flex;
-	flex-wrap: wrap;
-	font-size: 80%;
-	font-weight: bold;
-	height: 80%;
-	text-align: center;
-	justify-content: center;
-	margin: 2px 2px 0px 0%;
-	width: 15%;
-}
-.pestañas_comprobante{
-	align-items: center;
-	background-color: #4D4D4F;
-	border-radius: 0.1em;
-	color: #E3E7E8;
-	display: flex;
-	flex-wrap: nowrap;
-	font-size: 80%;
-	font-weight: bold;
-	height: 80%;
-	text-align: center;
-	justify-content: center;
-	margin: 2px 2px 0px 0%;
-	width: 15%;
-}
+	/*BODY*/
+	/*
+	.viewport_body{
+		background-color: rgb(243, 243, 243);
+		display: flex;
+		flex-wrap: wrap;
+		height: 80vh;
+		justify-content: center;
+		width: 100%;
+	}
+	*/
+	#box-general {	/* Box principal*/
+		height: 600px;
+		width: 70vw;
+		margin: auto;
+		margin-top: 50px;
+		display: flex;
+		flex-direction: column;
+	}
 
-/*VISUAL*/
-.visual{
-	align-items: center;
-	background: url(/images/pexels-natali-railean-2232180.jpg);
-	background-size: cover;
-	border-radius: 0.5em;
-	display: flex;
-	flex-wrap: wrap;
-	margin: 50px 0px 20px 20px;
-	min-height: 320px;
-	height: 70vh;
-	justify-content: space-between;
-	min-width: 310px;
-	width: 45%;
-	z-index: 1;
-}
-.descripcion{
-	display: flex;
-	flex-wrap: wrap;
-	height: 45%;
-	justify-content: space-around;
-	margin: 0px 0px 0px 20px;
-	width: 45%;
-}
-.categorias_box{
-	margin-top: 55px;
-}
-.boton_borrado{
-	align-items: center;
-	font-size: 20px;
-	font-weight: bold;
-	height: 15%;
-	justify-content: center;
-	width: 12%;
-}
+	#box-general div{	/* Se centran todos los divs */
+		text-align: center;
+	}
+
+	#top-pestanas {	/* Barra de 3 pestañas */
+		width: 100%;
+		min-height: 70px;
+		display: flex;
+	}
+
+	#top-pestanas div {	/* 3 pestañas horizontales y de igual tamaño */
+		flex-grow: 1;
+		display: flex;
+		align-items: center;
+		padding: 5px;
+		background-color: #A7A9AC;
+		border: 0;
+		margin: 0 5px;
+	}
+
+	#top-pestanas div:first-child{
+    margin-left: 0;
+	}
+
+	#top-pestanas div:last-child{
+    margin-right: 0;
+	}
+
+	.pestañas-revisar{ /* Se le da un color distinto a la pestaña actual */
+		background-color: #B3D7D6 !important;
+	}
+
+	#top-pestanas div a{	/* Texto de las pestañas */
+		color: white;
+		font-size: 20px;
+		text-decoration: none;
+		text-align: center;
+	}
+
+	#top-pestanas div a{	/* Centra el texto respecto a cada pestaña */
+		margin: auto;
+	}
+
+	#box-principal{	/* Recuadro de ancho igual al general, con los elementos alineados horizontalmente */
+		width: 100%;
+		display: flex; 
+		flex-direction: row;
+		flex-grow: 1;
+		margin-top: 10px;
+	}
+
+	#box-principal>div{ /* Mismo tamaño para los dos divs: box-imagen y box-descripcion. El contenido dentro será en forma de columna */
+		/*Para centrar verticalmente, ver: https://codepen.io/micjamking/pen/QdojLz*/
+		box-sizing: border-box;
+		flex: 1 0 50%;
+		padding-top: 15px;
+		background: white;
+		flex-direction: column;
+		display: flex;
+	}
+
+	#box-imagen img{	/* Se centra la imagen en el div, que se reescalará al contenido	 */
+		max-width: 90%;
+		height: auto;
+    margin: auto;
+    margin-top: 0px;
+	}
+
+	#descripcion{	/* Recuadro gris dentro de box-descripcion */
+		background: #E3E7E8;
+		display: flex;
+		flex-direction: column;
+		flex-grow: 1;
+		height: auto;
+		margin: 0px 10px 10px;
+		border-radius: 5px;
+		padding: 20px;
+	}
+
+	#descripcion>div{
+		padding-bottom: 15px;
+		font-size: 25px;
+		text-align: left;
+		margin-left: 20px;
+		font-family: "cocogothic";
+	}
+
+	#titulo-imagen{
+		font-size: 35px !important;
+		font-weight: bold;
+	}
+
+	#categorias-box .categoria{
+		font-size: 18px;
+		text-align: left;
+		line-height: 25px;
+	}
+
+	#categorias-box .categoria i{
+		margin-right: 10px;
+	}
+
+	#botones{
+		margin-top:auto;
+		display: flex;
+		flex-direction: row;
+		padding: 5px;
+		justify-content: space-between;
+	}
+
+	button span{
+		margin: auto;
+	}
+
+	button {
+		width: 48%;
+		display: flex;
+		flex-shrink: 1;
+		font-family: "made tommy";
+		outline: 0;
+		border: 0;
+		background: #B3D7D6;
+		padding: 15px;
+		 
+		font-size: 20px;
+		color: white;
+		-webkit-transition: all 0.3 ease;
+		transition: all 0.3 ease;
+		cursor: pointer;
+	}
+
+	button span{
+		font-size: 18px;
+	}
+
+	button:hover{
+		background-color: #F3C42F;
+	}
+
+	.boton-borrado:hover{
+		background-color: red;
+	}
+	/*
+	.box-padre{
+		align-items: flex-start;
+		background-color: white;
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		height: 580px;
+		justify-content: center;
+		margin: 0px 0px 50px 0px;
+		width: 85%;
+	}
+	.pestañas_revisarSeleccion{
+		align-items: center;
+		background-color: #B3D7D6;
+		border-radius: 0.1em;
+		color: #E3E7E8;
+		display: flex;
+		flex-wrap: wrap;
+		font-size: 80%;
+		font-weight: bold;
+		height: 80%;
+		text-align: center;
+		text-shadow: 0px 0px 8px black;
+		justify-content: center;
+		margin: 2px 2px 0px 8%;
+		width: 15%;
+	}
+	.pestañas_miCompra{
+		align-items: center;
+		background-color: #4D4D4F;
+		border-radius: 0.1em;
+		color: #E3E7E8;
+		display: flex;
+		flex-wrap: wrap;
+		font-size: 80%;
+		font-weight: bold;
+		height: 80%;
+		text-align: center;
+		justify-content: center;
+		margin: 2px 2px 0px 0%;
+		width: 15%;
+	}
+	.pestañas_comprobante{
+		align-items: center;
+		background-color: #4D4D4F;
+		border-radius: 0.1em;
+		color: #E3E7E8;
+		display: flex;
+		flex-wrap: nowrap;
+		font-size: 80%;
+		font-weight: bold;
+		height: 80%;
+		text-align: center;
+		justify-content: center;
+		margin: 2px 2px 0px 0%;
+		width: 15%;
+	}*/
+
+	/*VISUAL*/
+	/*.visual{
+		align-items: center;
+		background: url(/images/pexels-natali-railean-2232180.jpg);
+		background-size: cover;
+		border-radius: 0.5em;
+		display: flex;
+		flex-wrap: wrap;
+		margin: 50px 0px 20px 20px;
+		min-height: 320px;
+		height: 70vh;
+		justify-content: space-between;
+		min-width: 310px;
+		width: 45%;
+		z-index: 1;
+	}
+	.descripcion{
+		display: flex;
+		flex-wrap: wrap;
+		height: 45%;
+		justify-content: space-around;
+		margin: 0px 0px 0px 20px;
+		width: 45%;
+	}
+	.categorias_box{
+		margin-top: 55px;
+	}
+	.boton_borrado{
+		align-items: center;
+		font-size: 20px;
+		font-weight: bold;
+		height: 15%;
+		justify-content: center;
+		width: 12%;
+	}*/
 }

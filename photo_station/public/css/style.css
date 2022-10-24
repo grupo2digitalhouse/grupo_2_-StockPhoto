@@ -37,6 +37,9 @@ main {
 	/*margin: 1em auto;*/
 	/*margin-top: 70px; /* Compensa de los -70px del header, que se usan para que éste no ocupe parte del 100% del height total */
 	padding-bottom: 150px; /* Fundamental para que el footer no "pise" al main */
+	/* Esta es la forma de que el margin-top del hijo lo haga respecto al elemento y no a la página */
+	padding-top:1px; 
+  margin-top:-1px;
 }
 
 div.burger-menu {
@@ -338,11 +341,14 @@ form.formRegistro input[type="date"] {
 input {
 	border: 2px solid currentcolor;
 }
+
+/*
 input:invalid {
 	border: 2px dashed red;
 }
+*/
 input:invalid:focus {
-	background-color: red;
+	background-color: #ffd4cc;
 	content: "Insuficientes caracteres";
 	color: black;
 }

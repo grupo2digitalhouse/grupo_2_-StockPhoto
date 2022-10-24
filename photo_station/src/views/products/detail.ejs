@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>PStation-Detalle</title>
+		<title>Photo Station / Detalle de compra</title>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<script src="https://kit.fontawesome.com/635bf43688.js" crossorigin="anonymous"></script>
@@ -10,87 +10,64 @@
 		<link rel="stylesheet", href="/css/normalize.css">
 		<link rel="stylesheet" href="/css/style.css">
 		<link rel="stylesheet", href="/css/detail.css">
-		<title>Detalle</title>
 	</head>
 
-	<body class="viewport_body">
+	<!-- body class="viewport_body" -->
+	<body>
 		<div id="page-container">
 			<header>
 				<%- include("../partials/header") %>
 			</header>
 
-			<div class="top_pestañas">
-				<a class="pestañas_revisarSeleccion" href="detail">REVISAR SELECCION</a>
-				<a class="pestañas_miCompra" href="pago">MI COMPRA</a>
-				<a class="pestañas_comprobante">COMPROBANTES</a>
-			</div>
-			
-			<div class="box_padre">
-				<div class="visual" src="/images/pexels-natali-railean-2232180.jpg" alt="imagen">
-					<div class="boton_izq">
-						<i class="fa-solid fa-chevron-left"></i>
+			<main>
+				<div id="box-general">
+					<div id="top-pestanas">
+						<div class="pestañas-revisar"><a href="detail">Revisar selección</a></div>
+						<div class="pestañas-micompra"><a href="pago">Mi compra</a></div>
+						<div class="pestañas-comprobante"><a class="pestañas-comprobante">Comprobantes</a></div>
 					</div>
-					<div class="boton_der">
-						<i class="fa-solid fa-chevron-right"></i>
+					
+					<div id="box-principal">
+						<div id="box-imagen">
+							<img src="/images/pexels-natali-railean-2232180.jpg" alt="imagen">
+							<!--
+							<div class="boton_izq">
+								<i class="fa-solid fa-chevron-left"></i>
+							</div>
+							<div class="boton_der">
+								<i class="fa-solid fa-chevron-right"></i>
+							</div>
+							-->
+						</div>
+
+						<div id="box-descripcion">
+							<div id="descripcion">
+								
+								<div id="titulo-imagen">Título de imagen</div>
+								
+								<div class="info_box">
+									<p id="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero illum dolor sunt consectetur quisquam delectus molestias ipsam provident voluptates perferendis totam eligendi consequatur quod, fuga repellendus a temporibus voluptatibus amet?</p>
+								</div>
+
+								<div id="categorias-box">Categorías
+									<div class="categoria"><i class="fa-solid fa-circle-dot"></i>Naturaleza</div>
+									<div class="categoria"><i class="fa-solid fa-circle-dot"></i>Free</div>
+									<div class="categoria"><i class="fa-solid fa-circle-dot"></i>Estilo de vida</div>
+								</div>
+
+								<div id="botones">
+									<button class="boton-borrado" type="button" name="boton_borrado" id="boton_borrado"><span>Cancelar</span></button>
+									<button class="boton-pago" type="button" name="boton_pago" id="boton_pago"><span>Continuar</span></button>
+								</div>
+							</div>	
+						</div>
 					</div>
 				</div>
+			</main>
 
-				<div class="descripcion">
-					<div class="categorias_box">
-						<div class="categoria"><i class="fa-solid fa-xmark"></i>Naturaleza</div>
-						<div class="categoria"><i class="fa-solid fa-xmark"></i>Free</div>
-					</div>
-					<div class="titulo">Titulo de imagen seleccion</div>
-					<div class="info_box">
-						<p class="info"></p>
-					</div>
-				
-					<div class="resoluciones">
-						<div class="resolucion1">
-							<label for="eleccion_resolucion">
-								<input type="radio" name="eleccion_resolucion1" checked>
-							</label>
-							<div class="tamaño_letra">S</div>
-							<div class="tamaño_numero">667 x 1000</div>
-							<i class="fa-regular fa-circle-question"></i>
-						</div>
-
-						<div class="resolucion2">
-							<label for="eleccion_resolucion">
-								<input type="radio" name="eleccion_resolucion1">
-							</label>
-							<div class="tamaño_letra">L</div>
-							<div class="tamaño_numero">1333 x 2000</div>
-							<i class="fa-regular fa-circle-question"></i>
-						</div>
-
-						<div class="resolucion3">
-							<label for="eleccion_resolucion">
-								<input type="radio" name="eleccion_resolucion1">
-							</label>
-							<div class="tamaño_letra">XL</div>
-							<div class="tamaño_numero">4480 x 6720</div>
-							<i class="fa-regular fa-circle-question"></i>
-						</div>
-					</div>
-
-					<div class="boton_borrado">
-						<label for="boton_borrado">
-							<button class="boton_x" type="button" name="boton_borrado" id="boton_pago"><i class="fa-solid fa-xmark"></i></button>
-						</label>
-					</div>
-
-					<div class="boton_pago">
-						<label for="boton_pago">
-							<a href="pago"><button class="boton"  type="button" name="boton_pago" id="boton_pago">Finalizar compra</button></a>
-						</label>
-					</div>
-				</div>
-			</div>
+			<footer>
+				<%- include("../partials/footer") %>
+			</footer>
 		</div>
-
-		<footer>
-			<%- include("../partials/footer") %>
-		</footer>
 	</body>
 </html>
