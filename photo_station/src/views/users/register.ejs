@@ -82,19 +82,19 @@
 
                 <div>
                     <label for="">Ingresa tu fecha de Nacimiento</label>
-                    <input type="date" name="birthdate">
+                    <input type="date" name="birthdate" value="<%=locals.old && old.birthdate? old.birthdate : '' %> ">
                    
                 </div>
              
                 <div>
                     <label for="">Ingresa tu pais</label>
-                    <input type="text" name="id_country">
+                    <input type="text" name="id_country" value="<%=locals.old && old.id_country? old.id_country : '' %>">
                    
                  </div>
 
                  <div>
                     <label for="">Ingresa tu website</label>
-                    <input type="url" name=" website">
+                    <input type="url" name=" website" value="<%=locals.old && old.website? old.website : '' %> ">
                    
                  </div>
 
