@@ -1,0 +1,155 @@
+*{
+	font-family: "made tommy";
+}
+
+main h1{
+	text-align: center;
+}
+
+main{
+	padding-bottom: 150px; /* Con esto evitamos que se superponga con el footer */
+	margin: auto;
+	width: 80%;
+}
+
+#contenedor-imagen{
+	height: 60vh;
+}
+
+#contenedor-imagen img{
+  max-height: 100%;
+	max-width: 80vw;
+	display:block;
+  margin:auto;
+}
+
+#imagen-detalles{
+	margin: 10px 0;
+}
+
+#imagen-detalles p{
+	font-size: 18px;
+}
+
+#contenedor-imagen p{
+	text-align: center;
+}
+
+
+/****************************************************************************************/
+#box-general {	/* Box principal*/
+	margin-top: 100px;
+	height: 600px;
+	width: 70vw;
+	margin: auto;
+	margin-top: 50px;
+	display: flex;
+	flex-direction: column;
+}
+
+#box-general div{	/* Se centran todos los divs */
+	text-align: center;
+}
+
+#box-principal{	/* Recuadro de ancho igual al general, con los elementos alineados horizontalmente */
+	width: 100%;
+	display: flex; 
+	flex-direction: row;
+	flex-grow: 1;
+	margin-top: 10px;
+}
+
+#box-principal>div{ /* Mismo tamaño para los dos divs: box-imagen y box-descripcion. El contenido dentro será en forma de columna */
+	/*Para centrar verticalmente, ver: https://codepen.io/micjamking/pen/QdojLz*/
+	box-sizing: border-box;
+	flex: 1 0 50%;
+	padding-top: 15px;
+	background: white;
+	flex-direction: column;
+	display: flex;
+}
+
+#box-imagen img{	/* Se centra la imagen en el div, que se reescalará al contenido	 */
+	max-width: 90%;
+	height: auto;
+	margin: auto;
+	margin-top: 0px;
+}
+
+#descripcion{	/* Recuadro gris dentro de box-descripcion */
+	background: #E3E7E8;
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	height: auto;
+	margin: 0px 10px 10px;
+	border-radius: 5px;
+	padding: 20px;
+}
+
+#descripcion>div{
+	padding-bottom: 15px;
+	text-align: left;
+	margin-left: 20px;
+}
+
+#titulo-imagen{
+	font-size: 35px !important;
+	font-weight: bold;
+	font-family: "cocogothic";
+}
+
+.detalles-imagen{
+	font-size: 18px;
+}
+
+#categorias-box .categoria{
+	font-size: 18px;
+	text-align: left;
+	line-height: 25px;
+}
+
+#categorias-box .categoria i{
+	margin-right: 10px;
+}
+
+#botones{
+	margin-top:auto;
+	display: flex;
+	flex-direction: row;
+	padding: 5px;
+	justify-content: space-between;
+}
+
+button span{
+	margin: auto;
+}
+
+button {
+	width: 48%;
+	display: flex;
+	flex-shrink: 1;
+	font-family: "made tommy";
+	outline: 0;
+	border: 0;
+	background: #B3D7D6;
+	padding: 15px;
+	 
+	font-size: 20px;
+	color: white;
+	-webkit-transition: all 0.3 ease;
+	transition: all 0.3 ease;
+	cursor: pointer;
+}
+
+button span{
+	font-size: 18px;
+}
+
+button:hover{
+	background-color: #F3C42F;
+}
+
+.boton-borrado:hover{
+	background-color: tomato;
+}

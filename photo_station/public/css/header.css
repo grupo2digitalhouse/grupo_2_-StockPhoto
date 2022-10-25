@@ -16,6 +16,11 @@ header{
 	width: 50px;
 }
 
+.espacio-menu img{
+	height: 50%;
+	max-width: 100px;
+}
+
 .navigation{
 	-webkit-box-shadow: 0px 10px 10px 5px rgba(0,0,0,0.2); 
 	box-shadow: 0px 5px 10px 7px rgba(0,0,0,0.2);

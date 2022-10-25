@@ -1,0 +1,27 @@
+h1{
+	text-align: center;
+	font-family: "made tommy";
+}
+
+main{
+	padding-bottom: 150px; /* Con esto evitamos que se superponga con el footer */
+	margin: auto;
+	width: 80%;
+}
+
+.grilla-productos{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grilla-productos>img {
+	height: 300px;
+  flex-grow: 1;
+	object-fit: cover;
+  margin: 2px;
+}
+
+footer{
+	bottom: auto !important; /* Elimina la posición de footer prestablecida */
+}
+

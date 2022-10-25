@@ -12,85 +12,81 @@
 		<link rel="stylesheet", href="/css/register.css">
 	</head>
 
-    <body>
-        <div id="page-container">
+	<body>
+		<div id="page-container">
 			<header>
 				<%- include("../partials/header") %>
 			</header>
+			
+			<div class="form"> 
+				<form class="login-form" method="POST" action="/product/crear" enctype="multipart/form-data">
+					<div>
+						<input id="name" class="cajatexto" type="text" name="name" placeholder="Nombre de la foto">
+					</div>
+					<div>
+						<input type="text" class="cajatexto" name="description" placeholder="Descripción">
+					</div>
+					<div>   	
+						<input type="file" class="cajatexto" name="image">
+					</div>
 
-                    <div class="form"> 
-                        <form class="login-form" method="POST" action="/product/crear" enctype="multipart/form-data">
-                            <div>
-                                <label for="">Nombre de la foto</label>
-                                <input id="name" type="text" name="name">
-                            </div>
-                            <div>
-                                <label for="">Descripcion</label>
-                                <input type="text" name="description">
-                            </div>
-                            <div>   
-                                <label for="">Subi tu Iamgen</label>
-                                <input type="file" name="image">
-                            </div>
+					<div id="checkboxes">            
+						<label for="">
+							<input type="checkbox" name="category" value="1" class="myCheckBox">
+							Paisaje
+						</label>
+						<label for="">
+							<input type="checkbox" name="category" value="2" class="myCheckBox"> 
+							Moda         
+						</label>
+						<label for="">
+							<input type="checkbox" name="category" value="3" class="myCheckBox"> 
+							Comida            
+						</label>
+						<label for="">
+							<input type="checkbox" name="category" value="4" class="myCheckBox"> 
+							Animales         
+						</label>
+						<label for="">
+							<input type="checkbox" name="category" value="5" class="myCheckBox"> 
+							Personas        
+						</label>
+						<label for="">
+							<input type="checkbox" name="category" value="6" class="myCheckBox">  
+							Varios      
+						</label>
+						<label for="">
+							<input type="checkbox" name="category" value="7" class="myCheckBox"> 
+							Deportes
+						</label>
+						<label for="">
+							<input type="checkbox" name="category" value="8" class="myCheckBox"> 
+							Blanco y negro       
+						</label>
+						<label for="">
+							<input type="checkbox" name="category" value="9" class="myCheckBox"> 
+							Arquitectura            
+						</label>
+					</div>  
+					
+					<div>
+						<input type="number" class="cajatexto" name="price" placeholder="Precio">
+					</div>               
+					<button>Cargar</button> 
+				</form>
+			</div>
+			
+			<div class="errores">
+				<ul></ul>
+			</div>
 
-                            <div>            
-                                <label for="">
-                                    paisaje
-                                    <input type="checkbox" name="category" value="1" class="myCheckBox">
-                                </label>
-                                <label for="">
-                                    moda
-                                    <input type="checkbox" name="category" value="2" class="myCheckBox">                       
-                                </label>
-                                <label for="">
-                                    comida
-                                    <input type="checkbox" name="category" value="3" class="myCheckBox">                        
-                                </label>
-                                <label for="">
-                                    animales
-                                    <input type="checkbox" name="category" value="4" class="myCheckBox">                   
-                                </label>
-                                <label for="">
-                                    personas
-                                    <input type="checkbox" name="category" value="5" class="myCheckBox">                        
-                                </label>
-                                <label for="">
-                                    varios
-                                    <input type="checkbox" name="category" value="6" class="myCheckBox">                     
-                                </label>
-                                <label for="">
-                                    deportes
-                                    <input type="checkbox" name="category" value="7" class="myCheckBox">            
-                                </label>
-                                <label for="">
-                                    blanco y negro
-                                    <input type="checkbox" name="category" value="8" class="myCheckBox">                       
-                                </label>
-                                <label for="">
-                                    arquitectura
-                                    <input type="checkbox" name="category" value="9" class="myCheckBox">                 
-                                </label>
+			<footer>
+				<%- include("../partials/footer") %>
+			</footer>
 
-                            </div>  
-                            <div>
-                                <label for="">Precio</label>
-                                <input type="number" name="price">
-                            </div>               
-                            <button>Cargar</button> 
-                    </div>
-          
-        
-                    <div class="errores">
-                        <ul></ul>
-                    </div>
+		</div> 
 
-                    <footer>
-                        <%- include("../partials/footer") %>
-                    </footer>
-
-        </div> 
-
-      
-        <script src="/js/productAddValidator.js"></script>
-    </body>
+	  
+		<script src="/js/productAddValidator.js"></script>
+	</body>
 </html>

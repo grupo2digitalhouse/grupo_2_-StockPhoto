@@ -1,27 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-    
+	
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= product.name %> </title>
-    <link rel='stylesheet' href='/css/style.css' />
-
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title><%= product.name %> </title>
+	<link rel='stylesheet' href='/css/normalize.css'/>
+	<link rel='stylesheet' href='/css/style.css'/>
+	<link rel='stylesheet' href='/css/productDetail.css'/>
 </head>
 <body>
-    
-    <h1><%= product.name %> </h1>    
-    <br>
-    
-    <img src="/images/photos/<%= product.image %>">
-    <br>
-    <p>DESCRIPCION : <%= product.description %> </p>
-    <p>PRECIO: <%= product.price %> </p>
-    
-    <br>
-    <a href="/edit/<%= product.id %>">Editar</a>
-    <form action="/product/delete/<%= product.id %>" method="POST">
-        <button type="submit" >Eliminar</button>
-    </form>
+	<header>
+		<%- include("../partials/header") %>
+	</header>
+
+	<!--
+	<main>
+		<h1><%= product.name %> </h1>    
+
+		<div id="contenedor-imagen">
+			<img src="/images/photos/<%= product.image %>">
+			
+			<div id="imagen-detalles">
+				<p>Descripción: <%= product.description %> </p>
+				<p>Precio: $<%= product.price %> </p>
+			</div>
+		</div>
+
+		<div id="botones">
+			<a href="/edit/<%= product.id %>">Editar</a>
+			<form action="/product/delete/<%= product.id %>" method="POST">
+				<button type="submit" >Eliminar</button>
+			</form>
+		</div>
+	</main>
+	-->
+	
+	<main>
+		<div id="box-general">			
+			<div id="box-principal">
+				<div id="box-imagen">
+					<img src="/images/photos/<%= product.image %>">
+				</div>
+
+				<div id="box-descripcion">
+					<div id="descripcion">
+						
+						<div id="titulo-imagen"><%= product.name %> </div>
+						
+						<div class="detalles-imagen"><%= product.description %></div>
+						
+						<div class="detalles-imagen">Precio: $<%= product.price %></div>
+
+						<!--
+						<div id="categorias-box">Categorías
+							<div class="categoria"><i class="fa-solid fa-circle-dot"></i>Naturaleza</div>
+							<div class="categoria"><i class="fa-solid fa-circle-dot"></i>Free</div>
+							<div class="categoria"><i class="fa-solid fa-circle-dot"></i>Estilo de vida</div>
+						</div>
+						-->
+
+						<div id="botones">
+							<button class="boton-borrado" type="button" name="boton_borrado" id="boton_borrado" onclick="location.href='/product/delete/<%= product.id %>'"><span>Eliminar</span></button>
+							<button class="boton-pago" type="button" name="boton_pago" id="boton_pago" onclick="location.href='/product/delete/<%= product.id %>'"><span>Editar</span></button>
+						</div>
+					</div>	
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<footer>
+		<%- include("../partials/footer") %>
+	</footer>
 </body>
 </html>

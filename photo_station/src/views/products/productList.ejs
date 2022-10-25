@@ -2,29 +2,32 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>List de Productos</title>
-    <link rel='stylesheet' href='/css/style.css' />
-
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>List de Productos</title>
+	<link rel='stylesheet' href='/css/normalize.css'/>
+	<link rel='stylesheet' href='/css/style.css'/>
+	<link rel='stylesheet' href='/css/productList.css'/>
 </head>
 
 <body>
-    <h1>LISTADO DE PRODUCTOS</h1>
-    <ul>
-        <% for( let i = 0; i < product.length; i++ ) { %>
-        <li>
-            
-            <a href="/product/detail/<%=product[i].id %>"><%= product[i].name %></a>
-            <img src="/images/photos/<%= product[i].image %>">
-        </li>>
-        <% } %>
-       
-    </ul>
+	<header>
+		<%- include("../partials/header") %>
+	</header>
 
+	<main>
+		<h1>Mirá las imágenes que tenemos para vos</h1>
+		<div class="grilla-productos">
+		<% for( let i = 0; i < product.length; i++ ) { %>
+				<!-- a href="/product/detail/<%=product[i].id %>"><%= product[i].name %></a -->
+				<img src="/images/photos/<%= product[i].image %>">
+		<% } %>
+		</div>
+	</main>
 
-  
- 
+	<footer>
+		<%- include("../partials/footer") %>
+	</footer>
 </body>
 
 </html>

@@ -393,6 +393,7 @@ button.send a{
 	.categoriaImagen {
 		justify-content: space-between;
 	}
+	/*
 	.top-header .logo {
 		width: 30%;
 	}
@@ -401,7 +402,5 @@ button.send a{
 	}
 	.top-header .buy {
 		width: 30%;
-	}
+	}*/
 }
-
-	
