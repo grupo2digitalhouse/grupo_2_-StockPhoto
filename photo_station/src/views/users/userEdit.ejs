@@ -2,17 +2,72 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title class="titulo">Editar Foto</title>
-    <link rel="stylesheet" href="/css/style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title class="titulo">Photostation / Editar usuario</title>
+	<link rel="icon" type="image/png" href="images/photostation-isotipo.png"/>
+	<link rel="stylesheet", href="/css/normalize.css">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/userEdit.css">
 </head>
 
     
 
 <body>
+    <header>
+		<%- include("../partials/header") %>
+	</header>
+
+    <main>
+		<div id="box-general">			
+			<div id="box-principal">
+				<div id="box-imagen">
+					<img src="/images/profile/<%= user.image %>">
+				</div>
+
+				<div id="box-descripcion">
+					<form class="form" action="/register/edit/<%= user.id %>" method="POST" enctype="multipart/form-data">
+						<div id="descripcion">
+							<div>
+								<label for="">Cambia una contraseña</label>
+								<!-- <input type="text" name="name" id="name" value=""> -->
+                                <input type="password" name="password">
+							</div>
+							<div>
+								<label for="">Cambia tu Foto de Perfil</label>
+								<!-- <input type="text" name="description" id="description" value="<%= user.description%>"> -->
+                                <input type="file" name="image">
+							</div>
+                            <label for="">Cambia tu pais</label>
+                              <input type="text" name="id_country" id="id_country" ></p>
+							<div>
+								<label for="">Cambia tu fecha de Nacimiento</label>
+                                <input type="date" name="birthdate" id="birthdate"> </p>
+							</div>    
+                            <div>
+                                <label for="">Cambia tu website</label>
+                                <input type="text" name="website" id="website"> </p>
+                            </div>
+
+							<div id="botones">
+								<button class="botonVolver" type="button" name="boton_volver" id="boton_volver" onclick="location.href='/'"><span>Volver al inicio</span></button>
+								<button class="botonAgregar" type="submit"><span>Actualizar</span></button>	
+							</div>
+
+                            <!-- <button class="botonAgregar" type="submit">Actualizar</button>
+        
+                            <a  class="botonVolver" href="/">Pagina Principal</a></p> -->
+
+						</div>	
+					</form>
+				</div>
+			</div>
+		</div>
+	</main>
   
-    <h1 class="titulo">Edita tus datos:  <%=  user.username %></h1>
+
+
+    <!-- <h1 class="titulo">Edita tus datos:  <%=  user.username %></h1>
     <section class="formulario">
         <form action="/register/edit/<%= user.id %>" method="POST" enctype="multipart/form-data">
 
@@ -38,7 +93,11 @@
                 <a  class="botonVolver" href="/">Pagina Principal</a></p>
             
         </form>
-    </section>
+    </section> -->
+
+    <footer>
+		<%- include("../partials/footer") %>
+	</footer>
 </body>
 
 </html>

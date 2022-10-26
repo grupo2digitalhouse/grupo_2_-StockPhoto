@@ -23,6 +23,14 @@ main{
   margin:auto;
 }
 
+#imagen-detalles{
+	margin: 10px 0;
+}
+
+#imagen-detalles p{
+	font-size: 18px;
+}
+
 #contenedor-imagen p{
 	text-align: center;
 }
@@ -86,25 +94,25 @@ main{
 	
 }
 
-/** ACÁ EL CÓDIGO PARA DAR FORMATO A LAS CAJAS DE TEXTO**/
-.form input {
-	box-sizing: border-box;
-	width: 100%;
-	font-family: "made tommy";
-	font-size: 14px;
-	background: #f2f2f2;
-	outline: 0;
-	border: 0;
-	margin: 0 0 15px;
-	padding: 15px;
+#titulo-imagen{
+	font-size: 35px !important;
+	font-weight: bold;
+	font-family: "cocogothic";
 }
 
-.form.form{	/* Necesita esto para aplicar el flex en el hijo */
-	display: flex;
-	height: 100%;
+.detalles-imagen{
+	font-size: 18px;
 }
 
+#categorias-box .categoria{
+	font-size: 18px;
+	text-align: left;
+	line-height: 25px;
+}
 
+#categorias-box .categoria i{
+	margin-right: 10px;
+}
 
 #botones{
 	margin-top:auto;
@@ -121,13 +129,25 @@ button span{
 	font-family: "made tommy";
 }
 
-button {
+.boton-editar, form#boton-eliminar{
 	width: 48%;
 	display: flex;
 	flex-shrink: 1;
 	padding: 15px; 
 	background: #B3D7D6;
 	margin-right: 10px;
+}
+
+form#boton-eliminar{
+	cursor: pointer;
+}
+
+form#boton-eliminar>button{
+	background: inherit;
+	width: 100%;
+}
+
+button {
 	outline: 0;
 	border: 0;
 	background: #B3D7D6;
@@ -136,6 +156,14 @@ button {
 	cursor: pointer;
 }
 
-button:hover{
+.boton-editar:hover{
 	background-color: #F3C42F;
+}
+
+form#boton-eliminar:hover{
+	background-color: tomato;
+}
+
+.boton-borrado:hover{
+	background-color: tomato;
 }

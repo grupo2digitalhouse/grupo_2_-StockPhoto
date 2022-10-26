@@ -8,8 +8,9 @@
 	<link rel="icon" type="image/png" href="images/photostation-isotipo.png"/>
 	<link rel="stylesheet", href="/css/normalize.css">
 	<link rel="stylesheet" href="/css/style.css">
-	<link rel="stylesheet", href="/css/productDetail.css">
-	<link rel="stylesheet", href="/css/register.css">
+	<link rel="stylesheet" href="/css/productEdit.css">
+	<!-- link rel="stylesheet", href="/css/productDetail.css">
+	<link rel="stylesheet", href="/css/register.css"-->
 </head>
 
 <body>
@@ -25,26 +26,26 @@
 				</div>
 
 				<div id="box-descripcion">
-					<form action="/product/edit/<%= product.id %>" method="POST">
-							<div id="descripcion">
-								<div>
+					<form class="form" action="/product/edit/<%= product.id %>" method="POST">
+						<div id="descripcion">
+							<div>
 								<label for="">Nombre de la foto</label>
-									<input type="text" name="name" id="name" value="<%= product.name %>">
-								</div>
-								<div>
-									<label for="">Descripcion</label>
-								</div>
-									<input type="text" name="description" id="description" value="<%= product.description%>">
-								<div>
+								<input type="text" name="name" id="name" value="<%= product.name %>">
+							</div>
+							<div>
+								<label for="">Descripción</label>
+								<input type="text" name="description" id="description" value="<%= product.description%>">
+							</div>
+							<div>
 								<label for="price">Precio </label>
-									<input type="number" name="price" id="price" value="<%= product.price %>">
-								</div>    
+								<input type="number" name="price" id="price" value="<%= product.price %>">
+							</div>    
 
-								<div id="botones">
-									<button class="botonVolver" type="button" name="boton_volver" id="boton_volver" onclick="location.href='/product/list'"><span>Listado de Fotos</span></button>
-									<button class="botonAgregar" type="submit">Actualizar</button>	
-								</div>
-							</div>	
+							<div id="botones">
+								<button class="botonVolver" type="button" name="boton_volver" id="boton_volver" onclick="location.href='/product/list'"><span>Listado de Fotos</span></button>
+								<button class="botonAgregar" type="submit"><span>Actualizar</span></button>	
+							</div>
+						</div>	
 					</form>
 				</div>
 			</div>

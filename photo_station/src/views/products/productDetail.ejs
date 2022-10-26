@@ -34,18 +34,22 @@
 
 						
 						
-						<% if(locals.logueado.admin === 1) {%>
+						
     	
       					<div id="botones">
-				
+							<% if(locals.logueado.admin === 1) {%>
 							<button class="boton-editar" type="button" name="boton_editar" id="boton_editar" onclick="location.href='/edit/<%= product.id %>'"><span>Editar</span></button>
 						
 							<form id="boton-eliminar" action="/product/delete/<%= product.id %>" method="POST">
 								<button type="submit" ><span>Eliminar</span></button>
 							</form>	
-				
+
+							<%}%>	
+							<button class="boton-editar" type="button" name="boton_editar" id="boton_editar" onclick=""><span>Comprar</span></button>
+
 						</div>
-						<%}%>	
+						
+						<!-- <button class="boton-editar" type="button" name="boton_editar" id="boton_editar" onclick="location.href='/edit/<%= product.id %>'"><span>Comprar</span></button> -->
 						
 						
 					</div>	
