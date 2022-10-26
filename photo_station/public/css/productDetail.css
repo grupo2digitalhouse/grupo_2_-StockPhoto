@@ -91,7 +91,7 @@ main{
 #descripcion>div{
 	padding-bottom: 15px;
 	text-align: left;
-	margin-left: 20px;
+	
 }
 
 #titulo-imagen{
@@ -124,31 +124,44 @@ main{
 
 button span{
 	margin: auto;
+	font-size: 20px;
+	color: white;
+	font-family: "made tommy";
 }
 
-button {
+.boton-editar, form#boton-eliminar{
 	width: 48%;
 	display: flex;
 	flex-shrink: 1;
-	font-family: "made tommy";
+	padding: 15px; 
+	background: #B3D7D6;
+	margin-right: 10px;
+}
+
+form#boton-eliminar{
+	cursor: pointer;
+}
+
+form#boton-eliminar>button{
+	background: inherit;
+	width: 100%;
+}
+
+button {
 	outline: 0;
 	border: 0;
 	background: #B3D7D6;
-	padding: 15px;
-	 
-	font-size: 20px;
-	color: white;
 	-webkit-transition: all 0.3 ease;
 	transition: all 0.3 ease;
 	cursor: pointer;
 }
 
-button span{
-	font-size: 18px;
+.boton-editar:hover{
+	background-color: #F3C42F;
 }
 
-button:hover{
-	background-color: #F3C42F;
+form#boton-eliminar:hover{
+	background-color: tomato;
 }
 
 .boton-borrado:hover{

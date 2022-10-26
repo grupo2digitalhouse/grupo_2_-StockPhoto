@@ -41,8 +41,11 @@
 						-->
 
 						<div id="botones">
-							<button class="boton-borrado" type="button" name="boton_borrado" id="boton_borrado" onclick="location.href='/product/delete/<%= product.id %>'"><span>Eliminar</span></button>
-							<button class="boton-editar" type="button" name="boton_editar" id="boton_editar" onclick="location.href='/product/edit/<%= product.id %>'"><span>Editar</span></button>
+							<button class="boton-editar" type="button" name="boton_editar" id="boton_editar" onclick="location.href='/edit/<%= product.id %>'"><span>Editar</span></button>
+							<!-- button class="boton-borrado" type="button" name="boton_borrado" id="boton_borrado" onclick="location.href='/delete/<%= product.id %>'"><span>Eliminar</span></button -->
+							<form id="boton-eliminar" action="/product/delete/<%= product.id %>" method="POST">
+								<button type="submit" ><span>Eliminar</span></button>
+							</form>	
 						</div>
 					</div>	
 				</div>

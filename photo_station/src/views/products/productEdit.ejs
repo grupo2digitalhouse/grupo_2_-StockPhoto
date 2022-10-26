@@ -2,40 +2,84 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title class="titulo">Editar Foto</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet", href="/css/register.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title class="titulo">Photostation / Editar Foto</title>
+	<link rel="icon" type="image/png" href="images/photostation-isotipo.png"/>
+	<link rel="stylesheet", href="/css/normalize.css">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet", href="/css/productDetail.css">
+	<link rel="stylesheet", href="/css/register.css">
 </head>
 
 <body>
+	<header>
+		<%- include("../partials/header") %>
+	</header>
   
-    <h1 class="titulo">Foto a Editar:  <%=  product.name %></h1>
-    <section class="formulario">
-        <form action="/product/edit/<%= product.id %>" method="POST">
+	<main>
+		<div id="box-general">			
+			<div id="box-principal">
+				<div id="box-imagen">
+					<img src="/images/photos/<%= product.image %>">
+				</div>
 
-            <label for="">Nombre de la foto</label>
-            <input type="text" name="name" id="name" value="<%= product.name %>"></p>
-            <label for="">Descripcion</label>
-            <input type="text" name="description" id="description" value="<%= product.description%>"></p>
-            <label for="price">Precio </label>
-            <p><input type="number" name="price" id="price" value="<%= product.price %>"></p>
+				<div id="box-descripcion">
+					<form action="/product/edit/<%= product.id %>" method="POST">
+							<div id="descripcion">
+								<div>
+								<label for="">Nombre de la foto</label>
+									<input type="text" name="name" id="name" value="<%= product.name %>">
+								</div>
+								<div>
+									<label for="">Descripcion</label>
+								</div>
+									<input type="text" name="description" id="description" value="<%= product.description%>">
+								<div>
+								<label for="price">Precio </label>
+									<input type="number" name="price" id="price" value="<%= product.price %>">
+								</div>    
 
-            <br>
-            <p> <button class="botonAgregar" type="submit">Actualizar</button>
-        
-            <a  class="botonVolver" href="/product/list">Listado de Fotos</a></p>
-        </form>
-    </section>
+								<div id="botones">
+									<button class="botonVolver" type="button" name="boton_volver" id="boton_volver" onclick="location.href='/product/list'"><span>Listado de Fotos</span></button>
+									<button class="botonAgregar" type="submit">Actualizar</button>	
+								</div>
+							</div>	
+					</form>
+				</div>
+			</div>
+		</div>
+	</main>
 
-    <div class="errores">
-        <ul></ul>
-    </div>
+	<!--main>
+		<h1 class="titulo">Foto a Editar:  <%=  product.name %></h1>
+		<section class="formulario">
+			<form action="/product/edit/<%= product.id %>" method="POST">
 
+				<label for="">Nombre de la foto</label>
+				<input type="text" name="name" id="name" value="<%= product.name %>"></p>
+				<label for="">Descripcion</label>
+				<input type="text" name="description" id="description" value="<%= product.description%>"></p>
+				<label for="price">Precio </label>
+				<p><input type="number" name="price" id="price" value="<%= product.price %>"></p>
 
-  
-    <script src="/js/productEditValidator.js"></script>
+				<br>
+				<p> <button class="botonAgregar" type="submit">Actualizar</button>
+			
+				<a  class="botonVolver" href="/product/list">Listado de Fotos</a></p>
+			</form>
+		</section>
+	</main-->
+
+	<div class="errores">
+		<ul></ul>
+	</div>
+
+	<footer>
+		<%- include("../partials/footer") %>
+	</footer>
+
+	<script src="/js/productEditValidator.js"></script>
 
 </body>
 
