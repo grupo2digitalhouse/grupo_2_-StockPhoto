@@ -132,26 +132,12 @@ const productsControllers = {
                 console.log(error);
             }
         },
-        
+      
         
 
 
     };
-    /*putProduct:(req,res)=>{
-        const { id } = req.params;
-        const { product_name, descripcion, category, img} = req.body;
-    
-        const product = product.find((e)=>e.id===parseInt(id));
-    
-        if(!product){
-            res.sendStatus(404);
-        }else{
-            product.product_name = product_name;
-            product.descripciion = descripcion;
-            product.category = category;
-            product.img = img;
-            res.send(product);
-        }*/
+   
     
 
 

@@ -167,3 +167,6 @@ form#boton-eliminar:hover{
 .boton-borrado:hover{
 	background-color: tomato;
 }
+footer{
+	bottom:0 !important;
+}

@@ -32,21 +32,22 @@
 						
 						<div class="detalles-imagen">Precio: $<%= product.price %></div>
 
-						<!--
-						<div id="categorias-box">Categorías
-							<div class="categoria"><i class="fa-solid fa-circle-dot"></i>Naturaleza</div>
-							<div class="categoria"><i class="fa-solid fa-circle-dot"></i>Free</div>
-							<div class="categoria"><i class="fa-solid fa-circle-dot"></i>Estilo de vida</div>
-						</div>
-						-->
-
-						<div id="botones">
+						
+						
+						<% if(locals.logueado.admin === 1) {%>
+    	
+      					<div id="botones">
+				
 							<button class="boton-editar" type="button" name="boton_editar" id="boton_editar" onclick="location.href='/edit/<%= product.id %>'"><span>Editar</span></button>
-							<!-- button class="boton-borrado" type="button" name="boton_borrado" id="boton_borrado" onclick="location.href='/delete/<%= product.id %>'"><span>Eliminar</span></button -->
+						
 							<form id="boton-eliminar" action="/product/delete/<%= product.id %>" method="POST">
 								<button type="submit" ><span>Eliminar</span></button>
 							</form>	
+				
 						</div>
+						<%}%>	
+						
+						
 					</div>	
 				</div>
 			</div>
@@ -54,7 +55,8 @@
 	</main>
 
 	<footer>
-		<%- include("../partials/footer") %>
+		
+	<!--	<%- include("../partials/footer") %> -->
 	</footer>
 </body>
 </html>

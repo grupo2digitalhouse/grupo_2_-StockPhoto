@@ -12,11 +12,20 @@
 				<ul>
 					<li class="logo"><a href="/"><img src="/images/logo-icon.png" alt=""></a></li>
 					<li class="espacio-menu"><img src="/images/photostation-logotipo.png" alt=""></li>
-					<li class="menu-opcion"><a href="#">Planes</a></li>
-					<li class="menu-opcion"><a href="#">Categorías</a></li>
+					
+					<li class="menu-opcion"><a href="/product/list">Stock</a></li>
 					<li class="menu-opcion"><a href="#">Contacto</a></li>
-					<li class="user"><a href="/login"><i class="fas fa-user"></i></a></li>
+
+					<% if (locals.logueado) { %>
+					<li class="menu-opcion"><a href="userProfile">Hola
+						<%= locals.logueado.username %>
+					</a></li>
+					<li class="menu-opcion"><a href="/logout">Logout</a></li>
 					<li class="user"><a href="/cart"><i class="fas fa-shopping-cart"></i></a></li>
+					<% } else { %>
+					<li class="menu-opcion"><a href="/register">Registrarse</a></li>
+					<li class="user"><a href="/login"><i class="fas fa-user"></i></a></li>
+					<% } %>
 					<!-- li class="user"><a href="#"><i class="fas fa-sign-out-alt"></i></a></li -->
 				</ul> 
 			</nav>

@@ -35,7 +35,7 @@ module.exports=(sequelize, dataTypes)=>{
             type:dataTypes.DATE
         },
         id_country:{
-            type:dataTypes.INTEGER
+            type:dataTypes.STRING
         },
         website:{
             type:dataTypes.STRING
@@ -43,6 +43,9 @@ module.exports=(sequelize, dataTypes)=>{
         password:{
             type:dataTypes.STRING,
             allowNull: false,
+        },
+        admin:{
+            type:dataTypes.INTEGER,
         },
 
     };
