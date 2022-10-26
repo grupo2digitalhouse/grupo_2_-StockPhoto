@@ -2,6 +2,11 @@ html, body{
 	height: 100%;	/* Esto es fundamental para los elementos que ocupen la pantalla */
 }
 
+#page-container{
+	position: relative;
+  min-height: 100vh;
+}
+
 /* form */
 .form {
 	/*height: 100%;	/* Para poder centrarlo, le decimos que el form ocupa verticalmente lo mismo que el body y html, ya definidos en 100% */
@@ -19,28 +24,34 @@ html, body{
 	display: flex;
 	justify-content: center;
 	align-items: flex-start;
-	padding-bottom: 30px; /* Se pone un padding pequeño para dar lugar a los mensajes de error */
+	padding-bottom: 30px; /* Se pone un padding para dar lugar a los mensajes de error */
 }
 
 .login-form{
 	position: relative;
+	box-sizing: border-box;
 	z-index: 1;
 	background: #FFFFFF;
-	max-width: 360px;
+	max-width: 450px;
 	padding: 45px;
 	text-align: center;
 	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 
 .form input {
+	box-sizing: border-box;
+	width: 100%;
 	font-family: "made tommy";
-	outline: 0;
+	font-size: 14px;
 	background: #f2f2f2;
+	outline: 0;
 	border: 0;
 	margin: 0 0 15px;
 	padding: 15px;
-	box-sizing: border-box;
-	font-size: 14px;
+}
+
+#checkboxes input{	/* Cosas que hay que hacer porque el css afecta a dos archivos distintos */
+	width: unset;
 }
 
 .cajatexto{

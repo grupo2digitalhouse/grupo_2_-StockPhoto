@@ -4,7 +4,8 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>List de Productos</title>
+	<title>Photo Station / Catálogo de imágenes</title>
+	<link rel="icon" type="image/png" href="images/photostation-isotipo.png"/>
 	<link rel='stylesheet' href='/css/normalize.css'/>
 	<link rel='stylesheet' href='/css/style.css'/>
 	<link rel='stylesheet' href='/css/productList.css'/>
@@ -19,8 +20,9 @@
 		<h1>Mirá las imágenes que tenemos para vos</h1>
 		<div class="grilla-productos">
 		<% for( let i = 0; i < product.length; i++ ) { %>
-				<!-- a href="/product/detail/<%=product[i].id %>"><%= product[i].name %></a -->
-				<img src="/images/photos/<%= product[i].image %>">
+				<a href="/product/detail/<%=product[i].id %>">
+					<img src="/images/photos/<%= product[i].image %>">
+				</a>
 		<% } %>
 		</div>
 	</main>

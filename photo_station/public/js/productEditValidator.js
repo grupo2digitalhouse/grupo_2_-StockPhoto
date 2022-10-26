@@ -6,12 +6,12 @@ window.onload = function(){
 
         let name = document.querySelector("[name='name']");
         if(name.value.length < 5){
-            errores.push("El nombre es ogligatorio y debe ser mayor a 5");
+            errores.push("El nombre es obligatorio y debe ser mayor a 5");
         } 
 
         let description = document.querySelector("[name='description']");
         if(description.value.length < 20){
-            errores.push("La descricion debe ser mayor a 20");
+            errores.push("La descripción debe tener al menos 20 caracteres");
         } 
 
         let price = document.querySelector("[name='price']");

@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>PStation-Login</title>
+		<title>Photostation / Login</title>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<script src="https://kit.fontawesome.com/635bf43688.js" crossorigin="anonymous"></script>
@@ -13,103 +13,97 @@
 	</head>
 	
 	<body>
-		<div class="form">
-			<form class="login-form" method="POST" action="/register/crear" enctype="multipart/form-data">   
-				<div>
-					<label for="">Ingresa tu Usuario</label>
-					<input type="text" name="username" value="<%=locals.old && old.username? old.username :'' %>">
-				</div>
-				<% if ( locals.errors && errors.username){ %>
-					<div class="text-danger">
-						<p>
-							<%= errors.username.msg %>
-						</p>
-					</div>
-				<% } %>
-				<div>
-					<label for="">Ingresa tu nombre</label>
-					<input type="text" name="first_name" value="<%=locals.old && old.first_name? old.first_name :'' %>">
-				</div>
-				<% if ( locals.errors && errors.first_name){ %>
-					<div class="text-danger">
-						<p>
-							<%= errors.first_name.msg %>
-						</p>
-					</div>
-				<% } %>
-				<div>
-					<label for="">Ingresa tu Apellido</label>
-					<input type="text" name="last_name" value="<%=locals.old && old.last_name? old.last_name :'' %>">
-				</div>
-				<% if ( locals.errors && errors.last_name){ %>
-					<div class="text-danger">
-						<p>
-							<%= errors.last_name.msg %>
-						</p>
-					</div>
-				<% } %>
-				
-				<div>
-					<label for="">Ingresa tu Email</label>
-					<input type="email" name="email"
-						value="<%=locals.old && old.email? old.email : '' %> ">
-							
-						<div class="text-danger">
-								<% if ( locals.errors && errors.email){ %>
-									<p> <%= errors.email.msg %> </p>
-								<% } %> 
-						</div>
-				</div>
-				<div>   
-					<label for="">Subi tu Foto de Perfil</label>
-					<input type="file" name="image">
-				</div>
-
-				<div>
-					<label for="">Ingresa tu fecha de Nacimiento</label>
-					<input type="date" name="birthdate" value="<%=locals.old && old.birthdate? old.birthdate : '' %> ">
-
-				</div>
-
-				<div>
-					<label for="">Ingresa tu pais</label>
-					<input type="text" name="id_country" value="<%=locals.old && old.id_country? old.id_country : '' %>">
-
-				</div>
-
-				<div>
-					<label for="">Ingresa tu website</label>
-					<input type="url" name=" website" value="<%=locals.old && old.website? old.website : '' %> ">
-
-				</div>
-
-				<div>
-					<label for="">Crea una contraseña</label>
-					<input type="password" name="password">
-					<div class="text-danger">
-						<% if ( locals.errors && errors.password){ %>
-							<p> <%= errors.password.msg %> </p>
-						<% } %> 
-					</div>
-				</div>
-							
+		<div id="page-container">
+			<header>
+				<%- include("../partials/header") %>
+			</header>
 			
-				<button>Registrate</button>
-				<p class="message">Tus datos personales se utilizarán para procesar tu pedido, mejorar tu experiencia, gestionar el acceso a tu cuenta y otros própositos descriptos en nuestra  <a href="#">politica de pricvacidad</a></p>
-				<p class="message"><a href="login">ya tienes una cuenta?</a></p>
-			</form>
+			<div class="form">
+				<form class="login-form" method="POST" action="/register/crear" enctype="multipart/form-data">   
+					<div>
+						<input type="text" name="username" value="<%=locals.old && old.username? old.username :'' %>" placeholder="Nombre de usuario">
+					</div>
+					<% if ( locals.errors && errors.username){ %>
+						<div class="text-danger">
+							<p>
+								<%= errors.username.msg %>
+							</p>
+						</div>
+					<% } %>
+					<div>
+						<input type="text" name="first_name" value="<%=locals.old && old.first_name? old.first_name :'' %>" placeholder="Nombre">
+					</div>
+					<% if ( locals.errors && errors.first_name){ %>
+						<div class="text-danger">
+							<p>
+								<%= errors.first_name.msg %>
+							</p>
+						</div>
+					<% } %>
+					<div>
+						<input type="text" name="last_name" value="<%=locals.old && old.last_name? old.last_name :'' %>" placeholder="Apellido">
+					</div>
+					<% if ( locals.errors && errors.last_name){ %>
+						<div class="text-danger">
+							<p>
+								<%= errors.last_name.msg %>
+							</p>
+						</div>
+					<% } %>
+					
+					<div>
+						<input type="email" name="email"
+							value="<%=locals.old && old.email? old.email : '' %> " placeholder="e-mail">
+								
+							<div class="text-danger">
+									<% if ( locals.errors && errors.email){ %>
+										<p> <%= errors.email.msg %> </p>
+									<% } %> 
+							</div>
+					</div>
+					<div>   
+						<label for="">Subí tu foto de perfil</label>
+						<input type="file" name="image" placeholder="Foto de perfil">
+					</div>
+
+					<div>
+						<input type="date" name="birthdate" value="<%=locals.old && old.birthdate? old.birthdate : '' %> " placeholder="Fecha de nacimiento">
+					</div>
+
+					<div>
+						<input type="text" name="id_country" value="<%=locals.old && old.id_country? old.id_country : '' %>" placeholder="País">
+					</div>
+
+					<div>
+						<input type="url" name=" website" value="<%=locals.old && old.website? old.website : '' %> " placeholder="Website">
+
+					</div>
+
+					<div>
+						<input type="password" name="password" placeholder="Contraseña">
+						<div class="text-danger">
+							<% if ( locals.errors && errors.password){ %>
+								<p> <%= errors.password.msg %> </p>
+							<% } %> 
+						</div>
+					</div>
+								
+				
+					<button id="boton-registro">Registrate</button>
+					<p class="message">Tus datos personales se utilizarán para procesar tu pedido, mejorar tu experiencia, gestionar el acceso a tu cuenta y otros própositos descriptos en nuestra  <a href="#">política de pricvacidad</a></p>
+					<p class="message"><a href="login">¿Ya tenés una cuenta?</a></p>
+				</form>
+
+			</div>
 
 			<div class="errores">
 				<ul></ul>
 			</div>
 
-			<div>
-				<footer>
-					<%- include("../partials/footer") %>
-				</footer>
-			</div>
+			<footer>
+				<%- include("../partials/footer") %>
+			</footer>
 		</div>
-
 		<script src="/js/userRegister.js"></script>
 	</body>
 </html>

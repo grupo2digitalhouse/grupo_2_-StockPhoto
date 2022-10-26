@@ -21,25 +21,23 @@
 			<div class="form" >
 				<form class="login-form" method="POST" action="/login">
 	
-					<input type="email" name="email" placeholder="Ingrese su Email">
+					<input type="email" name="email" placeholder="e-mail">
 					<div class="text-danger">
 						<% if ( locals.errors && errors.email){ %>
 						   <p> <%= errors.email.msg %> </p>
-						
 							<% } %>  
 					</div>
 	
-					<input type="password" name="password"  placeholder="Ingrese su contraseña">
+					<input type="password" name="password"  placeholder="Contraseña">
 					<div class="text-danger">
 						<% if ( locals.errors && errors.password){ %>
 						   <p> <%= errors.password.msg %> </p>
-						
-							<% } %> 
+						<% } %> 
 						 
 					</div>
 	
-					<button>login</button>
-					<p class="message">¿No estás registrado?<a href="register">Create an account</a></p>
+					<button>Login</button>
+					<p class="message">¿No estás registrado? <a href="register">Creá una cuenta</a></p>
 					<p class="message"><a href="#">¿Olvidaste tu contraseña?</a></p>
 				</form>
 			</div>

@@ -14,7 +14,12 @@ main{
   flex-wrap: wrap;
 }
 
-.grilla-productos>img {
+.grilla-productos>a{
+	flex-grow: 1;
+	display: flex;
+}
+
+.grilla-productos>a>img{
 	height: 300px;
   flex-grow: 1;
 	object-fit: cover;
