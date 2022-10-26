@@ -1,0 +1,48 @@
+html, body{
+	height: 100%;	/* Esto es fundamental para los elementos que ocupen la pantalla */
+}
+
+#page-container{
+	position: relative;
+  min-height: 100vh;
+}
+
+.form {
+	padding-top: 50px;
+	box-sizing: border-box;	/* Con esto los padding no suman espacio al objeto */
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */	
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	padding-bottom: 30px; /* Se pone un padding para dar lugar a los mensajes de error */
+	
+}
+
+.login-form{
+	position: relative;
+	box-sizing: border-box;
+	z-index: 1;
+	background: #FFFFFF;
+	width: 450px;
+	min-height: 500px;
+	padding: 45px;
+	text-align: center;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+#categorias-box .categoria{
+	font-size: 18px;
+	text-align: left;
+	line-height: 25px;
+}
+
+#categorias-box .categoria i{
+	margin-right: 10px;
+}
+
+#titulo-imagen{
+	font-size: 35px !important;
+	font-weight: bold;
+	font-family: "cocogothic";
+}
