@@ -64,9 +64,17 @@ const controller = {
                 //TODO: URL DE IMAGEN
             })
         })
+    },
+
+    getCategories: (req, res) => {
+        DB.Category.findAll()
+            .then(category => {
+                return res.json({
+                    count: category.length,
+                    data: category
+                })
+            })
     }
 };
-
-
 
 module.exports = controller;

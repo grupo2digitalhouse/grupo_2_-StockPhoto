@@ -58,5 +58,5 @@ app.use(routerProduct)
 //Ruteo LOCAL
 app.listen(3001, ()=> console.log("Servidor escuchando en puerto 3001"));
 //ruteo HEROKU
-app.set('puerto',process.env.PORT || 3000);
-app.listen(app.get('puerto'), ()=>console.log('Servidor escuchando'))
+// app.set('puerto',process.env.PORT || 3000);
+// app.listen(app.get('puerto'), ()=>console.log('Servidor escuchando'))

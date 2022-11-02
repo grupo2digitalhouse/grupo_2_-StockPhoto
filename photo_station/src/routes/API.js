@@ -8,4 +8,5 @@ router.get('/api/users', APIController.listUsers);
 router.get('/api/users/:id', APIController.getUser);
 router.get('/api/products/', APIController.listProducts);
 router.get('/api/products/:id', APIController.getProduct);
+router.get('/api/categories', APIController.getCategories);
 module.exports = router;
