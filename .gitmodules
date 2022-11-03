@@ -1,0 +1,3 @@
+[submodule "dashboard"]
+	path = dashboard
+	url = https://github.com/grupo2digitalhouse/grupo_2_-StockPhoto.git
