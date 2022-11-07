@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
-import Genre from './Genre';
+import Genre from './Category';
 
 
-class GenresInDb extends Component{
+class CategoryInDb extends Component{
     constructor(){
         super()
         this.state ={
@@ -61,4 +61,4 @@ class GenresInDb extends Component{
 
 }
 
-export default GenresInDb;
+export default CategoryInDb;

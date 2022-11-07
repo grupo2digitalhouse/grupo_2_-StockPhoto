@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 
-import MovieList from './MovieList';
+//import MovieList from './MovieList';
 
-class Movie extends Component{
+class Photo extends Component{
     constructor(){
         super()
         this.state ={
@@ -82,4 +82,4 @@ class Movie extends Component{
 
 }
 
-export default Movie;
+export default Photo;

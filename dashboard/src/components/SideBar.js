@@ -1,5 +1,5 @@
 import React from 'react';
-import image from '../assets/images/logo-DH.png';
+import image from '../assets/images/photostation-imagotipo.png';
 
 function SideBar(){
     return(
@@ -21,7 +21,7 @@ function SideBar(){
                 <li className="nav-item active">
                     <a className="nav-link" href="/">
                         <i className="fas fa-fw fa-tachometer-alt"></i>
-                        <span>Dashboard - DH movies</span></a>
+                        <span>Dashboard - PhotoStation</span></a>
                 </li>
 
                 {/*<!-- Divider -->*/}

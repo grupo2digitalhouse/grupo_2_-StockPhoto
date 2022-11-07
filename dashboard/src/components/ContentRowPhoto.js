@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import SmallCard from './SmallCard';
-import MovieList from './MovieList';
+//import MovieList from './MovieList';
 
-class ContentRowMovies extends Component{
+class ContentRowPhoto extends Component{
     constructor(){
         super()
         this.state ={
@@ -91,4 +91,4 @@ class ContentRowMovies extends Component{
 
 }
 
-export default ContentRowMovies;
+export default ContentRowPhoto;
